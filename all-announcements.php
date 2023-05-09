@@ -17,7 +17,7 @@ if($conn->connect_error){
 	die("Connection Failed: ". $conn->connect_error());
 } ?> -->
 
-<?php include 'server/server.php' ?>
+<!-- <?php include 'server/server.php' ?> -->
 
 <?php
     $query = "SELECT * FROM tbl_announce WHERE id = '1'";
@@ -178,23 +178,25 @@ if($conn->connect_error){
 					<!-- Navigation Menu ==== -->
                     <div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
 						<div class="menu-logo">
-							<a href="index-3.php"><img src="assets/images/logo-black.png" alt=""></a>
+							<img src="assets/images/logo-black.png" alt="">
 						</div>
                         <ul class="nav navbar-nav">	
-							<li><a href="index-2.php">Home</a></li>
-							<li><a href="all-announcements.php">Announcements</a></li>
-							<li><a href="services.php">Services</a></li>
-							<!-- <li><a href="all-programs.php">Programs</a></li>
-							<li><a href="guidelines.php">Guidelines</a></li> -->
-							<li><a href="contact.php">Contact</a></li>
-							<li><a href="javascript:;">About<i class="fa fa-chevron-down"></i></a>
+							<li><a href="index-2.php">The Club</a></li>
+							<li><a href="org-structure.php">Coaches</a></li>
+							<li><a href="javascript:;">Players<i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
-									<li><a href="history.php">Our Story</a></li>
-									<li><a href="our-developers.php">Our Developers</a></li>
-									<li><a href="vision-mission.php">Vision & Mission</a></li>
-									<li><a href="org-structure.php">Org. Structure</a></li>
+									<li><a href="history.php">U9</a></li>
+									<li><a href="our-developers.php">U11</a></li>
+									<li><a href="vision-mission.php">U13</a></li>
+									<li><a href="org-structure.php">U15</a></li>
 								</ul>
 							</li>
+							<li><a href="all-announcements.php">Upcoming Events</a></li>
+							<li><a href="contact.php">Contacts</a></li>
+							<!-- <li><a href="all-programs.php">Programs</a></li>
+							<li><a href="guidelines.php">Guidelines</a></li> -->
+
+							
 							<?php
 								error_reporting(0);
 								if($_SESSION['role'] == 'administrator'){?>
@@ -209,7 +211,6 @@ if($conn->connect_error){
 									<li><a href="certif-of-indigency">Certifcate of Indigency</a></li>
 								</ul>
 							</li> -->
-							<!-- <li><a href="calendar.php">Calendar</a></li> -->
 						</ul>
 						<div class="nav-social-link">
 							<?php
@@ -218,7 +219,7 @@ if($conn->connect_error){
                         			<a href="model/logout.php">Log Out</a><?php 
                         		}else{
                         			?>
-                        			<a href="login_access.php">Login</a>
+                        			<a href="login_access-2.php">Login</a>
                         			<?php
                         		}
                          	?>
@@ -425,13 +426,13 @@ if($conn->connect_error){
     </div>
 	<!-- Page Content Box END ==== -->
 	<!-- Footer ==== -->
-    <footer>
+	<footer>
         <div class="footer-top">
 			<div class="pt-exebar">
 				<div class="container">
 					<div class="d-flex align-items-stretch">
 						<div class="pt-logo mr-auto">
-							<img src="assets/images/logo-white1.png" style="width: 220px;; height: 60px;" alt=""/>
+							<img src="assets/images/logo-white1111.png" style="width: 320px;; height: 60px;" alt=""/>
 						</div>
 						<div class="pt-social-link">
 							<ul class="list-inline m-a0">
@@ -448,7 +449,7 @@ if($conn->connect_error){
                 <div class="row">
 					<div class="col-lg-3 col-md-12 col-sm-12 footer-col-3">
                         <div class="widget">
-                        	<center><img src="assets/images/logo2.png" style="width: 170px; height: 170px;"></center>
+                        	<center><img src="assets/images/logo-2.jpg" style="width: 170px; height: 170px;"></center>
                         </div>
                     </div>
 					<div class="col-12 col-lg-9 col-md-12 col-sm-12">
@@ -467,7 +468,7 @@ if($conn->connect_error){
 								<div class="widget footer_widget">
 									<h5 class="footer-title">Quick Links</h5>
 									<ul>
-										<li><a href="history.hp">Our Story</a></li>
+										<li><a href="history.php">Our Story</a></li>
 										<!-- <li><a href="all-announcements.php">Brgy. Programs</a></li>
 										<li><a href="guidelines.php">Guidelines</a></li> -->
 										<li><a href="contact.php">Contact Us</a></li>
@@ -492,7 +493,7 @@ if($conn->connect_error){
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 text-center">© 2023 <a href="#" style="color: white;">Barangay Bolocboloc</a> All Rights Reserved.</div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-center">© 2023 <a href="#" style="color: white;">Sports Club</a> All Rights Reserved.</div>
                 </div>
             </div>
         </div>

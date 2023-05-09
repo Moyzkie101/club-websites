@@ -58,8 +58,8 @@ if($conn->connect_error){
 	<meta name="og:image" content="images/preview.png" align="middle"/>
 	<meta name="format-detection" content="telephone=no">
 	
-	<link rel="icon" href="assets/images/logo2.png" type="image/x-icon" />
-		<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo2.png" />
+	<link rel="icon" href="assets/images/logo-2.jpg" type="image/x-icon" />
+		<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo-2.jpg" />
 		<title>The Club</title>
 	
 	<!-- MOBILE SPECIFIC ============================================= -->
@@ -90,17 +90,17 @@ if($conn->connect_error){
 <style type="text/css">/*===================== 	Premery bg color =====================*/
 
 
-:root {	--primary: #5691cf;	--sc-primary: #5691cf;}
+:root {	--success: #5691cf;	--sc-success: #5691cf;}
 
-/* Hex */.bg-primary,.btn,.comments-area .comment-form p input[type="submit"],.pagination > .active > a,.pagination > .active > span,.pagination > .active > a:hover,.pagination > .active > span:hover,.pagination > .active > a:focus,.pagination > .active > span:focus,.feature-filters .active > [class*="btn"],.list-num-count > li:before,.pagination-bx.primary .pagination > li > a, .pagination-bx.primary .pagination > li > span,button.back-to-top,.rev-btn{    background-color: #5691cf;}
+/* Hex */.bg-success,.btn,.comments-area .comment-form p input[type="submit"],.pagination > .active > a,.pagination > .active > span,.pagination > .active > a:hover,.pagination > .active > span:hover,.pagination > .active > a:focus,.pagination > .active > span:focus,.feature-filters .active > [class*="btn"],.list-num-count > li:before,.pagination-bx.success .pagination > li > a, .pagination-bx.success .pagination > li > span,button.back-to-top,.rev-btn{    background-color: #5691cf;}
 
-/*Hex color :hover */.btn:active,.btn:hover,.btn:focus,.active > .btn,.bg-primary-dark,.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus ,.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus,.sidenav .closebtn:hover,.sidenav .closebtn:focus,.owl-btn-1.primary .owl-prev:hover, .owl-btn-1.primary .owl-next:hover,.owl-btn-2.primary .owl-prev:hover, .owl-btn-2.primary .owl-next:hover,.pagination-bx.primary .pagination > li > a:hover, .pagination-bx.primary .pagination > li > span:hover,.pagination-bx.primary .pagination > li.active > span,.pagination-bx.primary .pagination > li.active > a{    background-color: #5691cf;}
+/*Hex color :hover */.btn:active,.btn:hover,.btn:focus,.active > .btn,.bg-success-dark,.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus ,.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus,.sidenav .closebtn:hover,.sidenav .closebtn:focus,.owl-btn-1.success .owl-prev:hover, .owl-btn-1.success .owl-next:hover,.owl-btn-2.primary .owl-prev:hover, .owl-btn-2.success .owl-next:hover,.pagination-bx.success .pagination > li > a:hover, .pagination-bx.success .pagination > li > span:hover,.pagination-bx.success .pagination > li.active > span,.pagination-bx.success .pagination > li.active > a{    background-color: #5691cf;}
 
-/*===================== 	Premery text color =====================*/a,.text-primary,.primary li:before,.menu-links .nav > li.active > a,.menu-links .nav > li:hover > a,.menu-links .nav > li .mega-menu > li ul a:hover,.menu-links .nav > li .sub-menu li:hover > a,footer a:active,footer a:focus,footer a:hover,footer h1 a,footer h2 a,footer h3 a,footer h4 a,footer h5 a,footer h6 a,footer p a,.testimonial-1 .testimonial-position,.acod-head a:after,.acod-head a,.acod-head a:hover,.acod-head a.collapsed:hover,.ttr-tabs .nav-tabs > li > a i,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,.btn.outline,.btn-link:hover{    color: #5691cf;}
+/*===================== 	Premery text color =====================*/a,.text-success,.success li:before,.menu-links .nav > li.active > a,.menu-links .nav > li:hover > a,.menu-links .nav > li .mega-menu > li ul a:hover,.menu-links .nav > li .sub-menu li:hover > a,footer a:active,footer a:focus,footer a:hover,footer h1 a,footer h2 a,footer h3 a,footer h4 a,footer h5 a,footer h6 a,footer p a,.testimonial-1 .testimonial-position,.acod-head a:after,.acod-head a,.acod-head a:hover,.acod-head a.collapsed:hover,.ttr-tabs .nav-tabs > li > a i,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,.btn.outline,.btn-link:hover{    color: #5691cf;}
 
 /*===================== 	Secondery bg color =====================*/.bg-secondry {    background-color: #5691cf;}
 
-/*===================== 	Secondery text color =====================*/.text-secondry {    color: #a2cffe;}.ovpr-light:after, .ovpr-middle:after, .ovpr-dark:after,.ovpr:after,.bg-primary{	background-color:#5691cf;}.footer-top,.footer-bottom {	background-color: #121921;}.ovbl-middle::after, .ovbl-light::after, .ovbl-dark::after{	
+/*===================== 	Secondery text color =====================*/.text-secondry {    color: #a2cffe;}.ovpr-light:after, .ovpr-middle:after, .ovpr-dark:after,.ovpr:after,.bg-success{	background-color:#5691cf;}.footer-top,.footer-bottom {	background-color: #121921;}.ovbl-middle::after, .ovbl-light::after, .ovbl-dark::after{	
 
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#267621+0,#267621+50,110038+100 */	background: #5691cf; 
 
@@ -526,7 +526,7 @@ if($conn->connect_error){
 								data-paddingright="[30,35,35,15]"
 								data-paddingbottom="[12,12,12,12]"
 								data-paddingleft="[30,35,35,15]"
-								style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; background-color:var(--primary) !important; border:0; border-radius:30px; margin-right:5px;">REGISTER NOW </div></a>
+								style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; background-color:var(--success) !important; border:0; border-radius:30px; margin-right:5px;">REGISTER NOW </div></a>
 							<a class="tp-caption Newspaper-Button rev-btn" 
 								id="slide-200-layer-6" 
 								data-x="['center','center','center','center']" 
@@ -596,7 +596,7 @@ if($conn->connect_error){
 									<div class="feature-box-sm radius bg-white">
 										<i class="fa fa-bank text-primary"></i>
 									</div>
-									<h4><a href="services.php">Coaches</a></h4>
+									<h4><a href="org-structure.php">Coaches</a></h4>
 									<a href="services.php" class="btn radius-xl">Learn More</a>
 								</div>
 							</div>
@@ -644,7 +644,7 @@ if($conn->connect_error){
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12 heading-bx left">
-							<h2 class="title-head">Recent <span>Announcements</span></h2>
+							<h2 class="title-head">Upcoming <span>Events</span></h2>
 							<p>Check out the latest news, events and announcements here.</p>
 						</div>
 					</div>	
@@ -691,7 +691,7 @@ if($conn->connect_error){
                 <div class="row">
 					<div class="col-lg-3 col-md-12 col-sm-12 footer-col-3">
                         <div class="widget">
-                        	<center><img src="assets/images/logo2.png" style="width: 170px; height: 170px;"></center>
+                        	<center><img src="assets/images/logo-2.jpg" style="width: 170px; height: 170px;"></center>
                         </div>
                     </div>
 					<div class="col-12 col-lg-9 col-md-12 col-sm-12">

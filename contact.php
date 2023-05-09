@@ -1,37 +1,60 @@
-<!-- <?php 
-$database	= 'barsims';
-$username	= 'root';
-$host		= 'localhost';
-$password	= '';
-
-ini_set('display_errors',1);
-error_reporting(E_ALL);
-mysqli_report(MYSQLI_REPORT_ERROR | E_DEPRECATED | E_STRICT);
-// error_reporting(0);
-session_start();
-$conn = new mysqli($host,$username,$password,$database);
-
-if($conn->connect_error){
-	die("Connection Failed: ". $conn->connect_error());
-} ?> -->
-
-<!-- <?php include 'server/server.php' ?> -->
-
 <?php
-    $query = "SELECT * FROM tbl_announce WHERE id = '1'";
-    $result = $conn->query($query);
-	$row = $result->fetch_assoc();
 
-	$query1 = "SELECT * FROM tblbrgy_info WHERE id = '1'";
-    $result1 = $conn->query($query1);
+	//Import PHPMailer classes into the global namespace
+    //These must be at the top of your script, not inside a function
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\SMTP;
+    use PHPMailer\PHPMailer\Exception;
 
+    //Load Composer's autoloader
+    require 'vendor/autoload.php';
 
-	$rows = $result1->fetch_assoc();
+//    include 'server/server.php';
 
+	if (isset($_POST["submit"])) {
 
-	
+		$mail = new PHPMailer(true);
+
+        try{
+
+        	//Server settings
+        	$mail->SMTPDebug = 0;                      //Enable verbose debug output
+        	$mail->isSMTP();                                            //Send using SMTP
+        	$mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+        	$mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+        	$mail->Username   = 'brgybolocboloc.infosys@gmail.com';                     //SMTP username
+        	$mail->Password   = 'wrngxcppbkdrpqde';                               //SMTP password
+        	$mail->SMTPAutoTLS = false;
+        	$mail->SMTPSecure = 'tls';            //Enable implicit TLS encryption
+        	$mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
+        	//Recipients
+        	$mail->setFrom('brgybolocboloc.infosys@gmail.com','New Information from Internet');
+        	$mail->addAddress('brgybolocboloc.infosys@gmail.com');
+
+        	//Content
+        	$mail->isHTML(true);                                  //Set email format to HTML
+        	$mail->Subject = "New Contact Form Inquiry";
+        	$mail->Body    = "Name : ".$_POST['your_name'].
+        					 "<br><br> Email : ".$_POST['your_email'].
+        					 "<br><br> Address & Phone Number : ".$_POST['subject_message'].
+        					 "<br><br> Message : ".$_POST['body_message'];
+
+        	$mail->send();
+
+        } catch(Exception $e){
+
+            ?>
+                <script> 
+                	alert(<?php echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}"?>);
+                	window.location.href = "contact.php";
+                </script>
+            <?php
+
+        }
+
+	}
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,8 +68,6 @@ if($conn->connect_error){
 	<meta name="keywords" content="" />
 	<meta name="author" content="" />
 	<meta name="robots" content="" />
-	
-	<!-- DESCRIPTION -->
 	<meta name="description" content="The Club" />
 	
 	<!-- OG -->
@@ -55,13 +76,21 @@ if($conn->connect_error){
 	<meta name="og:image" content="images/preview.png" align="middle"/>
 	<meta name="format-detection" content="telephone=no">
 	
-		<link rel="icon" href="assets/images/logo-2.jpg" type="image/x-icon" />
-	<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo-2.jpg" />
-		<title>The Club | Barili Coaches</title>
+	<link rel="icon" href="assets/images/logo-2.jpg" type="image/x-icon" />
+		<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo-2.jpg" />
+		<title>The Club</title>
+	<!-- FAVICONS ICON ============================================= -->
+	<link rel="icon" href="assets/images/logo2.png" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo2.png" />
+	<title>The Club | CONTACT</title>
 	
 	<!-- MOBILE SPECIFIC ============================================= -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.min.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
 	
 	<!-- All PLUGINS CSS ============================================= -->
 	<link rel="stylesheet" type="text/css" href="assets/css/assets.css">
@@ -73,9 +102,8 @@ if($conn->connect_error){
 	<link rel="stylesheet" type="text/css" href="assets/css/shortcodes/shortcodes.css">
 	
 	<!-- STYLESHEETS ============================================= -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">	
-	<link rel="stylesheet" type="text/css" href="assets/css/loader.css">
-
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/loader.css">	
 </head>
 <style type="text/css">/*===================== 	Premery bg color =====================*/
 
@@ -125,10 +153,21 @@ if($conn->connect_error){
 </style>
 
 <style type="text/css">
-	ul {
-  list-style-type: none; /* Remove bullets */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margins */
+	.responsive-iframe {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+	  right: 0;
+	  width: 100%;
+	  height: 100%;
+	  border: none;
+	}
+	.container2 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
 }
 </style>
 <body id="bg">
@@ -143,7 +182,7 @@ if($conn->connect_error){
                 <div class="container clearfix">
 					<!-- Header Logo ==== -->
 					<div class="menu-logo">
-						<a href="index-2.php"><img src="assets/images/logo-white1111" alt=""></a>
+						<a href="index-2.php"><img src="assets/images/logo-white1111.png" style="width: 800px!important;" alt=""></a>
 					</div>
 					<!-- Mobile Nav Button ==== -->
                     <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -155,15 +194,15 @@ if($conn->connect_error){
                     <div class="secondary-menu">
                         <div class="secondary-inner">
                             <?php
-	                        	if(isset($_SESSION['role'])){
-	                        		?>
-	                        		<a href="model/logout.php">Log Out</a><?php 
-	                        	}else{
-	                        		?>
-	                        		<a href="login_access.php">Login</a>
-	                        		<?php
-	                        	}
-	                        ?>
+                        		if(isset($_SESSION['role'])){
+                        			  ?>
+                        			<a href="model/logout.php">Log Out</a><?php 
+                        		}else{
+                        			?>
+                        			<a href="login_access.php">Login</a>
+                        			<?php
+                        		}
+                         	?>
 						</div>
                     </div>
 					<!-- Search Box ==== -->
@@ -175,9 +214,9 @@ if($conn->connect_error){
 						<span id="search-remove"><i class="ti-close"></i></span>
                     </div>
 					<!-- Navigation Menu ==== -->
-                    <div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
+					<div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
 						<div class="menu-logo">
-							<img src="assets/images/logo-white1111.png" alt="">
+							<img src="assets/images/logo-black.png" alt="">
 						</div>
                         <ul class="nav navbar-nav">	
 							<li><a href="index-2.php">The Club</a></li>
@@ -233,10 +272,10 @@ if($conn->connect_error){
     <!-- Inner Content Box ==== -->
     <div class="page-content bg-white">
         <!-- Page Heading Box ==== -->
-        <div class="page-banner ovbl-dark" style="background-image:url(assets/images/cover2.jpeg);">
+        <div class="page-banner ovbl-dark" style="background-image:url(assets/images/cover1.jpg);">
             <div class="container">
                 <div class="page-banner-entry">
-                    <h1 class="text-white">Barili Coaches</h1>
+                    <h1 class="text-white">The Club Contact Us</h1>
 				 </div>
             </div>
         </div>
@@ -244,195 +283,88 @@ if($conn->connect_error){
 			<div class="container">
 				<ul class="list-inline">
 					<li><a href="home.php">Home</a></li>
-					<li>Coaches</li>
+					<li>Contact Us</li>
 				</ul>
 			</div>
 		</div>
 		<!-- Page Heading Box END ==== -->
-		<!-- contact area -->
-        <div class="content-block">
-			<!-- Portfolio  -->
-			<div class="section-area section-sp1">
-                <div class="container">
-					 <div class="row">
-						<div class="col-lg-3 col-md-4 col-sm-12 m-b30">
-							<div class="profile-bx text-center">
-								<div class="user-thumb">
-									<img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 280px;">	
-								</div>
-								<div class="profile-info">
-									<h4> First Lastname</h4>
-									<span>Main Coach</span>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-9 col-md-8 col-sm-12 m-b30">
-							<div class="profile-content-bx">
-								<div class="tab-content">
-									<div class="tab-pane active" id="courses">
-										<div class="profile-head">
-											<h3><span style="color: #5691cf">Coaches<br><span> Profile</h3>
-											<div class="feature-filters style1 ml-auto">
-												<ul class="filters" data-toggle="buttons">
-													<li data-filter="" class="btn active">
-														<input type="radio">
-														<a href="#"><span>All</span></a> 
-													</li>
-													<li data-filter="5" class="btn">
-														<input type="radio">
-														<a href="#"><span>Coach 1</span></a> 
-													</li>
-													<li data-filter="10" class="btn">
-														<input type="radio">
-														<a href="#"><span>Coach 2</span></a> 
-													</li>
-													<li data-filter="15" class="btn">
-														<input type="radio">
-														<a href="#"><span>Coach 3</span></a> 
-													</li>
-													<li data-filter="20" class="btn">
-														<input type="radio">
-														<a href="#"><span>Coach 4</span></a> 
-													</li>
-													<li data-filter="25" class="btn">
-														<input type="radio">
-														<a href="#"><span>Coach 5</span></a> 
-													</li>
-												</ul>
-											</div>
-										</div>
-										<div class="courses-filter">
-											<div class="clearfix">
-												<ul id="masonry" class="ttr-gallery-listing magnific-image row">
-													<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 10">
-														<div class="cours-bx">
-															<div class="action-box">
-																<img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;">	
-															</div>
-															<div class="info-bx text-center">
-																<h5><a href="#">First Lastname</a></h5>
-																<span><b>Coach 2</b></span><br>
-															</div>
-														</div>
-													</li>
-													<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 5">
-														<div class="cours-bx">
-															<div class="action-box">
-																 <img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;"> 	
-															</div>
-															<div class="info-bx text-center">
-																 <h5><a href="#">First Lastname</a></h5>
-																<span><b>Coach 1</b></span><br> 
-															</div>
-														</div>
-													</li>
+        <!-- Page Content Box ==== -->
+		<div class="content-block">
 
-														<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 25">
-														<div class="cours-bx">
-															<div class="action-box">
-																 <img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;"> 	
-															</div>
-															<div class="info-bx text-center">
-																 <h6><a href="#">First Lastname</a></h6>
-																<span><b>Coach 5</b></span><br> 
-															</div>
-														</div>
-													</li>
-													<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 5">
-														<div class="cours-bx">
-															<div class="action-box">
-																 <img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;"> 	
-															</div>
-															<div class="info-bx text-center">
-																 <h5><a href="#">First Lastname</a></h5>
-																<span><b>Coach 4</b></span><br> 
-															</div>
-														</div>
-													</li><li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 5">
-														<div class="cours-bx">
-															<div class="action-box">
-																 <img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;"> 	
-															</div>
-															<div class="info-bx text-center">
-																 <h6><a href="#">First Lastname</a></h6>
-																<span><b>Coach 3</b></span><br> 
-															</div>
-														</div>
-													</li><li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 5">
-														<div class="cours-bx">
-															<div class="action-box">
-																 <img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;"> 	
-															</div>
-															<div class="info-bx text-center">
-																 <h5><a href="#">First Lastname</a></h5>
-																<span><b>Coach 2</b></span><br> 
-															</div>
-														</div>
-													</li><li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 5">
-														<div class="cours-bx">
-															<div class="action-box">
-																 <img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;"> 	
-															</div>
-															<div class="info-bx text-center">
-																 <h5><a href="#">First Lastname</a></h5>
-																<span><b>Coach 1</b></span><br> 
-															</div>
-														</div>	
-													<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 15">
-														<div class="cours-bx">
-															<div class="action-box">
-																<img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;">	
-															</div>
-															<div class="info-bx text-center">
-																<h5><a href="#">First Lastname</a></h5>
-																<span><b>Coach 5</b></span><br>
-															</div>
-														</div>
-													</li>
-													<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 5">
-														<div class="cours-bx">
-															<div class="action-box">
-																<img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;">	
-															</div>
-															<div class="info-bx text-center">
-																<h6><a href="#">First Lastname</a></h6>
-																<span><b>Coach 3</b></span><br>
-															</div>
-														</div>
-													</li>
-													<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 5">
-														<div class="cours-bx">
-															<div class="action-box">
-																<img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;">	
-															</div>
-															<div class="info-bx text-center">
-																<h5><a href="#">First Lastname</a></h5>
-																<span><b>Coach 2</b></span><br>
-															</div>
-														</div>
-													</li>
-													<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 20">
-														<div class="cours-bx">
-															<div class="action-box">
-																<img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;">	
-															</div>
-															<div class="info-bx text-center">
-																<h5><a href="#">First Lastname</a></h5>
-																<span><b>Coach 1</b></span><br>
-															</div>
-														</div>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div> 
-								</div>
+
+			<div class="content-block">
+            <!-- Your Faq -->
+            <div class="section-area section-sp1">
+                <div class="container">
+					<div class="row align-items d-flex">
+						<div class="col-lg-7 col-md-12">
+							<div class="heading-bx left">
+								<h2 class="m-b10 title-head">Contact <span> Us</span></h2>
+							</div>
+								<a href="https://facebook.com/profile.php?id=100069445621624&mibextid=ZbWKwL" style="font-size: 20px; color: black;" target="blank"><i class="fa fa-facebook" style="font-size: 25px;"></i> Bolocboloc Page</a><br><br>
+																<a href="#" style="font-size: 20px; color: black;"><i class="fa fa-phone" style="font-size: 25px;"></i>&nbsp;0910-493-5212</a>
+								<br><br>
+							<div class="container2">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d420.0168676402042!2d123.52868859133369!3d10.113081608359911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9630643dd013b%3A0x6265dd3ae93a9dd5!2sBolocboloc%20Gym!5e1!3m2!1sen!2sph!4v1668923270352!5m2!1sen!2sph" class="responsive-iframe" loading="lazy"></iframe>
 							</div>
 						</div>
-				</div>
+						<div class="col-lg-5 col-md-12">
+							<form class="contact-bx dzForm" method="POST" action="contact.php">
+							<div class="dzFormMsg"></div>
+								<div class="heading-bx left">
+									<h2 class="title-head">Inquiries <span></span></h2>
+									<p>Send a message to us!</p>
+								</div>
+								<div class="row placeani" id="sent">
+									<div class="col-lg-6 ">
+										<div class="form-group">
+											<div class="input-group">
+												<label>Your Name</label>
+												<input name="your_name" type="text" required class="form-control" minlength="3" maxlength="30">
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="form-group">
+											<div class="input-group"> 
+												<label>Your Email Address</label>
+												<input name="your_email" type="email" class="form-control" required minlength="5" maxlength="50">
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12">
+										<div class="form-group">
+											<div class="input-group">
+												<label>Your Address and Phone Number</label>
+												<input name="subject_message" type="text" required class="form-control" minlength="3">
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12">
+										<div class="form-group">
+											<div class="input-group">
+												<label>Type Message</label>
+												<textarea name="body_message" rows="4" class="form-control" required minlength="5"></textarea>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12" align="center">
+										<button type="submit" name="submit" class="btn button-md button-block">Send Message</button>
+									</div>
+									<div class="col-lg-12" align="center">
+									<br>
+									<label style="color: green;font-weight: 540;"></label>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					
+                </div>
             </div>
-			<!-- contact area END -->
-        </div>
+            <!-- Your Faq End -->
+
+                    </div>
 		<!-- Page Content Box END ==== -->
     </div>
 	<!-- Page Content Box END ==== -->

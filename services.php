@@ -15,7 +15,7 @@ if($conn->connect_error){
 	die("Connection Failed: ". $conn->connect_error());
 } ?> -->
 
-<?php include 'server/server.php' ?>
+<!-- <?php include 'server/server.php' ?> -->
 
 <?php
     $query = "SELECT * FROM tbl_announce WHERE id = '1'";
@@ -490,13 +490,13 @@ if($conn->connect_error){
     </div>
 	<!-- Page Content Box END ==== -->
 	<!-- Footer ==== -->
-    <footer>
+	<footer>
         <div class="footer-top">
 			<div class="pt-exebar">
 				<div class="container">
 					<div class="d-flex align-items-stretch">
 						<div class="pt-logo mr-auto">
-							<img src="assets/images/logo-white1.png" style="width: 220px;; height: 60px;" alt=""/>
+							<img src="assets/images/logo-white1111.png" style="width: 320px;; height: 60px;" alt=""/>
 						</div>
 						<div class="pt-social-link">
 							<ul class="list-inline m-a0">
@@ -513,7 +513,7 @@ if($conn->connect_error){
                 <div class="row">
 					<div class="col-lg-3 col-md-12 col-sm-12 footer-col-3">
                         <div class="widget">
-                        	<center><img src="assets/images/logo2.png" style="width: 170px; height: 170px;"></center>
+                        	<center><img src="assets/images/logo-2.jpg" style="width: 170px; height: 170px;"></center>
                         </div>
                     </div>
 					<div class="col-12 col-lg-9 col-md-12 col-sm-12">
@@ -557,7 +557,7 @@ if($conn->connect_error){
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 text-center">© 2023 <a href="#" style="color: white;">Barangay Bolocboloc</a> All Rights Reserved.</div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-center">© 2023 <a href="#" style="color: white;">Sports Club</a> All Rights Reserved.</div>
                 </div>
             </div>
         </div>

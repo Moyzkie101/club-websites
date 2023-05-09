@@ -61,9 +61,10 @@ if($conn->connect_error){
 	<meta name="og:image" content="images/preview.png" align="middle"/>
 	<meta name="format-detection" content="telephone=no">
 	
-	<link rel="icon" href="assets/images/logo2.png" type="image/x-icon" />
-		<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo2.png" />
+	<link rel="icon" href="assets/images/logo-2.jpgg" type="image/x-icon" />
+		<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo-2.jpg" />
 		<title>The Club</title>
+
 	
 	<!-- MOBILE SPECIFIC ============================================= -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -151,7 +152,7 @@ if($conn->connect_error){
                 <div class="container clearfix">
 					<!-- Header Logo ==== -->
 					<div class="menu-logo">
-						<a href="index-2.php"><img src="assets/images/logo-white1.png" style="width: 700px!important;" alt=""></a>
+						<a href="index-2.php"><img src="assets/images/logo-white1111.png" style="width: 700px!important;" alt=""></a>
 					</div>
 					<!-- Mobile Nav Button ==== -->
                     <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -374,7 +375,7 @@ if($conn->connect_error){
 								data-paddingright="[30,35,35,15]"
 								data-paddingbottom="[12,12,12,12]"
 								data-paddingleft="[30,35,35,15]"
-								style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; background-color:var(--primary) !important; border:0; border-radius:30px; margin-right:5px;">REGISTER NOW </div></a>
+								style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; background-color:var(--success) !important; border:0; border-radius:30px; margin-right:5px;">REGISTER NOW </div></a>
 							<a class="tp-caption Newspaper-Button rev-btn" 
 								id="slide-100-layer-6" 
 								data-x="['center','center','center','center']" 
@@ -532,7 +533,7 @@ if($conn->connect_error){
 								data-paddingright="[30,35,35,15]"
 								data-paddingbottom="[12,12,12,12]"
 								data-paddingleft="[30,35,35,15]"
-								style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; background-color:var(--primary) !important; border:0; border-radius:30px; margin-right:5px;">REGISTER NOW </div></a>
+								style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; background-color:var(--success) !important; border:0; border-radius:30px; margin-right:5px;">REGISTER NOW </div></a>
 							<a class="tp-caption Newspaper-Button rev-btn" 
 								id="slide-200-layer-6" 
 								data-x="['center','center','center','center']" 
@@ -669,7 +670,7 @@ if($conn->connect_error){
 				<div class="container">
 					<div class="d-flex align-items-stretch">
 						<div class="pt-logo mr-auto">
-							<img src="assets/images/logo-white1.png" style="width: 220px;; height: 60px;" alt=""/>
+							<img src="assets/images/logo-white1111.png" style="width: 320px;; height: 60px;" alt=""/>
 						</div>
 						<div class="pt-social-link">
 							<ul class="list-inline m-a0">
@@ -686,7 +687,7 @@ if($conn->connect_error){
                 <div class="row">
 					<div class="col-lg-3 col-md-12 col-sm-12 footer-col-3">
                         <div class="widget">
-                        	<center><img src="assets/images/logo2.png" style="width: 170px; height: 170px;"></center>
+                        	<center><img src="assets/images/logo-2.jpg" style="width: 170px; height: 170px;"></center>
                         </div>
                     </div>
 					<div class="col-12 col-lg-9 col-md-12 col-sm-12">
@@ -730,7 +731,7 @@ if($conn->connect_error){
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 text-center">© 2023 <a href="#" style="color: white;">The Club</a> All Rights Reserved.</div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-center">© 2023 <a href="#" style="color: white;">Sports Club</a> All Rights Reserved.</div>
                 </div>
             </div>
         </div>
