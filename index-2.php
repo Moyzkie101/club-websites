@@ -633,14 +633,14 @@ if($conn->connect_error){
 			
 			<!---About Us-->
 			
-			<div class="section-area section-sp1">
+			 <div class="section-area section-sp1">
                 <div class="container">
 					<div class="row align-items d-flex">
 						<div class="col-lg-7 col-md-12">
 							<div class="heading-bx left">
 								<h2 class="m-b10 title-head">About <span> Us</span></h2>
 							</div>
-							<p style="text-align: justify; "><span style="font-size: 18px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sports clubs enable children to develop skills that will help them in school, in their personal lives and in future careers. Key skills such as leadership, problem-solving, responsibility and a sense of initiative are all developed through sporting activities with peers.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With the wide range of clubs, we offer at PTC, as part of a school curriculum or our extra-curricular activities such as holiday clubs and lunchtime sessions, we can help children develop and gain skills that will be beneficial to them throughout their lives. Our popular parent and child sessions, Fit Families, allow children to follow a parents’ example in a class that is modified to fit all ages and is fun for all the family.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>For more information on the classes and clubs we offer, don’t hesitate to contact us.</b></span></p>
+							<p style="text-align: justify; "><span style="font-size: 18px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sports clubs enable children to develop skills that will help them in school, in their personal lives and in future careers. Key skills such as leadership, problem-solving, responsibility and a sense of initiative are all developed through sporting activities with peers.<br><br>&nbsp;&nbsp;&nbsp;<b>For more information on the classes and clubs we offer, don’t hesitate to contact us.</b></span></p>
 						</div>
 						<div class="col-lg-5 col-md-12">
 							<div class="heading-bx left">
