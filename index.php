@@ -15,7 +15,7 @@ if($conn->connect_error){
 	die("Connection Failed: ". $conn->connect_error());
 } ?> -->
 
-<!-- <?php include 'server/server.php' ?> -->
+ <?php //include 'server/server.php' ?>
 
 <?php
 
@@ -58,7 +58,7 @@ if($conn->connect_error){
 	<meta name="og:image" content="images/preview.png" align="middle"/>
 	<meta name="format-detection" content="telephone=no">
 	
-	<link rel="icon" href="assets/images/logo-2.jpg" type="image/x-icon" />
+	<!-- <link rel="icon" href="assets/images/logo-2.jpg" type="image/x-icon" /> -->
 		<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo-2.jpg" />
 		<title>The Club</title>
 	
@@ -164,6 +164,21 @@ if($conn->connect_error){
                         		}else{
                         			?>
                         			<a href="login_access.php">Login</a>
+                        			<?php
+                        		}
+                         	?>
+						</div>
+						<div class="secondary-inner">
+							<p>|</p>
+						</div>
+						<div class="secondary-inner">
+                        	<?php
+                        		if(isset($_SESSION['role'])){
+                        			  ?>
+                        			<a href="model/logout.php">Log Out</a><?php 
+                        		}else{
+                        			?>
+                        			<a href="login_access.php">Sign Up</a>
                         			<?php
                         		}
                          	?>
