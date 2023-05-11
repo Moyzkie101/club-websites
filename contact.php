@@ -272,7 +272,7 @@
     <!-- Inner Content Box ==== -->
     <div class="page-content bg-white">
         <!-- Page Heading Box ==== -->
-        <div class="page-banner ovbl-dark" style="background-image:url(assets/images/cover1.jpg);">
+        <div class="page-banner ovbl-dark" style="background-image:url(assets/images//cover2.jpeg);">
             <div class="container">
                 <div class="page-banner-entry">
                     <h1 class="text-white">The Club Contact Us</h1>
@@ -301,11 +301,11 @@
 							<div class="heading-bx left">
 								<h2 class="m-b10 title-head">Contact <span> Us</span></h2>
 							</div>
-								<a href="https://facebook.com/profile.php?id=100069445621624&mibextid=ZbWKwL" style="font-size: 20px; color: black;" target="blank"><i class="fa fa-facebook" style="font-size: 25px;"></i> Bolocboloc Page</a><br><br>
-																<a href="#" style="font-size: 20px; color: black;"><i class="fa fa-phone" style="font-size: 25px;"></i>&nbsp;0910-493-5212</a>
+								<a href="https://www.facebook.com/profile.php?id=100067489560259" style="font-size: 20px; color: black;" target="blank"><i class="fa fa-facebook" style="font-size: 25px;"></i> Municipality of Barili</a><br><br>
+																<a href="#" style="font-size: 20px; color: black;"><i class="fa fa-phone" style="font-size: 25px;"></i>&nbsp;0911-22-3456</a>
 								<br><br>
 							<div class="container2">
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d420.0168676402042!2d123.52868859133369!3d10.113081608359911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9630643dd013b%3A0x6265dd3ae93a9dd5!2sBolocboloc%20Gym!5e1!3m2!1sen!2sph!4v1668923270352!5m2!1sen!2sph" class="responsive-iframe" loading="lazy"></iframe>
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125683.55283757197!2d123.43982629417452!3d10.13089049937613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a961e191649497%3A0xd2a5a997b77eb5c1!2sBarili%2C%20Cebu!5e0!3m2!1sen!2sph!4v1683783773671!5m2!1sen!2sph" class="responsive-iframe" loading="lazy"></iframe>
 							</div>
 						</div>
 						<div class="col-lg-5 col-md-12">

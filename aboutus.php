@@ -47,17 +47,17 @@ if($conn->connect_error){
 	<meta name="robots" content="" />
 	
 	<!-- DESCRIPTION -->
-	<meta name="description" content="Barangay Bolocboloc" />
+	<meta name="description" content="The Club" />
 	
 	<!-- OG -->
-	<meta property="og:title" content="Barangay Bolocboloc" />
-	<meta property="og:description" content="Barangay Bolocboloc" />
+	<meta property="og:title" content="The Club" />
+	<meta property="og:description" content="The Club" />
 	<meta name="og:image" content="images/preview.png" align="middle"/>
 	<meta name="format-detection" content="telephone=no">
 	
-	<link rel="icon" href="assets/images/logo2.png" type="image/x-icon" />
-	<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo2.png" />
-	<title>Barangay Bolocboloc | OUR STORY</title>
+	<link rel="icon" href="assets/images/logo-2.jpg" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo-2.jpg" />
+	<title>The Club | About Us</title>
 	
 	<!-- MOBILE SPECIFIC ============================================= -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -136,7 +136,7 @@ if($conn->connect_error){
                 <div class="container clearfix">
 					<!-- Header Logo ==== -->
 					<div class="menu-logo">
-						<a href="index-2.php"><img src="assets/images/logo-black.png" alt=""></a>
+						<a href="index-2.php"><img src="assets/images/logo-white1111.png" style="width: 800px!important;" alt=""></a>
 					</div>
 					<!-- Mobile Nav Button ==== -->
                     <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -168,25 +168,27 @@ if($conn->connect_error){
 						<span id="search-remove"><i class="ti-close"></i></span>
                     </div>
 					<!-- Navigation Menu ==== -->
-                    <div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
+					<div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
 						<div class="menu-logo">
-							<a href="index-3.php"><img src="assets/images/logo-black.png" alt=""></a>
+							<img src="assets/images/logo-black.png" alt="">
 						</div>
                         <ul class="nav navbar-nav">	
-							<li><a href="index-2.php">Home</a></li>
-							<li><a href="all-announcements.php">Announcements</a></li>
-							<li><a href="services.php">Services</a></li>
-							<!-- <li><a href="all-programs.php">Programs</a></li>
-							<li><a href="guidelines.php">Guidelines</a></li> -->
-							<li><a href="contact.php">Contact</a></li>
-							<li><a href="javascript:;">About<i class="fa fa-chevron-down"></i></a>
+							<li><a href="index-2.php">The Club</a></li>
+							<li><a href="org-structure.php">Coaches</a></li>
+							<li><a href="javascript:;">Players<i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
-									<li><a href="history.php">Our Story</a></li>
-									<li><a href="our-developers.php">Our Developers</a></li>
-									<li><a href="vision-mission.php">Vision & Mission</a></li>
-									<li><a href="org-structure.php">Org. Structure</a></li>
+									<li><a href="#">U9</a></li>
+									<li><a href="#">U11</a></li>
+									<li><a href="#">U13</a></li>
+									<li><a href="#">U15</a></li>
 								</ul>
 							</li>
+							<li><a href="all-events">Upcoming Events</a></li>
+							<li><a href="contact.php">Contacts</a></li>
+							<!-- <li><a href="all-programs.php">Programs</a></li>
+							<li><a href="guidelines.php">Guidelines</a></li> -->
+
+							
 							<?php
 								error_reporting(0);
 								if($_SESSION['role'] == 'administrator'){?>
@@ -201,7 +203,6 @@ if($conn->connect_error){
 									<li><a href="certif-of-indigency">Certifcate of Indigency</a></li>
 								</ul>
 							</li> -->
-							<!-- <li><a href="calendar.php">Calendar</a></li> -->
 						</ul>
 						<div class="nav-social-link">
 							<?php
@@ -210,7 +211,7 @@ if($conn->connect_error){
                         			<a href="model/logout.php">Log Out</a><?php 
                         		}else{
                         			?>
-                        			<a href="login_access.php">Login</a>
+                        			<a href="login_access-2.php">Login</a>
                         			<?php
                         		}
                          	?>
@@ -225,10 +226,10 @@ if($conn->connect_error){
     <!-- Inner Content Box ==== -->
     <div class="page-content bg-white">
         <!-- Page Heading Box ==== -->
-        <div class="page-banner ovbl-dark" style="background-image:url(assets/images/cover1.jpg);">
+        <div class="page-banner ovbl-dark" style="background-image:url(assets/images/cover2.jpeg);">
             <div class="container">
                 <div class="page-banner-entry">
-                    <h1 class="text-white">Barangay Bolocboloc History</h1>
+                    <h1 class="text-white">About Us</h1>
 				 </div>
             </div>
         </div>
@@ -236,7 +237,7 @@ if($conn->connect_error){
 			<div class="container">
 				<ul class="list-inline">
 					<li><a href="home.php">Home</a></li>
-					<li>Our Story</li>
+					<li>About Us</li>
 				</ul>
 			</div>
 		</div>
@@ -245,30 +246,31 @@ if($conn->connect_error){
 		<div class="content-block">
 
 
-			 <!-- Our Story ==== -->
-            <div class="section-area section-sp1">
+			<!---About Us-->
+			
+			<div class="section-area section-sp1">
                 <div class="container">
 					<div class="row align-items d-flex">
 						<div class="col-lg-7 col-md-12">
 							<div class="heading-bx left">
-								<h2 class="m-b10 title-head">Our <span> Story</span></h2>
+								<h2 class="m-b10 title-head">About <span> Us</span></h2>
 							</div>
-							<p style="text-align: justify; "><span style="font-size: 18px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;According to traditions, the name Bolocboloc is derived from the colorful waters which got a color from a fish that lived in the water. It's ever changing colors (boloc in dialect) had made the people call the place "Bolocboloc". One day a fishermen, hoping to catch a fish for lunch, caught the fish. When he turned around, to his surprise he saw that all the waters in the area was following him. In his fear, he climbed the nearest coconut tree and released the fish. It swam back to his home, and the rest of the water was returned to where it came from.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Another version, the barangay was named during the spanish Regime. A spring colors, and a murmuring "borocboroc" sound. One day two spanish soldiers passed by and asked the name of the flowing water. The two residents were not able to convey it in spanish so they just expressed it through sign language. The beautiful plants surrounding the place and it's amazing sound, the barangay was then named bolocboloc (from the word borocboroc) meaning the sound of the spring.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>The bolocboloc spring water are rich in sulfur, and can heals skin diseases.</b></span></p>
+							<p style="text-align: justify; "><span style="font-size: 18px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sports clubs enable children to develop skills that will help them in school, in their personal lives and in future careers. Key skills such as leadership, problem-solving, responsibility and a sense of initiative are all developed through sporting activities with peers.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With the wide range of clubs, we offer at PTC, as part of a school curriculum or our extra-curricular activities such as holiday clubs and lunchtime sessions, we can help children develop and gain skills that will be beneficial to them throughout their lives. Our popular parent and child sessions, Fit Families, allow children to follow a parents’ example in a class that is modified to fit all ages and is fun for all the family.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>For more information on the classes and clubs we offer, don’t hesitate to contact us.</b></span></p>
 						</div>
 						<div class="col-lg-5 col-md-12">
 							<div class="heading-bx left">
-								<h2 class="m-b10 title-head">Brgy. <span>Head</span></h2>
+								<h2 class="m-b10 title-head">Sports <span>Club</span></h2>
 							</div>	
 							<div class="row">
 								<div class="col-md-12">
 									<div class="profile text-center">
 										<div>
-											<img src="assets/images/org-structure/Captain1.png" style="width: 150px; height: 200px;">
+											<img src="assets/images/org-structure/sports.jpg" style="width: 520px; height: 280px;">
 										</div>
-										<div class="profile-info">
+										<!-- <div class="profile-info">
 											<h4>Hon. Aquiles O. Cañete</h4>
 											<span>Barangay Captain</span>
-										</div>
+										</div> -->
 									</div>
 								</div>		
 							</div>		   
@@ -277,7 +279,7 @@ if($conn->connect_error){
 					
                 </div>
             </div>
-            <!-- Our Story End -->	
+            <!-- About End-->	
 			
 			        </div>
 		<!-- Page Content Box END ==== -->
@@ -290,7 +292,7 @@ if($conn->connect_error){
 				<div class="container">
 					<div class="d-flex align-items-stretch">
 						<div class="pt-logo mr-auto">
-							<img src="assets/images/logo-white1.png" style="width: 220px;; height: 60px;" alt=""/>
+							<img src="assets/images/logo-white1111.png" style="width: 320px;; height: 60px;" alt=""/>
 						</div>
 						<div class="pt-social-link">
 							<ul class="list-inline m-a0">
@@ -307,7 +309,7 @@ if($conn->connect_error){
                 <div class="row">
 					<div class="col-lg-3 col-md-12 col-sm-12 footer-col-3">
                         <div class="widget">
-                        	<center><img src="assets/images/logo2.png" style="width: 170px; height: 170px;"></center>
+                        	<center><img src="assets/images/logo-2.jpg" style="width: 170px; height: 170px;"></center>
                         </div>
                     </div>
 					<div class="col-12 col-lg-9 col-md-12 col-sm-12">
@@ -351,7 +353,7 @@ if($conn->connect_error){
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 text-center">© 2023 <a href="#" style="color: white;">Barangay Bolocboloc</a> All Rights Reserved.</div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-center">© 2023 <a href="#" style="color: white;">Sports Club</a> All Rights Reserved.</div>
                 </div>
             </div>
         </div>

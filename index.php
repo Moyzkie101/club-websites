@@ -94,7 +94,7 @@ if($conn->connect_error){
 
 /* Hex */.bg-success,.btn,.comments-area .comment-form p input[type="submit"],.pagination > .active > a,.pagination > .active > span,.pagination > .active > a:hover,.pagination > .active > span:hover,.pagination > .active > a:focus,.pagination > .active > span:focus,.feature-filters .active > [class*="btn"],.list-num-count > li:before,.pagination-bx.success .pagination > li > a, .pagination-bx.success .pagination > li > span,button.back-to-top,.rev-btn{    background-color: #5691cf;}
 
-/*Hex color :hover */.btn:active,.btn:hover,.btn:focus,.active > .btn,.bg-success-dark,.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus ,.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus,.sidenav .closebtn:hover,.sidenav .closebtn:focus,.owl-btn-1.success .owl-prev:hover, .owl-btn-1.success .owl-next:hover,.owl-btn-2.primary .owl-prev:hover, .owl-btn-2.success .owl-next:hover,.pagination-bx.success .pagination > li > a:hover, .pagination-bx.success .pagination > li > span:hover,.pagination-bx.success .pagination > li.active > span,.pagination-bx.success .pagination > li.active > a{    background-color: #5691cf;}
+/*Hex color :hover */.btn:active,.btn:hover,.btn:focus,.active > .btn,.bg-success-dark,.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus ,.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus,.sidenav .closebtn:hover,.sidenav .closebtn:focus,.owl-btn-1.success .owl-prev:hover, .owl-btn-1.success .owl-next:hover,.owl-btn-2.success .owl-prev:hover, .owl-btn-2.success .owl-next:hover,.pagination-bx.success .pagination > li > a:hover, .pagination-bx.success .pagination > li > span:hover,.pagination-bx.success .pagination > li.active > span,.pagination-bx.success .pagination > li.active > a{    background-color: #5691cf;}
 
 /*===================== 	Premery text color =====================*/a,.text-success,.success li:before,.menu-links .nav > li.active > a,.menu-links .nav > li:hover > a,.menu-links .nav > li .mega-menu > li ul a:hover,.menu-links .nav > li .sub-menu li:hover > a,footer a:active,footer a:focus,footer a:hover,footer h1 a,footer h2 a,footer h3 a,footer h4 a,footer h5 a,footer h6 a,footer p a,.testimonial-1 .testimonial-position,.acod-head a:after,.acod-head a,.acod-head a:hover,.acod-head a.collapsed:hover,.ttr-tabs .nav-tabs > li > a i,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,.btn.outline,.btn-link:hover{    color: #5691cf;}
 
@@ -118,7 +118,7 @@ if($conn->connect_error){
 
 	/* Old browsers */	background: -moz-linear-gradient(45deg, #5691cf 0%, #5691cf 100%); 
 
-	/* FF3.6-15 */	background: -webkit-linear-gradient(45deg, #5691cf 0%,#5691cf 100%); 
+	/* FF3.6-15 */	background: -webkit-linear-gradient(45deg, #ut us5691cf 0%,#5691cf 100%); 
 
 	/* Chrome10-25,Safari5.1-6 */	background: linear-gradient(45deg, #5691cf 0%,#5691cf 100%); 
 
@@ -194,13 +194,13 @@ if($conn->connect_error){
 							<li><a href="org-structure.php">Coaches</a></li>
 							<li><a href="javascript:;">Players<i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
-									<li><a href="history.php">U9</a></li>
-									<li><a href="our-developers.php">U11</a></li>
-									<li><a href="vision-mission.php">U13</a></li>
-									<li><a href="org-structure.php">U15</a></li>
+									<li><a href="#">U9</a></li>
+									<li><a href="#">U11</a></li>
+									<li><a href="#">U13</a></li>
+									<li><a href="#">U15</a></li>
 								</ul>
 							</li>
-							<li><a href="services.php">Upcoming Events</a></li>
+							<li><a href="all-events">Upcoming Events</a></li>
 							<li><a href="contact.php">Contacts</a></li>
 							<!-- <li><a href="all-programs.php">Programs</a></li>
 							<li><a href="guidelines.php">Guidelines</a></li> -->
@@ -365,7 +365,7 @@ if($conn->connect_error){
 									 CTU-Barili Campus
 							</div>
 							<!-- LAYER NR. 4 -->
-							<a href="registration.php"><div class="tp-caption Newspaper-Button rev-btn " 
+							<a href="#"><div class="tp-caption Newspaper-Button rev-btn " 
 								id="slide-200-layer-5" 
 								data-x="['center','center','center','center']" 
 								data-hoffset="['90','80','75','90']" 
@@ -523,7 +523,7 @@ if($conn->connect_error){
 								Lorem ipsum dolor sit amet
 							</div>
 							<!-- LAYER NR. 4 -->
-							<a href="registration.php"><div class="tp-caption Newspaper-Button rev-btn " 
+							<a href="#"><div class="tp-caption Newspaper-Button rev-btn " 
 								id="slide-200-layer-5" 
 								data-x="['center','center','center','center']" 
 								data-hoffset="['90','80','75','90']" 
@@ -581,10 +581,10 @@ if($conn->connect_error){
 								</div>
 								<div class="info-bx text-center">
 									<div class="feature-box-sm radius bg-white">
-										<i class="fa fa-book text-primary"></i>
+										<i class="fa fa-book text-success"></i>
 									</div>
-									<h4><a href="history.php">The Club</a></h4>
-									<a href="history.php" class="btn radius-xl">Learn More</a>
+									<h4><a href="aboutus.php">The Club</a></h4>
+									<a href="aboutus.php" class="btn radius-xl">Learn More</a>
 								</div>
 							</div>
 						</div>
@@ -595,7 +595,7 @@ if($conn->connect_error){
 								</div>
 								<div class="info-bx text-center">
 									<div class="feature-box-sm radius bg-white">
-										<i class="fa fa-envelope-open text-primary"></i>
+										<i class="fa fa-envelope-open text-success"></i>
 									</div>
 									<h4><a href="all-announcements.php">Members</a></h4>
 									<a href="all-announcements.php" class="btn radius-xl">Learn More</a>
@@ -609,7 +609,7 @@ if($conn->connect_error){
 								</div>
 								<div class="info-bx text-center">
 									<div class="feature-box-sm radius bg-white">
-										<i class="fa fa-bank text-primary"></i>
+										<i class="fa fa-bank text-success"></i>
 									</div>
 									<h4><a href="org-structure.php">Coaches</a></h4>
 									<a href="services.php" class="btn radius-xl">Learn More</a>
@@ -623,7 +623,7 @@ if($conn->connect_error){
 								</div>
 								<div class="info-bx text-center">
 									<div class="feature-box-sm radius bg-white">
-										<i class="fa fa-bank text-primary"></i>
+										<i class="fa fa-bank text-success"></i>
 									</div>
 									<h4><a href="services.php">Attendance</a></h4>
 									<a href="services.php" class="btn radius-xl">Learn More</a>
@@ -635,25 +635,41 @@ if($conn->connect_error){
             </div>
             <!-- Our Services END -->
 			
-			<!-- About Us -->
+			<!---About Us-->
 			
-			<div class="section-area section-sp2">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12 heading-bx left">
-							<h2 class="title-head">About <span>Us</span></h2>
-							<p>Check out the latest news, events and announcements here.</p>
+			 <div class="section-area section-sp1">
+                <div class="container">
+					<div class="row align-items d-flex">
+						<div class="col-lg-7 col-md-12">
+							<div class="heading-bx left">
+								<h2 class="m-b10 title-head">About <span> Us</span></h2>
+							</div>
+							<p style="text-align: justify; "><span style="font-size: 18px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sports clubs enable children to develop skills that will help them in school, in their personal lives and in future careers. Key skills such as leadership, problem-solving, responsibility and a sense of initiative are all developed through sporting activities with peers.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With the wide range of clubs, we offer at PTC, as part of a school curriculum or our extra-curricular activities such as holiday clubs and lunchtime sessions, we can help children develop and gain skills that will be beneficial to them throughout their lives. Our popular parent and child sessions, Fit Families, allow children to follow a parents’ example in a class that is modified to fit all ages and is fun for all the family.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>For more information on the classes and clubs we offer, don’t hesitate to contact us.</b></span></p>
 						</div>
-					</div>	
-					<div class="about-right-col">
-					<img src="assets/img/person.png">
+						<div class="col-lg-5 col-md-12">
+							<div class="heading-bx left">
+								<h2 class="m-b10 title-head">Sports <span>Club</span></h2>
+							</div>	
+							<div class="row">
+								<div class="col-md-12">
+									<div class="profile text-center">
+										<div>
+											<img src="assets/images/org-structure/sports.jpg" style="width: 520px; height: 280px;">
+										</div>
+										<!-- <div class="profile-info">
+											<h4>Hon. Aquiles O. Cañete</h4>
+											<span>Barangay Captain</span>
+										</div> -->
+									</div>
+								</div>		
+							</div>		   
+						</div>
 					</div>
-				</div>
-			</div>
-
-			<!-- About Us End-->
-
-
+					
+                </div>
+            </div>
+            <!-- About End-->	
+		
 			<!-- Popular Courses -->
 			<div class="section-area section-sp2">
 				<div class="container">
@@ -667,7 +683,7 @@ if($conn->connect_error){
 						<div class="upcoming-event-carousel owl-carousel owl-btn-center-lr owl-btn-1 col-12 p-lr0  m-b30"></div>
 					</div>
 					<div class="text-center">
-						<a href="all-announcements.php" class="btn">View All Announcements</a>
+						<a href="all-announcements.php" class="btn">View All Events</a>
 					</div>
 				</div>
 			</div>
