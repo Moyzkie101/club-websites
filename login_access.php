@@ -18,7 +18,7 @@
 		<meta name="robots" content="" />
 		<meta name="format-detection" content="telephone=no">
 		
-		<!-- <link rel="icon" href="assets/images/logo2.png" type="image/x-icon" /> -->
+		<link rel="icon" href="assets/images/logo2.png" type="image/x-icon" />
 		<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo2.png" />
 		<title>Barangay Bolocboloc | LOGIN</title>
 
