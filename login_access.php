@@ -85,7 +85,7 @@
 
 	<body id="bg">
 		<div class="page-wraper">
-			<div class="">
+			<div class="loader">
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen hidden></iframe>
 			</div>
 			<div class="account-form">
@@ -103,8 +103,11 @@
 				            <?php unset($_SESSION['message']); ?>
 				            <?php endif ?>
 							<h2 class="title-head">Login <span>Access</span></h2>
-						</div>	
-						<a href="<?php $client->createAuthUrl();?>" class="fa fa-google" aria-hidden="true" >test</a>
+						</div>
+						<div class="row justify-content-md-center">
+							<a href="" class="red-hover btn button-md col-md-auto center"><i class="fa fa-google" aria-hidden="true"> </i> : Login as Google Account</a>
+						</div>
+						
 					</div>
 				</div>
 			</div>
