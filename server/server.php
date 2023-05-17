@@ -1,29 +1,26 @@
 <?php
-	$database	= 'barsims';
-	$username	= 'root';
-	$host		= 'localhost';
-	$password	= '';
+$database	= 'barsims';
+$username	= 'root';
+$host		= 'localhost';
+$password	= '';
 
 
-	ini_set('display_errors',1);
-	error_reporting(E_ALL);
-	mysqli_report(MYSQLI_REPORT_ERROR | E_DEPRECATED | E_STRICT);
-	error_reporting(0);
 
-	date_default_timezone_set('Asia/Manila');
+ini_set('display_errors',1);
+error_reporting(E_ALL);
+mysqli_report(MYSQLI_REPORT_ERROR | E_DEPRECATED | E_STRICT);
+error_reporting(0);
 
-	$conn = new mysqli($host,$username,$password,$database);
+date_default_timezone_set('Asia/Manila');
 
-	if($conn->connect_error){
-		die("Connection Failed: ". $conn->connect_error());
-	}
+$conn = new mysqli($host,$username,$password,$database);
 
-	if(!isset($_SESSION)){
-		session_start();	
-	}
+if($conn->connect_error){
+	die("Connection Failed: ". $conn->connect_error());
+}
 
-	// if(!isset($_SESSION['username'])){
-	// 	header('Location: login_access.php');
-	// }
+if(!isset($_SESSION)){
+	session_start();	
+}
 
 ?>

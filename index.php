@@ -169,17 +169,10 @@ if($conn->connect_error){
                          	?>
 						</div>
 						<div class="secondary-inner">
-							<p>|</p>
-						</div>
-						<div class="secondary-inner">
                         	<?php
                         		if(isset($_SESSION['role'])){
                         			  ?>
                         			<a href="model/logout.php">Log Out</a><?php 
-                        		}else{
-                        			?>
-                        			<a href="login_access.php">Sign Up</a>
-                        			<?php
                         		}
                          	?>
 						</div>

@@ -1,0 +1,50 @@
+<?php 
+	include '../server/server.php';
+
+	session_start();
+
+	if(!isset($_SESSION['username'])){
+		if (isset($_SERVER["HTTP_REFERER"])) {
+			header("Location: " . $_SERVER["HTTP_REFERER"]);
+		}
+	}
+	
+    $id 	= $conn->real_escape_string($_POST['id_financial']);
+	$complete_name    = $conn->real_escape_string($_POST['complete_name']);
+	$address 	= $conn->real_escape_string($_POST['address']);
+    $occupation	    = $conn->real_escape_string($_POST['occupation']);
+	$gender 	       = $conn->real_escape_string($_POST['gender']);
+    $age 	    = $conn->real_escape_string($_POST['age']);
+    $contact_no           = $conn->real_escape_string($_POST['contact_no']);
+    $status 	    = $conn->real_escape_string($_POST['status']);
+    $remarks 	    = $conn->real_escape_string($_POST['remarks']);
+
+	if(!empty($id)){
+
+		$query 		= "UPDATE financial SET `complete_name`='$complete_name', `address`='$address', `occupation`='$occupation',`gender`='$gender', `age`='$age', `contact_no`='$contact_no', 
+                         `status`='$status', `remarks`='$remarks' WHERE f_id=$id;";	
+		$result 	= $conn->query($query);
+
+		if($result === true){
+
+			   $m = $_POST['username'] . " updated " . $_POST['financial']." from financial details in Financial Records.";
+				$conn->query("insert into history_log values(NULL,".$_POST['user_id'].",'".$_POST['name']."','".date('h:i;a')."','".date('m/d/Y')."','".$m."');");
+            
+			$_SESSION['message'] = 'Financial details has been updated!';
+			$_SESSION['success'] = 'success';
+
+			
+			
+
+		}else{
+
+			
+			$_SESSION['message'] = 'Something went wrong!';
+			$_SESSION['success'] = 'danger';
+		}
+
+    header("Location: ../financial.php?id=".$_POST['f_id']."&anme=".$_POST['f_name']."");
+
+	$conn->close();
+
+?>
