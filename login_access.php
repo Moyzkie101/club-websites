@@ -85,7 +85,7 @@
 
 	<body id="bg">
 		<div class="page-wraper">
-			<div class="loader">
+			<div class="">
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen hidden></iframe>
 			</div>
 			<div class="account-form">
@@ -104,47 +104,7 @@
 				            <?php endif ?>
 							<h2 class="title-head">Login <span>Access</span></h2>
 						</div>	
-						<form class="contact-bx" method="POST" action="model/login.php">
-							<div class="row placeani">
-								<div class="col-lg-12">
-									<div class="form-group">
-										<div class="input-group">
-											<label>Enter Username</label>
-											<input name="username" type="text" class="form-control" required>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-12">
-									<div class="form-group">
-										<div class="input-group"> 
-											<label>Enter Password</label>
-											<input id="password" name="password" type="password" class="form-control" required>
-											<span toggle="#password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div style="padding: 5px;"></div>
-									<div class="form-group form-forget">
-										<div class="custom-control custom-checkbox">
-											<input type="checkbox" class="custom-control-input" id="customControlAutosizing">
-											<label class="custom-control-label" for="customControlAutosizing">Remember me</label>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6 m-b30" align="right">
-										<button name="submit" type="submit" value="Submit" name="login" class="red-hover btn button-md" style="background-color: #5691cf!important;" value="login">Login</button>
-								</div>
-								<div class="col-lg-12">
-									<div class="form-group form-forget">
-										<center>Don't have an account? <a href="registration.php">Register here</a>.</center>
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<a href="forgot_password.php"><span>Forgot Password</a>.</span>
-								</div>
-							</div>
-						</form>
+						<a href="<?php $client->createAuthUrl();?>" class="fa fa-google" aria-hidden="true" >test</a>
 					</div>
 				</div>
 			</div>

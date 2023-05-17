@@ -1,5 +1,5 @@
 <?php
-$database	= 'barsims';
+$database	= 'sports_club_db';
 $username	= 'root';
 $host		= 'localhost';
 $password	= '';

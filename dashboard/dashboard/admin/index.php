@@ -1,6 +1,5 @@
 ﻿<?php
-require '../../include/db_conn.php';
-page_protect();
+require './server/server.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
