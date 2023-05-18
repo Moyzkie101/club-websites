@@ -1,8 +1,10 @@
 <?php 
-	session_start(); 
-	if(isset($_SESSION['username'])){
-		header('Location: dashboard.php');
-	}
+
+	require './server/server.php';
+
+	if (isset($_SESSION['user_token'])) {
+		header("Location: club-websites/dashboard/dashboard/admin/index.php");
+	  }
 ?>
 
 <!DOCTYPE html>
@@ -105,7 +107,7 @@
 							<h2 class="title-head">Login <span>Access</span></h2>
 						</div>
 						<div class="row justify-content-md-center">
-							<a href="" class="red-hover btn button-md col-md-auto center"><i class="fa fa-google" aria-hidden="true"> </i> : Login as Google Account</a>
+							<a href="<?php $client->createAuthUrl();?>" class="red-hover btn button-md col-md-auto center"><i class="fa fa-google" aria-hidden="true"> </i> : Login as Google Account</a>
 						</div>
 						
 					</div>

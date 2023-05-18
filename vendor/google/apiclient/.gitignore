@@ -1,8 +1,0 @@
-.DS_Store
-phpunit.xml
-phpcs.xml
-composer.lock
-vendor
-examples/testfile-small.txt
-examples/testfile.txt
-tests/.apiKey
