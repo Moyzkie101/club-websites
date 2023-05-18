@@ -1,7 +1,7 @@
 ﻿<?php
 //welcome.php
 
-require './server/server.php';
+require_once 'server/server.php';
 
 // authenticate code from Google OAuth Flow
 if (isset($_GET['code'])) {
@@ -45,7 +45,7 @@ if (isset($_GET['code'])) {
   $_SESSION['user_token'] = $token;
 } else {
   if (!isset($_SESSION['user_token'])) {
-    header("Location: club-websites/dashboard/dashboard/admin/index.php");
+    header("Location: club-websites/dashboard.php");;
     die();
   }
 
@@ -57,7 +57,7 @@ if (isset($_GET['code'])) {
     $userinfo = mysqli_fetch_assoc($result);
   }
 }
-
+error_reporting(0);
 ?>
 
 <!DOCTYPE html>
@@ -67,10 +67,10 @@ if (isset($_GET['code'])) {
     
     <title>SPORTS CLUB  | Dashboard </title>
 
-    <link rel="stylesheet" href="../../css/style.css"  id="style-resource-5">
-    <script type="text/javascript" src="../../js/Script.js"></script>
-    <link rel="stylesheet" href="../../css/dashMain.css">
-    <link rel="stylesheet" type="text/css" href="../../css/entypo.css">
+    <link rel="stylesheet" href="./dashboard/css/style.css"  id="style-resource-5">
+    <script type="text/javascript" src="./dashboard/js/Script.js"></script>
+    <link rel="stylesheet" href="./dashboard/css/dashMain.css">
+    <link rel="stylesheet" type="text/css" href="./dashboard/css/entypo.css">
      <style>
     	.page-container .sidebar-menu #main-menu li#dash > a {
     	background-color: #2b303a;
@@ -105,7 +105,7 @@ if (isset($_GET['code'])) {
 			
 		
 			</header>
-    		<?php include('nav.php'); ?>
+    		<?php include('./admin/nav.php'); ?>
     	</div>
 
     		<div class="main-content">
@@ -123,7 +123,7 @@ if (isset($_GET['code'])) {
 						
 						<ul class="list-inline links-list pull-right">
 
-							<li>Welcome <?php echo $_SESSION['full_name']; ?> 
+							<li>Welcome <?php echo $_SESSION[$userinfo['full_name']]; ?> 
 							</li>					
 						
 							<li>
@@ -141,7 +141,7 @@ if (isset($_GET['code'])) {
 
 			<hr>
 
-			<div class="col-sm-3"><a href="revenue_month.php">			
+			<div class="col-sm-3"><a href="./admin/revenue_month.php">			
 				<div class="tile-stats tile-red">
 					<div class="icon"><i class="entypo-users"></i></div>
 						<div class="num" data-postfix="" data-duration="1500" data-delay="0">
@@ -171,7 +171,7 @@ if (isset($_GET['code'])) {
 			</div>
 			
 
-			<div class="col-sm-3"><a href="table_view.php">			
+			<div class="col-sm-3"><a href="./admin/table_view.php">			
 				<div class="tile-stats tile-green">
 					<div class="icon"><i class="entypo-chart-bar"></i></div>
 						<div class="num" data-postfix="" data-duration="1500" data-delay="0">
@@ -192,7 +192,7 @@ if (isset($_GET['code'])) {
 				</div></a>
 			</div>	
 				
-			<div class="col-sm-3"><a href="over_members_month.php">			
+			<div class="col-sm-3"><a href="./admin/over_members_month.php">			
 				<div class="tile-stats tile-aqua">
 					<div class="icon"><i class="entypo-mail"></i></div>
 						<div class="num" data-postfix="" data-duration="1500" data-delay="0">
@@ -216,7 +216,7 @@ if (isset($_GET['code'])) {
 				</div></a>			
 			</div>
 
-			<div class="col-sm-3"><a href="view_plan.php">			
+			<div class="col-sm-3"><a href="./admin/view_plan.php">			
 				<div class="tile-stats tile-blue">
 					<div class="icon"><i class="entypo-rss"></i></div>
 						<div class="num" data-postfix="" data-duration="1500" data-delay="0">
@@ -242,7 +242,7 @@ if (isset($_GET['code'])) {
 
 			
    
-    	<?php include('footer.php'); ?>
+    	<?php include('./admin/footer.php'); ?>
 </div>
 
   

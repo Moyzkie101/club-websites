@@ -1,7 +1,7 @@
 
 <ul id="main-menu" class="" >
 			
-    <li id="dash"><a href="index.php"><i class="entypo-gauge"></i><span>Dashboard</span></a></li>
+    <li id="dash"><a href="../dashboard.php"><i class="entypo-gauge"></i><span>Dashboard</span></a></li>
                 
 	<li id="regis"><a href="new_entry.php"><i class="entypo-user-add"></i><span>New Registration</span></a>                
 				
