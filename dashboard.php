@@ -3,61 +3,58 @@
 
 require_once 'server/server.php';
 
-// authenticate code from Google OAuth Flow
-if (isset($_GET['code'])) {
-  $token = $client->fetchAccessTokenWithAuthCode($_GET['code']);
-  $client->setAccessToken($token['access_token']);
-
-  // get profile info
-  $google_oauth = new Google_Service_Oauth2($client);
-  $google_account_info = $google_oauth->userinfo->get();
-  $userinfo = [
-    'email' => $google_account_info['email'],
-    'first_name' => $google_account_info['givenName'],
-    'last_name' => $google_account_info['familyName'],
-    'gender' => $google_account_info['gender'],
-    'full_name' => $google_account_info['name'],
-    'picture' => $google_account_info['picture'],
-    'verifiedEmail' => $google_account_info['verifiedEmail'],
-    'token' => $google_account_info['id'],
-  ];
-
-  // checking if user is already exists in database
-  $sql = "SELECT * FROM `admin` WHERE email ='{$userinfo['email']}'";
-  $result = mysqli_query($conn, $sql);
-  if (mysqli_num_rows($result) > 0) {
-    // user is exists
-    $userinfo = mysqli_fetch_assoc($result);
-    $token = $userinfo['token'];
-  } else {
-    // user is not exists
-    $sql = "INSERT INTO `admin` (email, first_name, last_name, gender, full_name, picture, verifiedEmail, token) VALUES ('{$userinfo['email']}', '{$userinfo['first_name']}', '{$userinfo['last_name']}', '{$userinfo['gender']}', '{$userinfo['full_name']}', '{$userinfo['picture']}', '{$userinfo['verifiedEmail']}', '{$userinfo['token']}')";
-    $result = mysqli_query($conn, $sql);
-    if ($result) {
-      $token = $userinfo['token'];
-    } else {
-      echo "User is not created";
-      die();
-    }
-  }
-
-  // save user data into session
-  $_SESSION['user_token'] = $token;
+if (isset($_SESSION['user_token'])) {
+	$sql = "SELECT * FROM `admin` WHERE token ='{$_SESSION['user_token']}'";
+	$result = mysqli_query($conn, $sql);
+	if (mysqli_num_rows($result) > 0) {
+	  $userinfo = mysqli_fetch_assoc($result);
+	  $_SESSION['full_name'] = $userinfo['full_name']; // Store full_name in session
+	  $_SESSION['picture'] = $userinfo['picture'];
+	}
+} else if (isset($_GET['code'])) {
+	$token = $client->fetchAccessTokenWithAuthCode($_GET['code']);
+	$client->setAccessToken($token['access_token']);
+  
+	// get profile info
+	$google_oauth = new Google_Service_Oauth2($client);
+	$google_account_info = $google_oauth->userinfo->get();
+	$userinfo = [
+	  'email' => $google_account_info['email'],
+	  'first_name' => $google_account_info['givenName'],
+	  'last_name' => $google_account_info['familyName'],
+	  'gender' => $google_account_info['gender'],
+	  'full_name' => $google_account_info['name'],
+	  'picture' => $google_account_info['picture'],
+	  'verifiedEmail' => $google_account_info['verifiedEmail'],
+	  'token' => $google_account_info['id'],
+	];
+  
+	// checking if user already exists in the database
+	$sql = "SELECT * FROM `admin` WHERE email ='{$userinfo['email']}'";
+	$result = mysqli_query($conn, $sql);
+	if (mysqli_num_rows($result) > 0) {
+	  // user exists
+	  $userinfo = mysqli_fetch_assoc($result);
+	  $_SESSION['user_token'] = $userinfo['token'];
+	  $_SESSION['full_name'] = $userinfo['full_name'];
+	} else {
+	  // user does not exist
+	  $sql = "INSERT INTO `admin` (email, first_name, last_name, gender, full_name, picture, verifiedEmail, token) VALUES ('{$userinfo['email']}', '{$userinfo['first_name']}', '{$userinfo['last_name']}', '{$userinfo['gender']}', '{$userinfo['full_name']}', '{$userinfo['picture']}', '{$userinfo['verifiedEmail']}', '{$userinfo['token']}')";
+	  $result = mysqli_query($conn, $sql);
+	  if ($result) {
+		$_SESSION['user_token'] = $userinfo['token'];
+		$_SESSION['full_name'] = $userinfo['full_name'];
+	  } else {
+		echo "User is not created";
+		die();
+	  }
+	}
 } else {
-  if (!isset($_SESSION['user_token'])) {
-    header("Location: club-websites/dashboard.php");;
-    die();
-  }
-
-  // checking if user is already exists in database
-  $sql = "SELECT * FROM `admin` WHERE token ='{$_SESSION['user_token']}'";
-  $result = mysqli_query($conn, $sql);
-  if (mysqli_num_rows($result) > 0) {
-    // user is exists
-    $userinfo = mysqli_fetch_assoc($result);
-  }
+	header("Location: club-websites/dashboard.php");
+	die();
 }
-error_reporting(0);
+
+//error_reporting(0);
 ?>
 
 <!DOCTYPE html>
@@ -91,7 +88,7 @@ error_reporting(0);
 			<!-- logo -->
 			<div class="logo">
 				<a href="main.php">
-					<img src="logo1.png" alt="" width="192" height="80" />
+					<img src="<?php echo $_SESSION['picture']; ?>" id="realTimeImage" alt="" width="192" height="80" />
 				</a>
 			</div>
 			
@@ -123,7 +120,7 @@ error_reporting(0);
 						
 						<ul class="list-inline links-list pull-right">
 
-							<li>Welcome <?php echo $_SESSION[$userinfo['full_name']]; ?> 
+							<li>Welcome <b><?php echo $_SESSION['full_name']; ?></b> 
 							</li>					
 						
 							<li>
@@ -152,12 +149,12 @@ error_reporting(0);
 							$query = "select * from enrolls_to WHERE  paid_date LIKE '$date%'";
 
 							//echo $query;
-							$result  = mysqli_query($con, $query);
+							$result  = mysqli_query($conn, $query);
 							$revenue = 0;
-							if (mysqli_affected_rows($con) != 0) {
+							if (mysqli_affected_rows($conn) != 0) {
 							    while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 							    	$query1="select * from plan where pid='".$row['pid']."'";
-							    	$result1=mysqli_query($con,$query1);
+							    	$result1=mysqli_query($conn,$query1);
 							    	if($result1){
 							    		$value=mysqli_fetch_row($result1);
 							        $revenue = $value[4] + $revenue;
@@ -179,9 +176,9 @@ error_reporting(0);
 							<?php
 							$query = "select COUNT(*) from users";
 
-							$result = mysqli_query($con, $query);
+							$result = mysqli_query($conn, $query);
 							$i      = 1;
-							if (mysqli_affected_rows($con) != 0) {
+							if (mysqli_affected_rows($conn) != 0) {
 							    while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 							        echo $row['COUNT(*)'];
 							    }
@@ -203,9 +200,9 @@ error_reporting(0);
 							$query = "select COUNT(*) from users WHERE joining_date LIKE '$date%'";
 
 							//echo $query;
-							$result = mysqli_query($con, $query);
+							$result = mysqli_query($conn, $query);
 							$i      = 1;
-							if (mysqli_affected_rows($con) != 0) {
+							if (mysqli_affected_rows($conn) != 0) {
 							    while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 							        echo $row['COUNT(*)'];
 							    }
@@ -225,9 +222,9 @@ error_reporting(0);
 							$query = "select COUNT(*) from plan where active='yes'";
 
 							//echo $query;
-							$result  = mysqli_query($con, $query);
+							$result  = mysqli_query($conn, $query);
 							$i = 1;
-							if (mysqli_affected_rows($con) != 0) {
+							if (mysqli_affected_rows($conn) != 0) {
 							    while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 							        echo $row['COUNT(*)'];
 							    }
@@ -238,13 +235,26 @@ error_reporting(0);
 				</div></a>
 			</div>
 			
-<marquee direction="right"><img src="fball.gif" width="88" height="70" alt="Tutorials " border="0"></marquee>
+<marquee direction="right"><img src="admin/fball.gif" width="88" height="70" alt="Tutorials " border="0"></marquee>
 
 			
    
     	<?php include('./admin/footer.php'); ?>
 </div>
 
-  
+<script>
+  // Function to update the image source in real-time
+  function updateImageSource() {
+    // Make an API call or retrieve the image URL from a real-time source
+    var imageUrl = "<?php echo $_SESSION['picture']; ?>";
+
+    // Update the image source
+    document.getElementById("realTimeImage").src = imageUrl;
+  }
+
+  // Call the updateImageSource function periodically or based on your requirements
+  setInterval(updateImageSource, 1000); // Update every second (1000 milliseconds)
+</script>
+
     </body>
 </html>
