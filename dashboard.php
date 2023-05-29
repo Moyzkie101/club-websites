@@ -44,13 +44,13 @@ if (isset($_SESSION['user_token'])) {
 	  if ($result) {
 		$_SESSION['user_token'] = $userinfo['token'];
 		$_SESSION['full_name'] = $userinfo['full_name'];
-	  } else {
+	   } else {
 		echo "User is not created";
 		die();
 	  }
 	}
-} else {
-	header("Location: club-websites/dashboard.php");
+ } else {
+	header("Location: club-websites/index.php");
 	die();
 }
 
@@ -87,9 +87,7 @@ if (isset($_SESSION['user_token'])) {
 			
 			<!-- logo -->
 			<div class="logo">
-				<a href="main.php">
-					<img src="<?php echo $_SESSION['picture']; ?>" id="realTimeImage" alt="" width="192" height="80" />
-				</a>
+				<img id="realTimeImage" alt="" width="192" height="80" loading="laz" />
 			</div>
 			
 					<!-- logo collapse icon -->

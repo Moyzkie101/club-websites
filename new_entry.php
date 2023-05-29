@@ -1,6 +1,6 @@
 ﻿<?php
-require '../../include/db_conn.php';
-page_protect();
+require_once 'server/server.php';
+error_reporting(0);
 ?>
 
 
@@ -9,11 +9,11 @@ page_protect();
 <head>
 
     <title>SPORTS CLUB | New User</title>
-    <link rel="stylesheet" href="../../css/style.css"  id="style-resource-5">
-    <script type="text/javascript" src="../../js/Script.js"></script>
-    <link rel="stylesheet" href="../../css/dashMain.css">
-    <link rel="stylesheet" type="text/css" href="../../css/entypo.css">
-    <link href="a1style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard/css/style.css"  id="style-resource-5">
+    <script type="text/javascript" src="dashboard/js/Script.js"></script>
+    <link rel="stylesheet" href="dashboard/css/dashMain.css">
+    <link rel="stylesheet" type="text/css" href="dashboard/css/entypo.css">
+    <link href="admin/a1style.css" type="text/css" rel="stylesheet">
     <style>
     	.page-container .sidebar-menu #main-menu li#regis > a {
     	background-color: #2b303a;
@@ -35,9 +35,7 @@ page_protect();
 			
 			<!-- logo -->
 			<div class="logo">
-				<a href="main.php">
-					<img src="logo1.png" alt="" width="192" height="80" />
-				</a>
+				<img src="<?php echo $_SESSION['picture']; ?>" id="realTimeImage" alt="" width="192" height="80" />
 			</div>
 			
 					<!-- logo collapse icon -->
@@ -50,7 +48,7 @@ page_protect();
 			
 		
 			</header>
-    		<?php include('nav.php'); ?>
+    		<?php include('./admin/nav.php'); ?>
     	</div>
 
     		<div class="main-content">
@@ -68,7 +66,7 @@ page_protect();
 						
 						<ul class="list-inline links-list pull-right">
 
-							<li>Welcome <?php echo $_SESSION['full_name']; ?> 
+						<li>Welcome <b><?php echo $_SESSION['full_name']; ?></b> 
 							</li>
 						
 							<li>
