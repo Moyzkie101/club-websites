@@ -1,10 +1,10 @@
 <?php
 require_once 'server/server.php';
-
+error_reporting(0);
 ?>
 <ul id="main-menu" class="" >
 			
-    <li id="dash"><a href="http://localhost/club-websites/dashboard.php?code=<?= $_GET['code'];?>&scope=<?= $_GET['scope'];?>&authuser=<?= $_GET['authuser'];?>&hd=<?= $_GET['hd'];?>&prompt=<?= $_GET['prompt'];?>"><i class="entypo-gauge"></i><span>Dashboard</span></a></li>
+    <li id="dash"><a href="dashboard.php?code=<?= $_GET['code'];?>&scope=<?= $_GET['scope'];?>&authuser=<?= $_GET['authuser'];?>&hd=<?= $_GET['hd'];?>&prompt=<?= $_GET['prompt'];?>"><i class="entypo-gauge"></i><span>Dashboard</span></a></li>
                 
 	<li id="regis"><a href="new_entry.php"><i class="entypo-user-add"></i><span>New Registration</span></a>                
 				

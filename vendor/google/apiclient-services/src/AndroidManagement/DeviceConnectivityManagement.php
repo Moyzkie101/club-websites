@@ -15,48 +15,30 @@
  * the License.
  */
 
-namespace Google\Service\SecurityCommandCenter;
+namespace Google\Service\AndroidManagement;
 
-class CloudDlpDataProfile extends \Google\Model
+class DeviceConnectivityManagement extends \Google\Model
 {
   /**
    * @var string
    */
-  public $dataProfile;
-  /**
-   * @var string
-   */
-  public $parentType;
+  public $usbDataAccess;
 
   /**
    * @param string
    */
-  public function setDataProfile($dataProfile)
+  public function setUsbDataAccess($usbDataAccess)
   {
-    $this->dataProfile = $dataProfile;
+    $this->usbDataAccess = $usbDataAccess;
   }
   /**
    * @return string
    */
-  public function getDataProfile()
+  public function getUsbDataAccess()
   {
-    return $this->dataProfile;
-  }
-  /**
-   * @param string
-   */
-  public function setParentType($parentType)
-  {
-    $this->parentType = $parentType;
-  }
-  /**
-   * @return string
-   */
-  public function getParentType()
-  {
-    return $this->parentType;
+    return $this->usbDataAccess;
   }
 }
 
 // Adding a class alias for backwards compatibility with the previous class name.
-class_alias(CloudDlpDataProfile::class, 'Google_Service_SecurityCommandCenter_CloudDlpDataProfile');
+class_alias(DeviceConnectivityManagement::class, 'Google_Service_AndroidManagement_DeviceConnectivityManagement');

@@ -50,7 +50,7 @@ if (isset($_SESSION['user_token'])) {
 	  }
 	}
  } else {
-	header("Location: club-websites/index.php");
+	header("Location:dashboard.php");
 	die();
 }
 

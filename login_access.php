@@ -3,7 +3,7 @@
 	require_once 'server/server.php';
 
 	if (isset($_SESSION['user_token'])) {
-		header("Location: club-websites/dashboard.php");
+		header("Location: dashboard.php");
 	} else {
 		$a = "<a href='" . $client->createAuthUrl() . "' class='red-hover btn button-md col-md-auto center' ><i class='fa fa-google' aria-hidden='true'> </i> : Login as Google Account</a>";
 	  }

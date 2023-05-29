@@ -15,48 +15,31 @@
  * the License.
  */
 
-namespace Google\Service\SecurityCommandCenter;
+namespace Google\Service\PlayIntegrity;
 
-class CloudDlpDataProfile extends \Google\Model
+class GuidanceDetails extends \Google\Collection
 {
+  protected $collection_key = 'userRemediation';
   /**
-   * @var string
+   * @var string[]
    */
-  public $dataProfile;
-  /**
-   * @var string
-   */
-  public $parentType;
+  public $userRemediation;
 
   /**
-   * @param string
+   * @param string[]
    */
-  public function setDataProfile($dataProfile)
+  public function setUserRemediation($userRemediation)
   {
-    $this->dataProfile = $dataProfile;
+    $this->userRemediation = $userRemediation;
   }
   /**
-   * @return string
+   * @return string[]
    */
-  public function getDataProfile()
+  public function getUserRemediation()
   {
-    return $this->dataProfile;
-  }
-  /**
-   * @param string
-   */
-  public function setParentType($parentType)
-  {
-    $this->parentType = $parentType;
-  }
-  /**
-   * @return string
-   */
-  public function getParentType()
-  {
-    return $this->parentType;
+    return $this->userRemediation;
   }
 }
 
 // Adding a class alias for backwards compatibility with the previous class name.
-class_alias(CloudDlpDataProfile::class, 'Google_Service_SecurityCommandCenter_CloudDlpDataProfile');
+class_alias(GuidanceDetails::class, 'Google_Service_PlayIntegrity_GuidanceDetails');
