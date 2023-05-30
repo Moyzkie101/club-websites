@@ -10,6 +10,8 @@
     $clientSecret = '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';
     $redirectUri = 'http://localhost/club-websites/dashboard.php';
 
+    //GOOGLE API KEY : AIzaSyDMMdbxQhGQSt7oGxOeqmexzK0RZvn1bnA
+
 // create Client Request to access Google API
 $client = new Google_Client();
 $client->setClientId($clientID);
@@ -24,8 +26,12 @@ $username = "root";
 $password = "";
 $database = "sports_club_db";
 
-$conn = mysqli_connect($hostname, $username, $password, $database);
+mysqli_report(MYSQLI_REPORT_ERROR | E_DEPRECATED | E_STRICT);
 
+$conn = mysqli_connect($hostname, $username, $password, $database);
+if($conn->connect_error){
+     	die("Connection Failed: ".mysqli_connect_error());
+     }
 
 //  ini_set('display_errors',1);
 //  error_reporting(E_ALL);
