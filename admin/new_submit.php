@@ -1,5 +1,5 @@
 <?php
-require '../../include/db_conn.php';
+require_once 'server/server.php';
 page_protect();
 
  $memID=$_POST['m_id'];

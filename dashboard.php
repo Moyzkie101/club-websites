@@ -122,7 +122,7 @@ if (isset($_SESSION['user_token'])) {
 							</li>					
 						
 							<li>
-								<a href="logout.php">
+								<a href="admin/logout.php">
 									Log Out <i class="entypo-logout right"></i>
 								</a>
 							</li>
