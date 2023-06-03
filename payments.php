@@ -1,6 +1,6 @@
 ﻿<?php
-require '../../include/db_conn.php';
-page_protect();
+require_once 'server/server.php';
+
 ?>
 
 
@@ -9,11 +9,11 @@ page_protect();
 <head>
 
     <title>SPORTS CLUB  | Payments</title>
-    <link rel="stylesheet" href="../../css/style.css"  id="style-resource-5">
-    <script type="text/javascript" src="../../js/Script.js"></script>
-    <link rel="stylesheet" href="../../css/dashMain.css">
-    <link rel="stylesheet" type="text/css" href="../../css/entypo.css">
-    <link href="a1style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard/css/style.css"  id="style-resource-5">
+    <script type="text/javascript" src="dashboard/js/Script.js"></script>
+    <link rel="stylesheet" href="dashboard/css/dashMain.css">
+    <link rel="stylesheet" type="text/css" href="dashboard/css/entypo.css">
+    <link href="admin/a1style.css" type="text/css" rel="stylesheet">
     <style>
     	.page-container .sidebar-menu #main-menu li#paymnt > a {
     	background-color: #2b303a;
@@ -48,7 +48,7 @@ page_protect();
 			
 		
 			</header>
-    		<?php include('nav.php'); ?>
+    		<?php include('./admin/nav.php'); ?>
     	</div>
 
     		<div class="main-content">
@@ -143,7 +143,7 @@ page_protect();
 		</table>
 
 
-			<?php include('footer.php'); ?>
+			<?php include('./admin/footer.php'); ?>
     	</div>
 
     </body>

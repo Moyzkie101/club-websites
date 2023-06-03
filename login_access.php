@@ -1,12 +1,8 @@
 <?php 
-
-	require_once 'server/server.php';
-
-	if (isset($_SESSION['user_token'])) {
-		header("Location: dashboard.php");
-	} else {
-		$a = "<a href='" . $client->createAuthUrl() . "' class='red-hover btn button-md col-md-auto center' ><i class='fa fa-google' aria-hidden='true'> </i> : Login as Google Account</a>";
-	  }
+	session_start(); 
+	if(isset($_SESSION['username'])){
+		header('Location: dashboard.php');
+	}
 ?>
 
 <!DOCTYPE html>
@@ -22,8 +18,9 @@
 		<meta name="robots" content="" />
 		<meta name="format-detection" content="telephone=no">
 		
-		
+		<!-- <link rel="icon" href="assets/images/logo2.png" type="image/x-icon" /> -->
 		<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo-2.jpg" />
+		<!-- <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo2.png" /> -->
 		<title>Barangay Bolocboloc | LOGIN</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -107,11 +104,48 @@
 				            <?php unset($_SESSION['message']); ?>
 				            <?php endif ?>
 							<h2 class="title-head">Login <span>Access</span></h2>
-						</div>
-						<div class="row justify-content-md-center">
-							<?php echo $a;?>
-						</div>
-						
+						</div>	
+						<form class="contact-bx" method="POST" action="model/login.php">
+							<div class="row placeani">
+								<div class="col-lg-12">
+									<div class="form-group">
+										<div class="input-group">
+											<label>Enter Username</label>
+											<input name="username" type="text" class="form-control" required>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-12">
+									<div class="form-group">
+										<div class="input-group"> 
+											<label>Enter Password</label>
+											<input id="password" name="password" type="password" class="form-control" required>
+											<span toggle="#password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div style="padding: 5px;"></div>
+									<div class="form-group form-forget">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+											<label class="custom-control-label" for="customControlAutosizing">Remember me</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6 m-b30" align="right">
+										<button name="submit" type="submit" value="Submit" name="login" class="red-hover btn button-md" style="background-color: #5691cf!important;" value="login">Login</button>
+								</div>
+								<div class="col-lg-12">
+									<div class="form-group form-forget">
+										<center>Don't have an account? <a href="registration.php">Register here</a>.</center>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<a href="forgot_password.php"><span>Forgot Password</a>.</span>
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
