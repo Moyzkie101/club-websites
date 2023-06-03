@@ -66,7 +66,7 @@ require_once 'server/server.php';
 						
 						<ul class="list-inline links-list pull-right">
 
-							<li>Welcome <?php echo $_SESSION['full_name']; ?> 
+							<li>Welcome <b><?php echo $_SESSION['role']; ?></b> 
 							</li>								
 						
 							<li>
@@ -84,7 +84,7 @@ require_once 'server/server.php';
 
 		<hr />
 		
-		<table class="table table-bordered datatable" id="table-1" border=1>
+		<table class="table table-bordered datatable" width="100%" id="table-1" border=1>
 			<thead>
 				<tr>
 					<th>Sl.No</th>
@@ -139,6 +139,18 @@ require_once 'server/server.php';
 
 					?>									
 				</tbody>
+				<tfoot>
+				<tr>
+					<th>Sl.No</th>
+					<th>Membership Expiry</th>
+					<th>Name</th>
+					<th>Member ID</th>
+					<th>Phone</th>
+					<th>E-Mail</th>
+					<th>Gender</th>
+					<th>Action</th>
+				</tr>
+				</tfoot>
 
 		</table>
 

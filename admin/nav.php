@@ -38,5 +38,5 @@ require_once 'server/server.php';
 		</ul>
 	</li>
 	<li id="adminprofile"><a href="more-userprofile.php"><i class="entypo-folder"></i><span>Profile</span></a></li>
-	<li><a href="logout.php"><i class="entypo-logout"></i><span>Logout</span></a></li>
+	<li><a href="./logout.php"><i class="entypo-logout"></i><span>Logout</span></a></li>
 </ul>

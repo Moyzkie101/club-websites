@@ -27,6 +27,7 @@ if (mysqli_affected_rows($conn) != 0) {
 $query = "SELECT COUNT(*) FROM users WHERE joining_date LIKE '$date%'";
 $result = mysqli_query($conn, $query);
 $joinedThisMonth = mysqli_fetch_array($result, MYSQLI_ASSOC)['COUNT(*)'];
+
 ?>
 
 <!DOCTYPE html>
@@ -66,6 +67,7 @@ $joinedThisMonth = mysqli_fetch_array($result, MYSQLI_ASSOC)['COUNT(*)'];
             </header>
             <?php include('./admin/nav.php'); ?>
         </div>
+
         <div class="main-content">
             <div class="row">
                 <div class="col-md-6 col-sm-8 clearfix"></div>

@@ -1,8 +1,5 @@
-		
-
 <?php
-require '../../include/db_conn.php';
-page_protect();
+require_once 'server/server.php';
 ?>
 
 
@@ -11,11 +8,11 @@ page_protect();
 <head>
 
     <title>SPORTS CLUB  | Member History</title>
-   	<link rel="stylesheet" href="../../css/style.css"  id="style-resource-5">
-    <script type="text/javascript" src="../../js/Script.js"></script>
-    <link rel="stylesheet" href="../../css/dashMain.css">
-    <link rel="stylesheet" type="text/css" href="../../css/entypo.css">
-<link href="a1style.css" rel="stylesheet" type="text/css">     
+   	<link rel="stylesheet" href="./dashboard/css/style.css"  id="style-resource-5">
+    <script type="text/javascript" src="./dashboard/js/Script.js"></script>
+    <link rel="stylesheet" href="./dashboard/css/dashMain.css">
+    <link rel="stylesheet" type="text/css" href="./dashboard/css/entypo.css">
+<link href="admin/a1style.css" rel="stylesheet" type="text/css">     
     <style>
     	.page-container .sidebar-menu #main-menu li#hassubopen > a {
     	background-color: #2b303a;
@@ -51,7 +48,7 @@ page_protect();
 			
 		
 			</header>
-    		<?php include('nav.php'); ?>
+    		<?php include('admin/nav.php'); ?>
     	</div>
 
 
@@ -70,7 +67,7 @@ page_protect();
 						
 						<ul class="list-inline links-list pull-right">
 
-							<li>Welcome <?php echo $_SESSION['full_name']; ?> 
+							<li>Welcome <?php echo $_SESSION['role']; ?> 
 							</li>							
 						
 							<li>
@@ -87,12 +84,12 @@ page_protect();
 		<h3>Member History</h3>
 
 			Details of : - <?php
-			$id     = $_POST['name'];
+			$id     = $_GET['id'];
 			$query  = "select * from users WHERE userid='$id'";
 			//echo $query;
-			$result = mysqli_query($con, $query);
+			$result = mysqli_query($conn, $query);
 
-			if (mysqli_affected_rows($con) != 0) {
+			if (mysqli_affected_rows($conn) != 0) {
 			    while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 			        $name = $row['username'];
 			        $memid=$row['userid'];
@@ -109,7 +106,7 @@ page_protect();
 
 
 		
-		<table border=1>
+		<table width="100%" border="1" >
 			<thead>
 				<tr>
 					<th>Membership ID</th>
@@ -120,7 +117,7 @@ page_protect();
 					<th>Join On</th>
 				</tr>
 			</thead>
-				<tbody>
+				<tbody align="center">
 					<?php
 					
 					        
@@ -138,13 +135,23 @@ page_protect();
 					    
 					?>								
 				</tbody>
+			<tfoot>
+				<tr>
+					<th>Membership ID</th>
+					<th>Name</th>
+					<th>Gender</th>
+					<th>Mobile</th>
+					<th>Email</th>
+					<th>Join On</th>
+				</tr>
+		</tfoot>
 		</table>
 				<br>
 				<br>
 
 				<h3>Payment history of : - <?php echo $name;?></h3>
 
-		<table border=1>
+		<table width="100%" border="1">
 			<thead>
 				<tr>
 					<th>Sl.No</th>
@@ -162,14 +169,14 @@ page_protect();
 						
 						$query1  = "select * from enrolls_to WHERE uid='$memid'";
 						//echo $query;
-						$result = mysqli_query($con, $query1);
+						$result = mysqli_query($conn, $query1);
 						$sno    = 1;
 
-						if (mysqli_affected_rows($con) != 0) {
+						if (mysqli_affected_rows($conn) != 0) {
 						    while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 						      $pid=$row['pid'];
 						      $query2="select * from plan where pid='$pid'";
-						      $result2=mysqli_query($con,$query2);
+						      $result2=mysqli_query($conn,$query2);
 						      if($result2){
 						      	$row1=mysqli_fetch_array($result2,MYSQLI_ASSOC);
 
@@ -198,6 +205,18 @@ page_protect();
 
 					?>							
 				</tbody>
+			<tfoot>
+				<tr>
+					<th>Sl.No</th>
+					<th>Plan Name</th>
+					<th>Plan Desc</th>
+					<th>Validity</th>
+					<th>Amount</th>
+					<th>Payment Date</th>
+					<th>Expire Date</th>
+					<th>Action</th>
+				</tr>
+			</tfoot>
 		</table>
 
 
@@ -205,4 +224,3 @@ page_protect();
     	</div>
     </body>
 </html>
-
