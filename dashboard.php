@@ -145,5 +145,18 @@ $joinedThisMonth = mysqli_fetch_array($result, MYSQLI_ASSOC)['COUNT(*)'];
             });
         });
     </script>
+    <script>
+        // Function to update the image source in real-time
+        function updateImageSource() {
+            // Make an API call or retrieve the image URL from a real-time source
+            var imageUrl = "<?php echo $_SESSION['picture']; ?>";
+
+            // Update the image source
+            document.getElementById("realTimeImage").src = imageUrl;
+        }
+
+        // Call the updateImageSource function periodically or based on your requirements
+        setInterval(updateImageSource, 1000); // Update every second (1000 milliseconds)
+    </script>
 </body>
 </html>
