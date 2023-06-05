@@ -1,6 +1,6 @@
 ﻿<?php
-require '../../include/db_conn.php';
-page_protect();
+require_once 'server/server.php';
+
 ?>
 
 
@@ -9,11 +9,11 @@ page_protect();
 <head>
 
     <title>SPORTS CLUB  | View Member</title>
-   <link rel="stylesheet" href="../../css/style.css"  id="style-resource-5">
-    <script type="text/javascript" src="../../js/Script.js"></script>
-    <link rel="stylesheet" href="../../css/dashMain.css">
-    <link rel="stylesheet" type="text/css" href="../../css/entypo.css">
-	<link href="a1style.css" rel="stylesheet" type="text/css">
+   <link rel="stylesheet" href="./dashboard/css/style.css"  id="style-resource-5">
+    <script type="text/javascript" src="./dashboard/js/Script.js"></script>
+    <link rel="stylesheet" href="./dashboard/css/dashMain.css">
+    <link rel="stylesheet" type="text/css" href="./dashboard/css/entypo.css">
+	<link href="admin/a1style.css" rel="stylesheet" type="text/css">
 	
 	<style>
  	#button1
@@ -54,7 +54,7 @@ page_protect();
 			
 		
 			</header>
-    		<?php include('nav.php'); ?>
+    		<?php include('admin/nav.php'); ?>
     	</div>
 
     		<div class="main-content">
@@ -72,7 +72,7 @@ page_protect();
 						
 						<ul class="list-inline links-list pull-right">
 
-							<li>Welcome <?php echo $_SESSION['full_name']; ?> 
+							<li>Welcome <b><?php echo $_SESSION['role']; ?></b> 
 							</li>								
 						
 							<li>
@@ -90,7 +90,7 @@ page_protect();
 
 		<hr />
 		
-		<table class="table table-bordered datatable" id="table-1" border=1>
+		<table class="table table-bordered datatable" id="table-1" border=1 width="100%">
 			<thead>
 				<tr><h2>
 					<th>Sl.No</th>
@@ -104,20 +104,20 @@ page_protect();
 					<th>Action</th></h2>
 				</tr>
 			</thead>
-				<tbody>
+				<tbody align="center">
 
 						<?php
 							$query  = "select * from users ORDER BY joining_date";
 							//echo $query;
-							$result = mysqli_query($con, $query);
+							$result = mysqli_query($conn, $query);
 							$sno    = 1;
 
-							if (mysqli_affected_rows($con) != 0) {
+							if (mysqli_affected_rows($conn) != 0) {
 							    while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 							        $uid   = $row['userid'];
 							        $query1  = "select * from enrolls_to WHERE uid='$uid' AND renewal='yes'";
-							        $result1 = mysqli_query($con, $query1);
-							        if (mysqli_affected_rows($con) == 1) {
+							        $result1 = mysqli_query($conn, $query1);
+							        if (mysqli_affected_rows($conn) == 1) {
 							            while ($row1 = mysqli_fetch_array($result1, MYSQLI_ASSOC)) {
 							                
 							                echo "<tr><td>".$sno."</td>";
@@ -144,7 +144,7 @@ page_protect();
 							        }
 							    }
 							}
-                    $res = mysqli_query($con,"CALL `countGender`();") or die("query fail:" .mysqli_error($con));
+                    $res = mysqli_query($conn,"CALL `countGender`();") or die("query fail:" .mysqli_error($conn));
                     echo"<table ><tr><th>gender</th><th>count</th></tr>";
                     while($row = mysqli_fetch_array($res)){
                         echo"<td>". $row['gender']. "</td>";

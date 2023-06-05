@@ -95,7 +95,7 @@ $query = "SELECT * FROM plan WHERE `active`='yes'";
                                         <tr>
                                             <td height="35">MEMBERSHIP ID:</td>
                                             <td height="35">
-                                                <input type="text" id="boxx" name="m_id" value="<?php echo time(); ?>" readonly required/>
+                                                <input type="text" id="boxx" name="m_id" value="<?php echo date("Ynjgis"); ?>" disabled required/>
                                             </td>
                                         </tr>
                                         <tr>

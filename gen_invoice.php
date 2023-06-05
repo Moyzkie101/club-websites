@@ -1,6 +1,5 @@
 <?php
-require '../../include/db_conn.php';
-page_protect();
+require_once 'server/server.php';
 $etid=$_GET['etid'];
 $pid=$_GET['pid'];
 $uid=$_GET['id'];
@@ -8,7 +7,7 @@ $uid=$_GET['id'];
 
 
 					$sql = "Select * from users u INNER JOIN enrolls_to e ON u.userid=e.uid INNER JOIN plan p where p.pid=e.pid and userid='".$uid."' and e.et_id='".$etid."'";
-					$res=mysqli_query($con, $sql);
+					$res=mysqli_query($conn, $sql);
 					 if($res){
 						      	$row=mysqli_fetch_array($res,MYSQLI_ASSOC);
 				
@@ -66,14 +65,15 @@ line-height:0.5cm;
    
   <tr>
     <td height="118" colspan="3"><p>Received with thanks from : <?php echo $row['username']?></p>
-      <p>A sum of Rupees : <?php echo $row['amount']?></p>
-      <p>On account of Membership plan: <?php echo $row['planName']?></p></td>
+      <p>A sum of Pesos : &#8369;<?php echo $row['amount']?></p>
+      <p>On Account of Membership Plan: <?php echo $row['planName']?></p></td>
     </tr>
   
   <tr>
     <td height="73" colspan="2"><p>&nbsp;</p></td>
     <td width="207"><p>&nbsp;</p>
-      <p>Signature</p></td>
+      <p></p>
+      <p>_________________________</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Signature</p></td>
   </tr>
 </table>
 
