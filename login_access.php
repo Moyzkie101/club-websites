@@ -1,7 +1,7 @@
 <?php 
 	session_start(); 
 	if(isset($_SESSION['username'])){
-		header('Location: dashboard.php');
+		header('Location:./dashboard/admin/');
 	}
 ?>
 
@@ -105,13 +105,13 @@
 				            <?php endif ?>
 							<h2 class="title-head">Login <span>Access</span></h2>
 						</div>	
-						<form class="contact-bx" method="POST" action="model/login.php">
+						<form class="contact-bx" method="POST" action="secure_login.php">
 							<div class="row placeani">
 								<div class="col-lg-12">
 									<div class="form-group">
 										<div class="input-group">
 											<label>Enter Username</label>
-											<input name="username" type="text" class="form-control" required>
+											<input name="user_id_auth" type="text" class="form-control" required>
 										</div>
 									</div>
 								</div>
@@ -119,7 +119,7 @@
 									<div class="form-group">
 										<div class="input-group"> 
 											<label>Enter Password</label>
-											<input id="password" name="password" type="password" class="form-control" required>
+											<input id="password" name="pass_key" type="password" class="form-control" required>
 											<span toggle="#password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 										</div>
 									</div>
