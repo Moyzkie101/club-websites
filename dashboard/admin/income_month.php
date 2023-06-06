@@ -69,7 +69,7 @@ if (mysqli_affected_rows($con) != 0) {
 
  	$monthName = date("F", mktime(0, 0, 0, $month, 10));
 
-    echo "<tr><td colspan=11 align='center'><h3>Total Income on ".$monthName." is ₹".$totalamount."</h3></td></tr>";
+    echo "<tr><td colspan=11 align='center'><h3>Total Income on ".$monthName." is &#8369;".$totalamount."</h3></td></tr>";
 
 }
 else{

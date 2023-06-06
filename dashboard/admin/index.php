@@ -102,11 +102,11 @@ page_protect();
 							    	$result1=mysqli_query($con,$query1);
 							    	if($result1){
 							    		$value=mysqli_fetch_row($result1);
-							        $revenue = $value[4] + $revenue;
+							        $revenue = $value[5] + $revenue;
 							    	}
 							    }
 							}
-							echo "₹".$revenue;
+							echo "&#8369;".$revenue;
 							?>
 						</div>
 				</div></a>
