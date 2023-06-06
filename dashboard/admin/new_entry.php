@@ -98,7 +98,7 @@ page_protect();
            <td height="35"><table width="100%" border="0" align="center">
            	 <tr>
            	   <td height="35">MEMBERSHIP ID:</td>
-           	   <td height="35"><input type="text" id="boxx" name="m_id" value="<?php echo time(); ?>" readonly required/></td>
+           	   <td height="35"><input type="text" id="boxx" name="m_id" value="<?php echo date("Ynjgis"); ?>" readonly required/></td>
          	   </tr>
 			   
 			   <tr>
@@ -155,7 +155,7 @@ page_protect();
 						$result=mysqli_query($con,$query);
 						if(mysqli_affected_rows($con)!=0){
 							while($row=mysqli_fetch_row($result)){
-								echo "<option value=".$row[0].">".$row[1]."</option>";
+								echo "<option value=".$row[1].">".$row[2]."</option>";
 							}
 						}
 
