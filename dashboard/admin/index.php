@@ -32,9 +32,8 @@ page_protect();
 			
 			<!-- logo -->
 			<div class="logo">
-				<a href="main.php">
-					<img src="logo1.png" alt="" width="192" height="80" />
-				</a>
+				<img src="logo1.png" alt="" width="192" height="80" />
+				
 			</div>
 			
 					<!-- logo collapse icon -->
