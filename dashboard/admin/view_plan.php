@@ -9,10 +9,10 @@ page_protect();
 <head>
 
     <title>SPORTS CLUB  | View sports Plan</title>
-    <link rel="stylesheet" href="../../css/style.css"  id="style-resource-5">
-    <script type="text/javascript" src="../../js/Script.js"></script>
-    <link rel="stylesheet" href="../../css/dashMain.css">
-    <link rel="stylesheet" type="text/css" href="../../css/entypo.css">
+    <link rel="stylesheet" href="../../css1/style.css"  id="style-resource-5">
+    <script type="text/javascript" src="../../js1/Script.js"></script>
+    <link rel="stylesheet" href="../../css/1dashMain.css">
+    <link rel="stylesheet" type="text/css" href="../../css1/entypo.css">
 	<link href="a1style.css" rel="stylesheet" type="text/css">
 	<style>
  		#button1

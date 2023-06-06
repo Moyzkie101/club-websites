@@ -11,10 +11,10 @@ if (isset($_POST['name'])) {
 <head>
 
     <title>SPORTS CLUB  | Edit Member</title>
-    <link rel="stylesheet" href="../../css/style.css"  id="style-resource-5">
-    <script type="text/javascript" src="../../js/Script.js"></script>
-    <link rel="stylesheet" href="../../css/dashMain.css">
-    <link rel="stylesheet" type="text/css" href="../../css/entypo.css">
+    <link rel="stylesheet" href="../../css1/style.css"  id="style-resource-5">
+    <script type="text/javascript" src="../../js1/Script.js"></script>
+    <link rel="stylesheet" href="../../css1/dashMain.css">
+    <link rel="stylesheet" type="text/css" href="../../css1/entypo.css">
 	<link href="a1style.css" rel="stylesheet" type="text/css">
 	
 	<style>
