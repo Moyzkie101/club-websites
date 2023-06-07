@@ -17,7 +17,7 @@ if($conn->connect_error){
 	die("Connection Failed: ". $conn->connect_error());
 } ?> -->
 
-<!-- <?php include 'server/server.php' ?> -->
+<?php include 'server/server.php' ?>
 
 <?php
     $query = "SELECT * FROM tbl_announce WHERE id = '1'";
@@ -35,6 +35,7 @@ if($conn->connect_error){
 ?>
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,17 +51,16 @@ if($conn->connect_error){
 	<meta name="robots" content="" />
 	
 	<!-- DESCRIPTION -->
-	<meta name="description" content="Barangay Bolocboloc" />
+	<meta name="description" content="The Club" />
 	
 	<!-- OG -->
-	<meta property="og:title" content="Barangay Bolocboloc" />
-	<meta property="og:description" content="Barangay Bolocboloc" />
+	<meta property="og:title" content="The Club" />
+	<meta property="og:description" content="The Club" />
 	<meta name="og:image" content="images/preview.png" align="middle"/>
 	<meta name="format-detection" content="telephone=no">
-	
-	<link rel="icon" href="assets/images/logo2.png" type="image/x-icon" />
-	<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo2.png" />
-	<title>Barangay Bolocboloc | ANNOUNCEMENTS</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo-2.jpg" />
+	<title>The Club | Events/title>
 	<!-- MOBILE SPECIFIC ============================================= -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
@@ -191,7 +191,7 @@ if($conn->connect_error){
 									<li><a href="org-structure.php">U15</a></li>
 								</ul>
 							</li>
-							<li><a href="all-announcements.php">Upcoming Events</a></li>
+							<li><a href="all-events.php">Upcoming Events</a></li>
 							<li><a href="contact.php">Contacts</a></li>
 							<!-- <li><a href="all-programs.php">Programs</a></li>
 							<li><a href="guidelines.php">Guidelines</a></li> -->
@@ -237,7 +237,7 @@ if($conn->connect_error){
         <div class="page-banner ovbl-dark" style="background-image:url(assets/images/cover1.jpg);">
             <div class="container">
                 <div class="page-banner-entry">
-                    <h1 class="text-white">Barangay Bolocboloc Announcements</h1>
+                    <h1 class="text-white">The Club Events</h1>
 				 </div>
             </div>
         </div>
@@ -245,7 +245,7 @@ if($conn->connect_error){
 			<div class="container">
 				<ul class="list-inline">
 					<li><a href="home.php">Home</a></li>
-					<li>Announcements</li>
+					<li>Events</li>
 				</ul>
 			</div>
 		</div>

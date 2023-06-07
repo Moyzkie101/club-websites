@@ -1,37 +1,3 @@
-<!-- <?php 
-$database	= 'barsims';
-$username	= 'root';
-$host		= 'localhost';
-$password	= '';
-
-ini_set('display_errors',1);
-error_reporting(E_ALL);
-mysqli_report(MYSQLI_REPORT_ERROR | E_DEPRECATED | E_STRICT);
-// error_reporting(0);
-session_start();
-$conn = new mysqli($host,$username,$password,$database);
-
-if($conn->connect_error){
-	die("Connection Failed: ". $conn->connect_error());
-} ?> -->
-
-<!-- <?php include 'server/server.php' ?> -->
-
-<?php
-    $query = "SELECT * FROM tbl_announce WHERE id = '1'";
-    $result = $conn->query($query);
-	$row = $result->fetch_assoc();
-
-	$query1 = "SELECT * FROM tblbrgy_info WHERE id = '1'";
-    $result1 = $conn->query($query1);
-
-
-	$rows = $result1->fetch_assoc();
-
-
-	
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,7 +21,6 @@ if($conn->connect_error){
 	<meta name="og:image" content="images/preview.png" align="middle"/>
 	<meta name="format-detection" content="telephone=no">
 	
-		<link rel="icon" href="assets/images/logo-2.jpg" type="image/x-icon" />
 	<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo-2.jpg" />
 		<title>The Club | Barili Coaches</title>
 	
@@ -304,61 +269,18 @@ if($conn->connect_error){
 										<div class="courses-filter">
 											<div class="clearfix">
 												<ul id="masonry" class="ttr-gallery-listing magnific-image row">
-													<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 10">
+													<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 5">
 														<div class="cours-bx">
 															<div class="action-box">
 																<img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;">	
 															</div>
 															<div class="info-bx text-center">
 																<h5><a href="#">First Lastname</a></h5>
-																<span><b>Coach 2</b></span><br>
+																<span><b>Coach 1</b></span><br>
 															</div>
 														</div>
 													</li>
-													<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 5">
-														<div class="cours-bx">
-															<div class="action-box">
-																 <img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;"> 	
-															</div>
-															<div class="info-bx text-center">
-																 <h5><a href="#">First Lastname</a></h5>
-																<span><b>Coach 1</b></span><br> 
-															</div>
-														</div>
-													</li>
-
-														<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 25">
-														<div class="cours-bx">
-															<div class="action-box">
-																 <img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;"> 	
-															</div>
-															<div class="info-bx text-center">
-																 <h6><a href="#">First Lastname</a></h6>
-																<span><b>Coach 5</b></span><br> 
-															</div>
-														</div>
-													</li>
-													<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 5">
-														<div class="cours-bx">
-															<div class="action-box">
-																 <img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;"> 	
-															</div>
-															<div class="info-bx text-center">
-																 <h5><a href="#">First Lastname</a></h5>
-																<span><b>Coach 4</b></span><br> 
-															</div>
-														</div>
-													</li><li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 5">
-														<div class="cours-bx">
-															<div class="action-box">
-																 <img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;"> 	
-															</div>
-															<div class="info-bx text-center">
-																 <h6><a href="#">First Lastname</a></h6>
-																<span><b>Coach 3</b></span><br> 
-															</div>
-														</div>
-													</li><li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 5">
+													<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 10">
 														<div class="cours-bx">
 															<div class="action-box">
 																 <img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;"> 	
@@ -368,57 +290,38 @@ if($conn->connect_error){
 																<span><b>Coach 2</b></span><br> 
 															</div>
 														</div>
-													</li><li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 5">
+													</li>
+
+														<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 15">
 														<div class="cours-bx">
 															<div class="action-box">
 																 <img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;"> 	
 															</div>
 															<div class="info-bx text-center">
-																 <h5><a href="#">First Lastname</a></h5>
-																<span><b>Coach 1</b></span><br> 
-															</div>
-														</div>	
-													<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 15">
-														<div class="cours-bx">
-															<div class="action-box">
-																<img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;">	
-															</div>
-															<div class="info-bx text-center">
-																<h5><a href="#">First Lastname</a></h5>
-																<span><b>Coach 5</b></span><br>
-															</div>
-														</div>
-													</li>
-													<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 5">
-														<div class="cours-bx">
-															<div class="action-box">
-																<img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;">	
-															</div>
-															<div class="info-bx text-center">
-																<h6><a href="#">First Lastname</a></h6>
-																<span><b>Coach 3</b></span><br>
-															</div>
-														</div>
-													</li>
-													<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 5">
-														<div class="cours-bx">
-															<div class="action-box">
-																<img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;">	
-															</div>
-															<div class="info-bx text-center">
-																<h5><a href="#">First Lastname</a></h5>
-																<span><b>Coach 2</b></span><br>
+																 <h6><a href="#">First Lastname</a></h6>
+																<span><b>Coach 3</b></span><br> 
 															</div>
 														</div>
 													</li>
 													<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 20">
 														<div class="cours-bx">
 															<div class="action-box">
-																<img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;">	
+																 <img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;"> 	
 															</div>
 															<div class="info-bx text-center">
-																<h5><a href="#">First Lastname</a></h5>
-																<span><b>Coach 1</b></span><br>
+																 <h5><a href="#">First Lastname</a></h5>
+																<span><b>Coach 4</b></span><br> 
+															</div>
+														</div>
+													</li>
+													<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 25">
+														<div class="cours-bx">
+															<div class="action-box">
+																 <img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;"> 	
+															</div>
+															<div class="info-bx text-center">
+																 <h6><a href="#">First Lastname</a></h6>
+																<span><b>Coach 5</b></span><br> 
 															</div>
 														</div>
 													</li>

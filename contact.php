@@ -275,7 +275,7 @@
         <div class="page-banner ovbl-dark" style="background-image:url(assets/images//cover2.jpeg);">
             <div class="container">
                 <div class="page-banner-entry">
-                    <h1 class="text-white">The Club Contact Us</h1>
+                    <h1 class="text-white"> Contact Us</h1>
 				 </div>
             </div>
         </div>

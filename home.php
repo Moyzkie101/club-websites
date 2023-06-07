@@ -1,38 +1,3 @@
-<!-- <?php 
-// $database	= 'barsims';
-// $username	= 'root';
-// $host		= 'localhost';
-// $password	= '';
-
-// ini_set('display_errors',1);
-// error_reporting(E_ALL);
-// mysqli_report(MYSQLI_REPORT_ERROR | E_DEPRECATED | E_STRICT);
-// // error_reporting(0);
-// session_start();
-// $conn = new mysqli($host,$username,$password,$database);
-
-// if($conn->connect_error){
-// 	//die("Connection Failed: ". $conn->connect_error());
-// } ?> -->
-
- <?php //include 'server/server.php' ?>
-
-<?php
-
-
-    // $query = "SELECT * FROM tbl_announce WHERE id = '1'";
-    // $result = $conn->query($query);
-	// $row = $result->fetch_assoc();
-
-	// $query1 = "SELECT * FROM tblbrgy_info WHERE id = '1'";
-    // $result1 = $conn->query($query1);
-
-
-	// $rows = $result1->fetch_assoc();
-
-	
-?> 
-	
 
 <!DOCTYPE html>
 <html lang="en">
@@ -58,8 +23,7 @@
 	<meta name="og:image" content="images/preview.png" align="middle"/>
 	<meta name="format-detection" content="telephone=no">
 	
-	<!-- <link rel="icon" href="assets/images/logo-2.jpg" type="image/x-icon" /> -->
-		<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo-2.jpg" />
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo-2.jpg" />
 		<title>The Club</title>
 	
 	<!-- MOBILE SPECIFIC ============================================= -->
@@ -90,17 +54,17 @@
 <style type="text/css">/*===================== 	Premery bg color =====================*/
 
 
-:root {	--success: #5691cf;	--sc-success: #5691cf;}
+:root {	--primary: #5691cf;	--sc-primary: #5691cf;}
 
-/* Hex */.bg-success,.btn,.comments-area .comment-form p input[type="submit"],.pagination > .active > a,.pagination > .active > span,.pagination > .active > a:hover,.pagination > .active > span:hover,.pagination > .active > a:focus,.pagination > .active > span:focus,.feature-filters .active > [class*="btn"],.list-num-count > li:before,.pagination-bx.success .pagination > li > a, .pagination-bx.success .pagination > li > span,button.back-to-top,.rev-btn{    background-color: #5691cf;}
+/* Hex */.bg-primary,.btn,.comments-area .comment-form p input[type="submit"],.pagination > .active > a,.pagination > .active > span,.pagination > .active > a:hover,.pagination > .active > span:hover,.pagination > .active > a:focus,.pagination > .active > span:focus,.feature-filters .active > [class*="btn"],.list-num-count > li:before,.pagination-bx.primary .pagination > li > a, .pagination-bx.primary .pagination > li > span,button.back-to-top,.rev-btn{    background-color: #5691cf;}
 
-/*Hex color :hover */.btn:active,.btn:hover,.btn:focus,.active > .btn,.bg-success-dark,.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus ,.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus,.sidenav .closebtn:hover,.sidenav .closebtn:focus,.owl-btn-1.success .owl-prev:hover, .owl-btn-1.success .owl-next:hover,.owl-btn-2.success .owl-prev:hover, .owl-btn-2.success .owl-next:hover,.pagination-bx.success .pagination > li > a:hover, .pagination-bx.success .pagination > li > span:hover,.pagination-bx.success .pagination > li.active > span,.pagination-bx.success .pagination > li.active > a{    background-color: #5691cf;}
+/*Hex color :hover */.btn:active,.btn:hover,.btn:focus,.active > .btn,.bg-primary-dark,.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus ,.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus,.sidenav .closebtn:hover,.sidenav .closebtn:focus,.owl-btn-1.primary .owl-prev:hover, .owl-btn-1.primary .owl-next:hover,.owl-btn-2.primary .owl-prev:hover, .owl-btn-2.primary .owl-next:hover,.pagination-bx.primary .pagination > li > a:hover, .pagination-bx.primary .pagination > li > span:hover,.pagination-bx.primary .pagination > li.active > span,.pagination-bx.primary .pagination > li.active > a{    background-color: #5691cf;}
 
-/*===================== 	Premery text color =====================*/a,.text-success,.success li:before,.menu-links .nav > li.active > a,.menu-links .nav > li:hover > a,.menu-links .nav > li .mega-menu > li ul a:hover,.menu-links .nav > li .sub-menu li:hover > a,footer a:active,footer a:focus,footer a:hover,footer h1 a,footer h2 a,footer h3 a,footer h4 a,footer h5 a,footer h6 a,footer p a,.testimonial-1 .testimonial-position,.acod-head a:after,.acod-head a,.acod-head a:hover,.acod-head a.collapsed:hover,.ttr-tabs .nav-tabs > li > a i,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,.btn.outline,.btn-link:hover{    color: #5691cf;}
+/*===================== 	Premery text color =====================*/a,.text-primary,.primary li:before,.menu-links .nav > li.active > a,.menu-links .nav > li:hover > a,.menu-links .nav > li .mega-menu > li ul a:hover,.menu-links .nav > li .sub-menu li:hover > a,footer a:active,footer a:focus,footer a:hover,footer h1 a,footer h2 a,footer h3 a,footer h4 a,footer h5 a,footer h6 a,footer p a,.testimonial-1 .testimonial-position,.acod-head a:after,.acod-head a,.acod-head a:hover,.acod-head a.collapsed:hover,.ttr-tabs .nav-tabs > li > a i,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,.btn.outline,.btn-link:hover{    color: #5691cf;}
 
 /*===================== 	Secondery bg color =====================*/.bg-secondry {    background-color: #5691cf;}
 
-/*===================== 	Secondery text color =====================*/.text-secondry {    color: #a2cffe;}.ovpr-light:after, .ovpr-middle:after, .ovpr-dark:after,.ovpr:after,.bg-success{	background-color:#5691cf;}.footer-top,.footer-bottom {	background-color: #121921;}.ovbl-middle::after, .ovbl-light::after, .ovbl-dark::after{	
+/*===================== 	Secondery text color =====================*/.text-secondry {    color: #a2cffe;}.ovpr-light:after, .ovpr-middle:after, .ovpr-dark:after,.ovpr:after,.bg-primary{	background-color:#5691cf;}.footer-top,.footer-bottom {	background-color: #121921;}.ovbl-middle::after, .ovbl-light::after, .ovbl-dark::after{	
 
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#267621+0,#267621+50,110038+100 */	background: #5691cf; 
 
@@ -118,7 +82,7 @@
 
 	/* Old browsers */	background: -moz-linear-gradient(45deg, #5691cf 0%, #5691cf 100%); 
 
-	/* FF3.6-15 */	background: -webkit-linear-gradient(45deg, #ut us5691cf 0%,#5691cf 100%); 
+	/* FF3.6-15 */	background: -webkit-linear-gradient(45deg, #5691cf 0%,#5691cf 100%); 
 
 	/* Chrome10-25,Safari5.1-6 */	background: linear-gradient(45deg, #5691cf 0%,#5691cf 100%); 
 
@@ -127,9 +91,11 @@
 	/* IE6-9 fallback on horizontal gradient */}/* Secondry Color */
 
 .portfolio-bx .portfolio-info-bx,.btn.outline:hover,.course-info-list ul li a.active, .course-info-list ul li a:hover,.btn,.profile-tabnav .nav li a.active,button.back-to-top,.upcoming-event-carousel.owl-btn-1 .owl-prev, .upcoming-event-carousel.owl-btn-1 .owl-next,.courses-carousel .owl-nav .owl-next, .courses-carousel .owl-nav .owl-prev, .recent-news-carousel .owl-nav .owl-next, .recent-news-carousel .owl-nav .owl-prev, .testimonial-carousel .owl-nav .owl-next, .testimonial-carousel .owl-nav .owl-prev{	background-color:#5691cf;	color:#fff;}.footer_widget ul li a:hover,[class*="ovbl-"] .counter-style-1 .counter-text,.header-transparent .secondary-menu .btn-link:hover,.header-transparent .menu-links .nav > li:hover > a,.header-transparent .menu-links .nav > li.active > a{	color:#5691cf;}.course-info-list ul li a.active:hover, .course-info-list ul li a:hover,.btn:hover,.profile-tabnav .nav li a.active:hover,button.back-to-top:hover,.upcoming-event-carousel.owl-btn-1 .owl-prev:hover, .upcoming-event-carousel.owl-btn-1 .owl-next:hover,.courses-carousel .owl-nav .owl-next:hover, .courses-carousel .owl-nav .owl-prev:hover, .recent-news-carousel .owl-nav .owl-next:hover, .recent-news-carousel .owl-nav .owl-prev:hover, .testimonial-carousel .owl-nav .owl-next:hover, .testimonial-carousel .owl-nav .owl-prev:hover{	background-color:#5691cf;	color:#fff;}.heading-bx.left .title-head{	border-color:#5691cf;	}
+
 .window-loading{
 	overflow: hidden;
 }
+
 </style>
 
 <body id="bg">
@@ -193,8 +159,7 @@
 									<li><a href="#">U15</a></li>
 								</ul>
 							</li>
-							<li><a href="all-events.php">Upcoming Events</a></li>
-							<li><a href="#">Sponsorship</a></li>
+							<li><a href="all-events">Upcoming Events</a></li>
 							<li><a href="contact.php">Contacts</a></li>
 							<!-- <li><a href="all-programs.php">Programs</a></li>
 							<li><a href="guidelines.php">Guidelines</a></li> -->
@@ -359,7 +324,7 @@
 									 CTU-Barili Campus
 							</div>
 							<!-- LAYER NR. 4 -->
-							<a href="registration.php"><div class="tp-caption Newspaper-Button rev-btn " 
+							<a href="#"><div class="tp-caption Newspaper-Button rev-btn " 
 								id="slide-200-layer-5" 
 								data-x="['center','center','center','center']" 
 								data-hoffset="['90','80','75','90']" 
@@ -517,7 +482,7 @@
 								Lorem ipsum dolor sit amet
 							</div>
 							<!-- LAYER NR. 4 -->
-							<a href="registration.php"><div class="tp-caption Newspaper-Button rev-btn " 
+							<a href="#"><div class="tp-caption Newspaper-Button rev-btn " 
 								id="slide-200-layer-5" 
 								data-x="['center','center','center','center']" 
 								data-hoffset="['90','80','75','90']" 

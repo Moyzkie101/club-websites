@@ -10,9 +10,8 @@
 		<meta name="robots" content="" />
 		<meta name="format-detection" content="telephone=no">
 		
-		<link rel="icon" href="assets/images/logo2.png" type="image/x-icon" />
-		<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo2.png" />
-		<title>Barangay Bolocboloc | REGISTRATION</title>
+		<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo-2.jpg" />
+		<title>The Club | REGISTRATION</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -85,7 +84,7 @@
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen hidden></iframe>
 			</div>
 			<div class="account-form">
-				<div class="account-head" style="background-image:url(assets/images/bg23.png);"></div>
+				<div class="account-head" style="background-image:url(assets/images/cover2.jpeg);"></div>
 				<div class="account-form-inner">
 					<div class="account-container">
 						<div class="col-lg-12 m-b30" align="right">
@@ -99,7 +98,7 @@
 								<div class="col-lg-12">
 									<div class="form-group">
 										<div class="input-group">
-											<label>National Id</label>
+											<label>Membership Id</label>
 											<input class="form-control" type="text" name="national_id" required maxlength="16">
 										</div>
 									</div>
@@ -115,11 +114,12 @@
 								<div class="col-lg-12">
 									<div class="form-group">
 										<div class="input-group">
-											<label>Username</label>
+											<label>First Name</label>
 											<input class="form-control" type="text" name="username" required maxlength="150">
 										</div>
 									</div>
 								</div>
+								
 								<div class="col-lg-12">
 									<div class="form-group">
 										<div class="input-group">

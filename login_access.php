@@ -90,7 +90,7 @@
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen hidden></iframe>
 			</div>
 			<div class="account-form">
-				<div class="account-head" style="background-image:url('assets/images/bg23.png');"></div>
+				<div class="account-head" style="background-image:url('assets/images/cover2.jpeg');"></div>
 				<div class="account-form-inner">
 					<div class="account-container">
 						<div class="col-lg-12 m-b30" align="right">
