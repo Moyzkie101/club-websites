@@ -1,3 +1,38 @@
+<!-- <?php 
+// $database	= 'barsims';
+// $username	= 'root';
+// $host		= 'localhost';
+// $password	= '';
+
+// ini_set('display_errors',1);
+// error_reporting(E_ALL);
+// mysqli_report(MYSQLI_REPORT_ERROR | E_DEPRECATED | E_STRICT);
+// // error_reporting(0);
+// session_start();
+// $conn = new mysqli($host,$username,$password,$database);
+
+// if($conn->connect_error){
+// 	//die("Connection Failed: ". $conn->connect_error());
+// } ?> -->
+
+<?php //include 'server/server.php' ?>
+
+<?php
+
+
+    // $query = "SELECT * FROM tbl_announce WHERE id = '1'";
+    // $result = $conn->query($query);
+	// $row = $result->fetch_assoc();
+
+	// $query1 = "SELECT * FROM tblbrgy_info WHERE id = '1'";
+    // $result1 = $conn->query($query1);
+
+
+	// $rows = $result1->fetch_assoc();
+
+	
+?> 
+	
 
 <!DOCTYPE html>
 <html lang="en">
@@ -23,10 +58,9 @@
 	<meta name="og:image" content="images/preview.png" align="middle"/>
 	<meta name="format-detection" content="telephone=no">
 	
-	<link rel="icon" href="assets/images/logo-2.jpgg" type="image/x-icon" />
+	<!-- <link rel="icon" href="assets/images/logo-2.jpg" type="image/x-icon" /> -->
 		<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo-2.jpg" />
 		<title>The Club</title>
-
 	
 	<!-- MOBILE SPECIFIC ============================================= -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -56,17 +90,17 @@
 <style type="text/css">/*===================== 	Premery bg color =====================*/
 
 
-:root {	--primary: #5691cf;	--sc-primary: #5691cf;}
+:root {	--success: #5691cf;	--sc-success: #5691cf;}
 
-/* Hex */.bg-primary,.btn,.comments-area .comment-form p input[type="submit"],.pagination > .active > a,.pagination > .active > span,.pagination > .active > a:hover,.pagination > .active > span:hover,.pagination > .active > a:focus,.pagination > .active > span:focus,.feature-filters .active > [class*="btn"],.list-num-count > li:before,.pagination-bx.primary .pagination > li > a, .pagination-bx.primary .pagination > li > span,button.back-to-top,.rev-btn{    background-color: #5691cf;}
+/* Hex */.bg-success,.btn,.comments-area .comment-form p input[type="submit"],.pagination > .active > a,.pagination > .active > span,.pagination > .active > a:hover,.pagination > .active > span:hover,.pagination > .active > a:focus,.pagination > .active > span:focus,.feature-filters .active > [class*="btn"],.list-num-count > li:before,.pagination-bx.success .pagination > li > a, .pagination-bx.success .pagination > li > span,button.back-to-top,.rev-btn{    background-color: #5691cf;}
 
-/*Hex color :hover */.btn:active,.btn:hover,.btn:focus,.active > .btn,.bg-primary-dark,.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus ,.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus,.sidenav .closebtn:hover,.sidenav .closebtn:focus,.owl-btn-1.primary .owl-prev:hover, .owl-btn-1.primary .owl-next:hover,.owl-btn-2.primary .owl-prev:hover, .owl-btn-2.primary .owl-next:hover,.pagination-bx.primary .pagination > li > a:hover, .pagination-bx.primary .pagination > li > span:hover,.pagination-bx.primary .pagination > li.active > span,.pagination-bx.primary .pagination > li.active > a{    background-color: #5691cf;}
+/*Hex color :hover */.btn:active,.btn:hover,.btn:focus,.active > .btn,.bg-success-dark,.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus ,.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus,.sidenav .closebtn:hover,.sidenav .closebtn:focus,.owl-btn-1.success .owl-prev:hover, .owl-btn-1.success .owl-next:hover,.owl-btn-2.success .owl-prev:hover, .owl-btn-2.success .owl-next:hover,.pagination-bx.success .pagination > li > a:hover, .pagination-bx.success .pagination > li > span:hover,.pagination-bx.success .pagination > li.active > span,.pagination-bx.success .pagination > li.active > a{    background-color: #5691cf;}
 
-/*===================== 	Premery text color =====================*/a,.text-primary,.primary li:before,.menu-links .nav > li.active > a,.menu-links .nav > li:hover > a,.menu-links .nav > li .mega-menu > li ul a:hover,.menu-links .nav > li .sub-menu li:hover > a,footer a:active,footer a:focus,footer a:hover,footer h1 a,footer h2 a,footer h3 a,footer h4 a,footer h5 a,footer h6 a,footer p a,.testimonial-1 .testimonial-position,.acod-head a:after,.acod-head a,.acod-head a:hover,.acod-head a.collapsed:hover,.ttr-tabs .nav-tabs > li > a i,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,.btn.outline,.btn-link:hover{    color: #5691cf;}
+/*===================== 	Premery text color =====================*/a,.text-success,.success li:before,.menu-links .nav > li.active > a,.menu-links .nav > li:hover > a,.menu-links .nav > li .mega-menu > li ul a:hover,.menu-links .nav > li .sub-menu li:hover > a,footer a:active,footer a:focus,footer a:hover,footer h1 a,footer h2 a,footer h3 a,footer h4 a,footer h5 a,footer h6 a,footer p a,.testimonial-1 .testimonial-position,.acod-head a:after,.acod-head a,.acod-head a:hover,.acod-head a.collapsed:hover,.ttr-tabs .nav-tabs > li > a i,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,.btn.outline,.btn-link:hover{    color: #5691cf;}
 
 /*===================== 	Secondery bg color =====================*/.bg-secondry {    background-color: #5691cf;}
 
-/*===================== 	Secondery text color =====================*/.text-secondry {    color: #a2cffe;}.ovpr-light:after, .ovpr-middle:after, .ovpr-dark:after,.ovpr:after,.bg-primary{	background-color:#5691cf;}.footer-top,.footer-bottom {	background-color: #121921;}.ovbl-middle::after, .ovbl-light::after, .ovbl-dark::after{	
+/*===================== 	Secondery text color =====================*/.text-secondry {    color: #a2cffe;}.ovpr-light:after, .ovpr-middle:after, .ovpr-dark:after,.ovpr:after,.bg-success{	background-color:#5691cf;}.footer-top,.footer-bottom {	background-color: #121921;}.ovbl-middle::after, .ovbl-light::after, .ovbl-dark::after{	
 
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#267621+0,#267621+50,110038+100 */	background: #5691cf; 
 
@@ -84,7 +118,7 @@
 
 	/* Old browsers */	background: -moz-linear-gradient(45deg, #5691cf 0%, #5691cf 100%); 
 
-	/* FF3.6-15 */	background: -webkit-linear-gradient(45deg, #5691cf 0%,#5691cf 100%); 
+	/* FF3.6-15 */	background: -webkit-linear-gradient(45deg, #ut us5691cf 0%,#5691cf 100%); 
 
 	/* Chrome10-25,Safari5.1-6 */	background: linear-gradient(45deg, #5691cf 0%,#5691cf 100%); 
 
@@ -93,11 +127,9 @@
 	/* IE6-9 fallback on horizontal gradient */}/* Secondry Color */
 
 .portfolio-bx .portfolio-info-bx,.btn.outline:hover,.course-info-list ul li a.active, .course-info-list ul li a:hover,.btn,.profile-tabnav .nav li a.active,button.back-to-top,.upcoming-event-carousel.owl-btn-1 .owl-prev, .upcoming-event-carousel.owl-btn-1 .owl-next,.courses-carousel .owl-nav .owl-next, .courses-carousel .owl-nav .owl-prev, .recent-news-carousel .owl-nav .owl-next, .recent-news-carousel .owl-nav .owl-prev, .testimonial-carousel .owl-nav .owl-next, .testimonial-carousel .owl-nav .owl-prev{	background-color:#5691cf;	color:#fff;}.footer_widget ul li a:hover,[class*="ovbl-"] .counter-style-1 .counter-text,.header-transparent .secondary-menu .btn-link:hover,.header-transparent .menu-links .nav > li:hover > a,.header-transparent .menu-links .nav > li.active > a{	color:#5691cf;}.course-info-list ul li a.active:hover, .course-info-list ul li a:hover,.btn:hover,.profile-tabnav .nav li a.active:hover,button.back-to-top:hover,.upcoming-event-carousel.owl-btn-1 .owl-prev:hover, .upcoming-event-carousel.owl-btn-1 .owl-next:hover,.courses-carousel .owl-nav .owl-next:hover, .courses-carousel .owl-nav .owl-prev:hover, .recent-news-carousel .owl-nav .owl-next:hover, .recent-news-carousel .owl-nav .owl-prev:hover, .testimonial-carousel .owl-nav .owl-next:hover, .testimonial-carousel .owl-nav .owl-prev:hover{	background-color:#5691cf;	color:#fff;}.heading-bx.left .title-head{	border-color:#5691cf;	}
-
 .window-loading{
 	overflow: hidden;
 }
-
 </style>
 
 <body id="bg">
@@ -114,7 +146,7 @@
                 <div class="container clearfix">
 					<!-- Header Logo ==== -->
 					<div class="menu-logo">
-						<a href="index-2.php"><img src="assets/images/logo-white1111.png" style="width: 700px!important;" alt=""></a>
+						<a href="index-2.php"><img src="assets/images/logo-white1111.png" style="width: 800px!important;" alt=""></a>
 					</div>
 					<!-- Mobile Nav Button ==== -->
                     <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -135,7 +167,14 @@
                         			<?php
                         		}
                          	?>
-                   
+						</div>
+						<div class="secondary-inner">
+                        	<?php
+                        		if(isset($_SESSION['role'])){
+                        			  ?>
+                        			<a href="model/logout.php">Log Out</a><?php 
+                        		}
+                         	?>
 						</div>
                     </div>
 					<!-- Navigation Menu ==== -->
@@ -145,7 +184,7 @@
 						</div>
                         <ul class="nav navbar-nav">	
 							<li><a href="index-2.php">The Club</a></li>
-							<li><a href="all-announcements.php">Coaches</a></li>
+							<li><a href="org-structure.php">Coaches</a></li>
 							<li><a href="javascript:;">Players<i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
 									<li><a href="#">U9</a></li>
@@ -154,10 +193,12 @@
 									<li><a href="#">U15</a></li>
 								</ul>
 							</li>
-							<li><a href="services.php">Upcoming Events</a></li>
+							<li><a href="all-events.php">Upcoming Events</a></li>
+							<li><a href="#">Sponsorship</a></li>
+							<li><a href="contact.php">Contacts</a></li>
 							<!-- <li><a href="all-programs.php">Programs</a></li>
 							<li><a href="guidelines.php">Guidelines</a></li> -->
-							<li><a href="contact.php">Contact</a></li>
+
 							
 							<?php
 								error_reporting(0);
@@ -166,7 +207,13 @@
 									<?php
 								}
 							?>
-							
+							<!-- <li><a href="javascript:;">Services<i class="fa fa-chevron-down"></i></a>
+								<ul class="sub-menu">
+									<li><a href="brgy-clearance">Barangay Clearance</a></li>
+									<li><a href="certif-of-residency">Certificate of Residency</a></li>
+									<li><a href="certif-of-indigency">Certifcate of Indigency</a></li>
+								</ul>
+							</li> -->
 						</ul>
 						<div class="nav-social-link">
 							<?php
@@ -445,7 +492,7 @@
 								data-paddingbottom="[0,0,0,0]"
 								data-paddingleft="[0,0,0,0]"
 								style="z-index: 7; white-space: nowrap;text-transform:uppercase; color:#fff; font-family:rubik; font-size:18px; font-weight:400;">
-									<span style="font-size: 23px;">CTU-Barili Campus</span> 
+									<span style="font-size: 23px;">SPORTS CLUB</span> 
 							</div>
 							
 							<!-- LAYER NR. 3 -->
@@ -544,8 +591,8 @@
 									<div class="feature-box-sm radius bg-white">
 										<i class="fa fa-envelope-open text-success"></i>
 									</div>
-									<h4><a href="#">Members</a></h4>
-									<a href="#" class="btn radius-xl">Learn More</a>
+									<h4><a href="all-announcements.php">Members</a></h4>
+									<a href="all-announcements.php" class="btn radius-xl">Learn More</a>
 								</div>
 							</div>
 						</div>
@@ -558,8 +605,8 @@
 									<div class="feature-box-sm radius bg-white">
 										<i class="fa fa-bank text-success"></i>
 									</div>
-									<h4><a href="#">Coaches</a></h4>
-									<a href="#" class="btn radius-xl">Learn More</a>
+									<h4><a href="org-structure.php">Coaches</a></h4>
+									<a href="services.php" class="btn radius-xl">Learn More</a>
 								</div>
 							</div>
 						</div>
@@ -572,18 +619,14 @@
 									<div class="feature-box-sm radius bg-white">
 										<i class="fa fa-bank text-success"></i>
 									</div>
-									<h4><a href="#">Attendance</a></h4>
-									<a href="#" class="btn radius-xl">Learn More</a>
+									<h4><a href="services.php">Attendance</a></h4>
+									<a href="services.php" class="btn radius-xl">Learn More</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
             </div>
-            <!-- Our Services END -->
-
-			
-        </div>
             <!-- Our Services END -->
 			
 			<!---About Us-->
@@ -594,7 +637,7 @@
 						<div class="col-lg-7 col-md-12">
 							<div class="heading-bx left">
 								<h2 class="m-b10 title-head">About <span> Us</span></h2>
-							</div>
+								</div>
 							<p style="text-align: justify; "><span style="font-size: 18px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sports clubs enable children to develop skills that will help them in school, in their personal lives and in future careers. Key skills such as leadership, problem-solving, responsibility and a sense of initiative are all developed through sporting activities with peers.<br><br>&nbsp;&nbsp;&nbsp;<b>For more information on the classes and clubs we offer, don’t hesitate to contact us.</b></span></p>
 						</div>
 						<div class="col-lg-5 col-md-12">
@@ -620,6 +663,7 @@
                 </div>
             </div>
             <!-- About End-->	
+		
 			<!-- Popular Courses -->
 			<div class="section-area section-sp2">
 				<div class="container">
@@ -633,15 +677,11 @@
 						<div class="upcoming-event-carousel owl-carousel owl-btn-center-lr owl-btn-1 col-12 p-lr0  m-b30"></div>
 					</div>
 					<div class="text-center">
-						<a href="all-announcements.php" class="btn">View All Announcements</a>
+						<a href="all-announcements.php" class="btn">View All Events</a>
 					</div>
 				</div>
 			</div>
 			<!-- Popular Courses END -->
-			
-
-			
-
 			
         </div>
 		<!-- contact area END -->
