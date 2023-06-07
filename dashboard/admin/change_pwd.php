@@ -113,19 +113,19 @@ page_protect();
              </tr>
 			 <tr>
            	   <td height="35">PASSWORD:</td>
-           	   <td height="35"><input type="text" name="pwfield" id="boxx" class="form-control"  data-rule-required="true" data-rule-minlength="6" placeholder="Your new passowrd"></td>
+           	   <td height="35"><input type="password" name="pwfield" id="boxx" class="form-control"  data-rule-required="true" data-rule-minlength="6" placeholder="Your new passowrd"></td>
          	   </tr>
              
              <tr>
 			  <tr>
            	   <td height="35">CONFIRM PASSWORD:</td>
-           	   <td height="35"><input type="text" name="confirmfield" id="boxx" class="form-control"  data-rule-equalto="#pwfield" data-rule-required="true" data-rule-minlength="6" placeholder="Confirm Your new passowrd"></td>
+           	   <td height="35"><input type="password" name="confirmfield" id="boxx" class="form-control"  data-rule-equalto="#pwfield" data-rule-required="true" data-rule-minlength="6" placeholder="Confirm Your new passowrd"></td>
          	   </tr>
              
              <tr>
              <tr>
                <td height="35"></td>
-               <td height="35"><a href="change_pwd.php" class="a1-btn a1-blue">SUBMIT</a><!--<input class="a1-btn a1-blue" type="submit" name="submit" id="submit" value="SUBMIT" >-->
+               <td height="35"><input class="a1-btn a1-blue" type="submit" name="submit" id="submit" value="SUBMIT" >
                  <input class="a1-btn a1-blue" type="reset" name="reset" id="reset" value="Reset"></td>
              </tr>
            </table></td>

@@ -66,7 +66,7 @@ line-height:0.5cm;
    
   <tr>
     <td height="118" colspan="3"><p>Received with thanks from : <?php echo $row['username']?></p>
-      <p>A sum of Rupees : <?php echo $row['amount']?></p>
+      <p>A sum of Pesos : &#8369; <?php echo $row['amount']?></p>
       <p>On account of Membership plan: <?php echo $row['planName']?></p></td>
     </tr>
   

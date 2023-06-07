@@ -15,7 +15,7 @@ $query="update enrolls_to set renewal='no' where uid='$memID'";
         if($result){
           $value=mysqli_fetch_row($result);
           date_default_timezone_set("Asia/Calcutta"); 
-          $d=strtotime("+".$value[3]." Months");
+          $d=strtotime("+".$value[4]." Months");
           $cdate=date("Y-m-d"); //current date
           $expiredate=date("Y-m-d",$d); //adding validity retrieve from plan to current date
           //inserting into enrolls_to table of corresponding userid
