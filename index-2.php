@@ -312,7 +312,7 @@
 								data-paddingbottom="[10,10,10,10]"
 								data-paddingleft="[0,0,0,0]"
 								style="z-index: 6; font-family:rubik; font-weight:700; text-align:center; white-space: normal;">
-									SPORTS <span style="color: #5691cf">CLUB</span>
+									BARILI FOOTBALL <span style="color: #5691cf">CLUB</span>
 							</div>
 
 							<!-- LAYER NR. 3 -->
@@ -356,7 +356,7 @@
 								data-paddingbottom="[0,0,0,0]"
 								data-paddingleft="[0,0,0,0]"
 								style="z-index: 7; text-transform:capitalize; white-space: unset; color:#fff; font-family:rubik; font-size:18px; line-height:28px; font-weight:400;">
-									 CTU-Barili Campus
+									 Barili, Cebu, Philippines
 							</div>
 							<!-- LAYER NR. 4 -->
 							<a href="registration.php"><div class="tp-caption Newspaper-Button rev-btn " 
@@ -420,7 +420,7 @@
 						data-param9="" data-param10="" 
 						data-description="Science says that Women are generally happier">
 							<!-- MAIN IMAGE -->
-							<img src="assets/images/slider/slide2.jpeg" alt="" 
+							<img src="assets/images/slider/slide222.jpg" alt="" 
 								data-bgposition="center center" 
 								data-bgfit="cover" 
 								data-bgrepeat="no-repeat" 
@@ -470,7 +470,7 @@
 								data-paddingbottom="[10,10,10,10]"
 								data-paddingleft="[0,0,0,0]"
 								style="z-index: 6; font-family:rubik; font-weight:700; text-align:center; white-space: normal;text-transform:uppercase;">
-									SPORTS <span style="color: #5691cf">CLUB</span>
+									BARILI FOOTBALL <span style="color: #5691cf">CLUB</span>
 							</div>
 
 							<!-- LAYER NR. 3 -->
