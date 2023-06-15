@@ -146,7 +146,7 @@
                 <div class="container clearfix">
 					<!-- Header Logo ==== -->
 					<div class="menu-logo">
-						<a href="index-2.php"><img src="assets/images/bfclogo.png" style="width: 80px!important;" alt=""></a>
+						<a href="index-2.php"><img src="assets/images/bfclogo.png" style="width: 65px!important;" alt=""></a>
 					</div>
 					<!-- Mobile Nav Button ==== -->
                     <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -420,7 +420,7 @@
 						data-param9="" data-param10="" 
 						data-description="Science says that Women are generally happier">
 							<!-- MAIN IMAGE -->
-							<img src="assets/images/slider/slide222.jpg" alt="" 
+							<img src="assets/images/slider/slide3.jpg" alt="" 
 								data-bgposition="center center" 
 								data-bgfit="cover" 
 								data-bgrepeat="no-repeat" 
@@ -556,6 +556,156 @@
 								data-paddingleft="[30,35,35,15]"
 								style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; border-radius:30px;" href="contact.php">CONTACT US</a>
 						</li>
+						<li data-index="rs-200" 
+						data-transition="parallaxvertical" 
+						data-slotamount="default" 
+						data-hideafterloop="0" 
+						data-hideslideonmobile="off" 
+						data-easein="default" 
+						data-easeout="default" 
+						data-masterspeed="default" 
+						data-thumb="assets/images/slider/slide1.jpeg" 
+						data-rotate="0" 
+						data-fstransition="fade" 
+						data-fsmasterspeed="1500" 
+						data-fsslotamount="7" 
+						data-saveperformance="off" 
+						data-title="A STUDY ON HAPPINESS" 
+						data-param1="" data-param2="" 
+						data-param3="" data-param4="" 
+						data-param5="" data-param6="" 
+						data-param7="" data-param8="" 
+						data-param9="" data-param10="" 
+						data-description="Science says that Women are generally happier">
+							<!-- MAIN IMAGE -->
+							<img src="assets/images/slider/slider5.jpg" alt="" 
+								data-bgposition="center center" 
+								data-bgfit="cover" 
+								data-bgrepeat="no-repeat" 
+								data-bgparallax="10" 
+								class="rev-slidebg" 
+								data-no-retina />
+						</li>
+						<li data-index="rs-200" 
+						data-transition="parallaxvertical" 
+						data-slotamount="default" 
+						data-hideafterloop="0" 
+						data-hideslideonmobile="off" 
+						data-easein="default" 
+						data-easeout="default" 
+						data-masterspeed="default" 
+						data-thumb="assets/images/slider/slide1.jpeg" 
+						data-rotate="0" 
+						data-fstransition="fade" 
+						data-fsmasterspeed="1500" 
+						data-fsslotamount="7" 
+						data-saveperformance="off" 
+						data-title="A STUDY ON HAPPINESS" 
+						data-param1="" data-param2="" 
+						data-param3="" data-param4="" 
+						data-param5="" data-param6="" 
+						data-param7="" data-param8="" 
+						data-param9="" data-param10="" 
+						data-description="Science says that Women are generally happier">
+							<!-- MAIN IMAGE -->
+							<img src="assets/images/slider/slider6.jpg" alt="" 
+								data-bgposition="center center" 
+								data-bgfit="cover" 
+								data-bgrepeat="no-repeat" 
+								data-bgparallax="10" 
+								class="rev-slidebg" 
+								data-no-retina />
+						</li>
+						<li data-index="rs-200" 
+						data-transition="parallaxvertical" 
+						data-slotamount="default" 
+						data-hideafterloop="0" 
+						data-hideslideonmobile="off" 
+						data-easein="default" 
+						data-easeout="default" 
+						data-masterspeed="default" 
+						data-thumb="assets/images/slider/slide1.jpeg" 
+						data-rotate="0" 
+						data-fstransition="fade" 
+						data-fsmasterspeed="1500" 
+						data-fsslotamount="7" 
+						data-saveperformance="off" 
+						data-title="A STUDY ON HAPPINESS" 
+						data-param1="" data-param2="" 
+						data-param3="" data-param4="" 
+						data-param5="" data-param6="" 
+						data-param7="" data-param8="" 
+						data-param9="" data-param10="" 
+						data-description="Science says that Women are generally happier">
+							<!-- MAIN IMAGE -->
+							<img src="assets/images/slider/slider7.jpg" alt="" 
+								data-bgposition="center center" 
+								data-bgfit="cover" 
+								data-bgrepeat="no-repeat" 
+								data-bgparallax="10" 
+								class="rev-slidebg" 
+								data-no-retina />
+						</li>
+						<li data-index="rs-200" 
+						data-transition="parallaxvertical" 
+						data-slotamount="default" 
+						data-hideafterloop="0" 
+						data-hideslideonmobile="off" 
+						data-easein="default" 
+						data-easeout="default" 
+						data-masterspeed="default" 
+						data-thumb="assets/images/slider/slide1.jpeg" 
+						data-rotate="0" 
+						data-fstransition="fade" 
+						data-fsmasterspeed="1500" 
+						data-fsslotamount="7" 
+						data-saveperformance="off" 
+						data-title="A STUDY ON HAPPINESS" 
+						data-param1="" data-param2="" 
+						data-param3="" data-param4="" 
+						data-param5="" data-param6="" 
+						data-param7="" data-param8="" 
+						data-param9="" data-param10="" 
+						data-description="Science says that Women are generally happier">
+							<!-- MAIN IMAGE -->
+							<img src="assets/images/slider/slider8.jpg" alt="" 
+								data-bgposition="center center" 
+								data-bgfit="cover" 
+								data-bgrepeat="no-repeat" 
+								data-bgparallax="10" 
+								class="rev-slidebg" 
+								data-no-retina />
+						</li>
+						<li data-index="rs-200" 
+						data-transition="parallaxvertical" 
+						data-slotamount="default" 
+						data-hideafterloop="0" 
+						data-hideslideonmobile="off" 
+						data-easein="default" 
+						data-easeout="default" 
+						data-masterspeed="default" 
+						data-thumb="assets/images/slider/slide1.jpeg" 
+						data-rotate="0" 
+						data-fstransition="fade" 
+						data-fsmasterspeed="1500" 
+						data-fsslotamount="7" 
+						data-saveperformance="off" 
+						data-title="A STUDY ON HAPPINESS" 
+						data-param1="" data-param2="" 
+						data-param3="" data-param4="" 
+						data-param5="" data-param6="" 
+						data-param7="" data-param8="" 
+						data-param9="" data-param10="" 
+						data-description="Science says that Women are generally happier">
+							<!-- MAIN IMAGE -->
+							<img src="assets/images/slider/slider9.jpg" alt="" 
+								data-bgposition="center center" 
+								data-bgfit="cover" 
+								data-bgrepeat="no-repeat" 
+								data-bgparallax="10" 
+								class="rev-slidebg" 
+								data-no-retina />
+						</li>
 						<!-- SLIDE  -->
 					</ul>
 				</div><!-- END REVOLUTION SLIDER -->  
@@ -564,7 +714,8 @@
         <!-- Main Slider -->
 		<div class="content-block">
             
-		<div class="section-area content-inner service-info-bx">
+			<!-- Our Services -->
+			<div class="section-area content-inner service-info-bx">
                 <div class="container">
 					<div class="row">
 						<div class="col-xl col-lg col-md col-sm">
@@ -702,7 +853,7 @@
 						</div>
 						<div class="pt-social-link">
 							<ul class="list-inline m-a0">
-								<li><a href="https://facebook.com/profile.php?id=100069445621624&mibextid=ZbWKwL" class="btn-link" target="blank"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://www.facebook.com/profile.php?id=100063941023672&mibextid=ZbWKwL" class="btn-link" target="blank"><i class="fa fa-facebook"></i></a></li>
 							</ul>
 						</div>
 						<div class="pt-btn-join">
@@ -745,9 +896,9 @@
 								<div class="widget footer_widget">
 									<h5 class="footer-title">Contact Us</h5>
 									<ul>
-										<li><a href="https://www.google.com/maps/dir//4G7H%2B6FW+Bolocboloc+Gym,+brgy,+Barili,+Cebu/@10.1130842,123.5284076,96m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x33a9630643dd013b:0x6265dd3ae93a9dd5!2m2!1d123.528696!2d10.1131061" target="blank">Bolocboloc Gym, Barili, Cebu City,<br>6036 Barili</a></li>
-										<li><a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=New+Stranger+from:&to=brgybolocboloc.infosys@gmail.com" target="blank">brgybolocboloc.infosys@gmail.com</a></li>
-										<li><a href="#">09104935212</a></li>
+										<li><a href="https://goo.gl/maps/HK8ZMEauYD8vPbvQ9" target="blank">Barili, Public Kiosk<br>6036 Barili</a></li>
+										<li><a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=New+Stranger+from:&to=barililgu@gmail.com" target="blank">barili.lgu@gmail.com</a></li>
+										<li><a href="#">0908 388 3647</a></li>
 									</ul>
 								</div>
 							</div>							
