@@ -146,7 +146,7 @@
                 <div class="container clearfix">
 					<!-- Header Logo ==== -->
 					<div class="menu-logo">
-						<a href="index-2.php"><img src="assets/images/bfclogo.png" style="width: 65px!important;" alt=""></a>
+						<a href="index-2.php"><img src="assets/images/bfclogo.png" style="width: 80px!important;" alt=""></a>
 					</div>
 					<!-- Mobile Nav Button ==== -->
                     <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -420,7 +420,7 @@
 						data-param9="" data-param10="" 
 						data-description="Science says that Women are generally happier">
 							<!-- MAIN IMAGE -->
-							<img src="assets/images/slider/slide3.jpg" alt="" 
+							<img src="assets/images/slider/slide222.jpg" alt="" 
 								data-bgposition="center center" 
 								data-bgfit="cover" 
 								data-bgrepeat="no-repeat" 
@@ -556,156 +556,6 @@
 								data-paddingleft="[30,35,35,15]"
 								style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; border-radius:30px;" href="contact.php">CONTACT US</a>
 						</li>
-						<li data-index="rs-200" 
-						data-transition="parallaxvertical" 
-						data-slotamount="default" 
-						data-hideafterloop="0" 
-						data-hideslideonmobile="off" 
-						data-easein="default" 
-						data-easeout="default" 
-						data-masterspeed="default" 
-						data-thumb="assets/images/slider/slide1.jpeg" 
-						data-rotate="0" 
-						data-fstransition="fade" 
-						data-fsmasterspeed="1500" 
-						data-fsslotamount="7" 
-						data-saveperformance="off" 
-						data-title="A STUDY ON HAPPINESS" 
-						data-param1="" data-param2="" 
-						data-param3="" data-param4="" 
-						data-param5="" data-param6="" 
-						data-param7="" data-param8="" 
-						data-param9="" data-param10="" 
-						data-description="Science says that Women are generally happier">
-							<!-- MAIN IMAGE -->
-							<img src="assets/images/slider/slider5.jpg" alt="" 
-								data-bgposition="center center" 
-								data-bgfit="cover" 
-								data-bgrepeat="no-repeat" 
-								data-bgparallax="10" 
-								class="rev-slidebg" 
-								data-no-retina />
-						</li>
-						<li data-index="rs-200" 
-						data-transition="parallaxvertical" 
-						data-slotamount="default" 
-						data-hideafterloop="0" 
-						data-hideslideonmobile="off" 
-						data-easein="default" 
-						data-easeout="default" 
-						data-masterspeed="default" 
-						data-thumb="assets/images/slider/slide1.jpeg" 
-						data-rotate="0" 
-						data-fstransition="fade" 
-						data-fsmasterspeed="1500" 
-						data-fsslotamount="7" 
-						data-saveperformance="off" 
-						data-title="A STUDY ON HAPPINESS" 
-						data-param1="" data-param2="" 
-						data-param3="" data-param4="" 
-						data-param5="" data-param6="" 
-						data-param7="" data-param8="" 
-						data-param9="" data-param10="" 
-						data-description="Science says that Women are generally happier">
-							<!-- MAIN IMAGE -->
-							<img src="assets/images/slider/slider6.jpg" alt="" 
-								data-bgposition="center center" 
-								data-bgfit="cover" 
-								data-bgrepeat="no-repeat" 
-								data-bgparallax="10" 
-								class="rev-slidebg" 
-								data-no-retina />
-						</li>
-						<li data-index="rs-200" 
-						data-transition="parallaxvertical" 
-						data-slotamount="default" 
-						data-hideafterloop="0" 
-						data-hideslideonmobile="off" 
-						data-easein="default" 
-						data-easeout="default" 
-						data-masterspeed="default" 
-						data-thumb="assets/images/slider/slide1.jpeg" 
-						data-rotate="0" 
-						data-fstransition="fade" 
-						data-fsmasterspeed="1500" 
-						data-fsslotamount="7" 
-						data-saveperformance="off" 
-						data-title="A STUDY ON HAPPINESS" 
-						data-param1="" data-param2="" 
-						data-param3="" data-param4="" 
-						data-param5="" data-param6="" 
-						data-param7="" data-param8="" 
-						data-param9="" data-param10="" 
-						data-description="Science says that Women are generally happier">
-							<!-- MAIN IMAGE -->
-							<img src="assets/images/slider/slider7.jpg" alt="" 
-								data-bgposition="center center" 
-								data-bgfit="cover" 
-								data-bgrepeat="no-repeat" 
-								data-bgparallax="10" 
-								class="rev-slidebg" 
-								data-no-retina />
-						</li>
-						<li data-index="rs-200" 
-						data-transition="parallaxvertical" 
-						data-slotamount="default" 
-						data-hideafterloop="0" 
-						data-hideslideonmobile="off" 
-						data-easein="default" 
-						data-easeout="default" 
-						data-masterspeed="default" 
-						data-thumb="assets/images/slider/slide1.jpeg" 
-						data-rotate="0" 
-						data-fstransition="fade" 
-						data-fsmasterspeed="1500" 
-						data-fsslotamount="7" 
-						data-saveperformance="off" 
-						data-title="A STUDY ON HAPPINESS" 
-						data-param1="" data-param2="" 
-						data-param3="" data-param4="" 
-						data-param5="" data-param6="" 
-						data-param7="" data-param8="" 
-						data-param9="" data-param10="" 
-						data-description="Science says that Women are generally happier">
-							<!-- MAIN IMAGE -->
-							<img src="assets/images/slider/slider8.jpg" alt="" 
-								data-bgposition="center center" 
-								data-bgfit="cover" 
-								data-bgrepeat="no-repeat" 
-								data-bgparallax="10" 
-								class="rev-slidebg" 
-								data-no-retina />
-						</li>
-						<li data-index="rs-200" 
-						data-transition="parallaxvertical" 
-						data-slotamount="default" 
-						data-hideafterloop="0" 
-						data-hideslideonmobile="off" 
-						data-easein="default" 
-						data-easeout="default" 
-						data-masterspeed="default" 
-						data-thumb="assets/images/slider/slide1.jpeg" 
-						data-rotate="0" 
-						data-fstransition="fade" 
-						data-fsmasterspeed="1500" 
-						data-fsslotamount="7" 
-						data-saveperformance="off" 
-						data-title="A STUDY ON HAPPINESS" 
-						data-param1="" data-param2="" 
-						data-param3="" data-param4="" 
-						data-param5="" data-param6="" 
-						data-param7="" data-param8="" 
-						data-param9="" data-param10="" 
-						data-description="Science says that Women are generally happier">
-							<!-- MAIN IMAGE -->
-							<img src="assets/images/slider/slider9.jpg" alt="" 
-								data-bgposition="center center" 
-								data-bgfit="cover" 
-								data-bgrepeat="no-repeat" 
-								data-bgparallax="10" 
-								class="rev-slidebg" 
-								data-no-retina />
-						</li>
 						<!-- SLIDE  -->
 					</ul>
 				</div><!-- END REVOLUTION SLIDER -->  
@@ -714,8 +564,7 @@
         <!-- Main Slider -->
 		<div class="content-block">
             
-			<!-- Our Services -->
-			<div class="section-area content-inner service-info-bx">
+		<div class="section-area content-inner service-info-bx">
                 <div class="container">
 					<div class="row">
 						<div class="col-xl col-lg col-md col-sm">

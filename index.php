@@ -187,7 +187,7 @@
 							<li><a href="org-structure.php">Coaches</a></li>
 							<li><a href="javascript:;">Players<i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
-									<li><a href="#">U9</a></li>
+									<li><a href="history.php">U9</a></li>
 									<li><a href="#">U11</a></li>
 									<li><a href="#">U13</a></li>
 									<li><a href="#">U15</a></li>

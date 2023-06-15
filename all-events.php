@@ -16,8 +16,9 @@
 //if($conn->connect_error){
 //	die("Connection Failed: ". $conn->connect_error());
 //} 
-// ?> -->
- <!-- <?php include 'server/server.php' ?>
+// ?> 
+
+
 
  //<?php
 //     $query = "SELECT * FROM tbl_announce WHERE id = '1'";
@@ -59,7 +60,7 @@
 	<meta name="og:image" content="images/preview.png" align="middle"/>
 	<meta name="format-detection" content="telephone=no">
 
-	<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo-2.jpg" />
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/bfclogo.png" />
 	<title>The Club | Events</title>
 	<!-- MOBILE SPECIFIC ============================================= -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -138,13 +139,14 @@
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen hidden></iframe>
 	</div>
     <!-- Header Top ==== -->
-    <header class="header rs-nav">
+    <header class="header rs-nav header-transparent">
+
 		<div class="sticky-header navbar-expand-lg">
             <div class="menu-bar clearfix">
                 <div class="container clearfix">
 					<!-- Header Logo ==== -->
 					<div class="menu-logo">
-						<a href="index-2.php"><img src="assets/images/logo-black.png" alt=""></a>
+						<a href="index-2.php"><img src="assets/images/bfclogo.png" style="width: 65px!important;" alt=""></a>
 					</div>
 					<!-- Mobile Nav Button ==== -->
                     <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -166,14 +168,14 @@
                         		}
                          	?>
 						</div>
-                    </div>
-					<!-- Search Box ==== -->
-                    <div class="nav-search-bar">
-                        <form action="#">
-                            <input name="search" value="" type="text" class="form-control" placeholder="Type to search">
-                            <span><i class="ti-search"></i></span>
-                        </form>
-						<span id="search-remove"><i class="ti-close"></i></span>
+						<div class="secondary-inner">
+                        	<?php
+                        		if(isset($_SESSION['role'])){
+                        			  ?>
+                        			<a href="model/logout.php">Log Out</a><?php 
+                        		}
+                         	?>
+						</div>
                     </div>
 					<!-- Navigation Menu ==== -->
                     <div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
@@ -185,13 +187,14 @@
 							<li><a href="org-structure.php">Coaches</a></li>
 							<li><a href="javascript:;">Players<i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
-									<li><a href="history.php">U9</a></li>
-									<li><a href="our-developers.php">U11</a></li>
-									<li><a href="vision-mission.php">U13</a></li>
-									<li><a href="org-structure.php">U15</a></li>
+									<li><a href="#">U9</a></li>
+									<li><a href="#">U11</a></li>
+									<li><a href="#">U13</a></li>
+									<li><a href="#">U15</a></li>
 								</ul>
 							</li>
 							<li><a href="all-events.php">Upcoming Events</a></li>
+							<li><a href="#">Sponsorship</a></li>
 							<li><a href="contact.php">Contacts</a></li>
 							<!-- <li><a href="all-programs.php">Programs</a></li>
 							<li><a href="guidelines.php">Guidelines</a></li> -->
@@ -265,125 +268,125 @@
 									<div class="container">
 										<div class="clearfix">
 											<ul id='masonry' class='ttr-gallery-listing magnific-image row'>
-											<?php
+											<!-- <?php
 
-												$query = "SELECT * FROM `tbl_announce`";
-												// $query2 = "SELECT date_month.month FROM tbl_announce INNER JOIN date_month ON tbl_announce.month=date_month.id";
+												// $query = "SELECT * FROM `tbl_announce`";
+												// // $query2 = "SELECT date_month.month FROM tbl_announce INNER JOIN date_month ON tbl_announce.month=date_month.id";
 
-												$query_run = mysqli_query($conn, $query);
-												$check_tbl_announce = mysqli_num_rows($query_run) > 0;
+												// $query_run = mysqli_query($conn, $query);
+												// $check_tbl_announce = mysqli_num_rows($query_run) > 0;
 
-												if($check_tbl_announce) {
+												// if($check_tbl_announce) {
 													
-													while ($row = mysqli_fetch_array($query_run)) {
+												// 	while ($row = mysqli_fetch_array($query_run)) {
 
-														if($row['updates'] == 'happening'){
+												// 		if($row['updates'] == 'happening'){
 
-															echo "
-																<li class='action-card col-lg-6 col-md-6 col-sm-12 happening'>
-																	<div class='event-bx m-b30'>
-																		<div class='action-box'>
-																			<a href='#'><img src='model/uploads/".$row['uploads']."' style='height: 280px;object-fit: cover;' alt=''></a>
-																		</div>
-																		<div class='info-bx d-flex'>
-																			<div>
-																				<a href='#'><div class='event-time'>
-																					<div class='event-date'>". date('d', strtotime($row['date'])) ."</div>
-																					<div class='event-month'><b>". date('F', strtotime($row['date'])) ."</b></div>
-																					<div class='event-year'><b>". date('Y', strtotime($row['date'])) ."</b></div>
-																				</div></a>
-																			</div>
-																			<div class='event-info'>
-																				<article>
-																					<h4 class='event-title'>".$row['title']."<a href='#'>
+												// 			echo "
+												// 				<li class='action-card col-lg-6 col-md-6 col-sm-12 happening'>
+												// 					<div class='event-bx m-b30'>
+												// 						<div class='action-box'>
+												// 							<a href='#'><img src='model/uploads/".$row['uploads']."' style='height: 280px;object-fit: cover;' alt=''></a>
+												// 						</div>
+												// 						<div class='info-bx d-flex'>
+												// 							<div>
+												// 								<a href='#'><div class='event-time'>
+												// 									<div class='event-date'>". date('d', strtotime($row['date'])) ."</div>
+												// 									<div class='event-month'><b>". date('F', strtotime($row['date'])) ."</b></div>
+												// 									<div class='event-year'><b>". date('Y', strtotime($row['date'])) ."</b></div>
+												// 								</div></a>
+												// 							</div>
+												// 							<div class='event-info'>
+												// 								<article>
+												// 									<h4 class='event-title'>".$row['title']."<a href='#'>
 																						
-																					</a></h4>
-																					<ul class='media-post'>
-																						<li>
-																							<a href='#'><i class='fa fa-clock-o'></i> <b>9:20 PM</b></a>
-																						</li>
-																					</ul>
+												// 									</a></h4>
+												// 									<ul class='media-post'>
+												// 										<li>
+												// 											<a href='#'><i class='fa fa-clock-o'></i> <b>9:20 PM</b></a>
+												// 										</li>
+												// 									</ul>
 																					
-																						<p>".$row['txt']."</p>
-																				</article>
-																			</div>
-																		</div>
-																	</div>
-																</li>
-															";
-														}elseif($row['updates'] == 'upcoming'){
-															echo "
-																<li class='action-card col-lg-6 col-md-6 col-sm-12 ".$row['updates']."'>
-																	<div class='event-bx m-b30'>
-																		<div class='action-box'>
-																			<a href='#'><img src='model/uploads/".$row['uploads']."' style='height: 280px;object-fit: cover;' alt=''></a>
-																		</div>
-																		<div class='info-bx d-flex'>
-																			<div>
-																				<a href='#'><div class='event-time'>
-																					<div class='event-date'>". date('d', strtotime($row['date'])) ."</div>
-																					<div class='event-month'><b>". date('F', strtotime($row['date'])) ."</b></div>
-																					<div class='event-year'><b>". date('Y', strtotime($row['date'])) ."</b></div>
-																				</div></a>
-																			</div>
-																			<div class='event-info'>
-																				<article>
-																					<h4 class='event-title'>".$row['title']."<a href='#'>
+												// 										<p>".$row['txt']."</p>
+												// 								</article>
+												// 							</div>
+												// 						</div>
+												// 					</div>
+												// 				</li>
+												// 			";
+												// 		}elseif($row['updates'] == 'upcoming'){
+												// 			echo "
+												// 				<li class='action-card col-lg-6 col-md-6 col-sm-12 ".$row['updates']."'>
+												// 					<div class='event-bx m-b30'>
+												// 						<div class='action-box'>
+												// 							<a href='#'><img src='model/uploads/".$row['uploads']."' style='height: 280px;object-fit: cover;' alt=''></a>
+												// 						</div>
+												// 						<div class='info-bx d-flex'>
+												// 							<div>
+												// 								<a href='#'><div class='event-time'>
+												// 									<div class='event-date'>". date('d', strtotime($row['date'])) ."</div>
+												// 									<div class='event-month'><b>". date('F', strtotime($row['date'])) ."</b></div>
+												// 									<div class='event-year'><b>". date('Y', strtotime($row['date'])) ."</b></div>
+												// 								</div></a>
+												// 							</div>
+												// 							<div class='event-info'>
+												// 								<article>
+												// 									<h4 class='event-title'>".$row['title']."<a href='#'>
 																						
-																					</a></h4>
-																					<ul class='media-post'>
-																						<li>
-																							<a href='#'><i class='fa fa-clock-o'></i> <b>9:20 PM</b></a>
-																						</li>
-																					</ul>
+												// 									</a></h4>
+												// 									<ul class='media-post'>
+												// 										<li>
+												// 											<a href='#'><i class='fa fa-clock-o'></i> <b>9:20 PM</b></a>
+												// 										</li>
+												// 									</ul>
 																					
-																						<p>".$row['txt']."</p>
-																				</article>
-																			</div>
-																		</div>
-																	</div>
-																</li>
-															";
-														}elseif($row['updates'] == 'expired'){
-															echo "
-																<li class='action-card col-lg-6 col-md-6 col-sm-12 ".$row['updates']."'>
-																	<div class='event-bx m-b30'>
-																		<div class='action-box'>
-																			<a href='#'><img src='model/uploads/".$row['uploads']."' style='height: 280px;object-fit: cover;' alt=''></a>
-																		</div>
-																		<div class='info-bx d-flex'>
-																			<div>
-																				<a href='#'><div class='event-time'>
-																					<div class='event-date'>". date('d', strtotime($row['date'])) ."</div>
-																					<div class='event-month'><b>". date('F', strtotime($row['date'])) ."</b></div>
-																					<div class='event-year'><b>". date('Y', strtotime($row['date'])) ."</b></div>
-																				</div></a>
-																			</div>
-																			<div class='event-info'>
-																				<article>
-																					<h4 class='event-title'>".$row['title']."<a href='#'>
+												// 										<p>".$row['txt']."</p>
+												// 								</article>
+												// 							</div>
+												// 						</div>
+												// 					</div>
+												// 				</li>
+												// 			";
+												// 		}elseif($row['updates'] == 'expired'){
+												// 			echo "
+												// 				<li class='action-card col-lg-6 col-md-6 col-sm-12 ".$row['updates']."'>
+												// 					<div class='event-bx m-b30'>
+												// 						<div class='action-box'>
+												// 							<a href='#'><img src='model/uploads/".$row['uploads']."' style='height: 280px;object-fit: cover;' alt=''></a>
+												// 						</div>
+												// 						<div class='info-bx d-flex'>
+												// 							<div>
+												// 								<a href='#'><div class='event-time'>
+												// 									<div class='event-date'>". date('d', strtotime($row['date'])) ."</div>
+												// 									<div class='event-month'><b>". date('F', strtotime($row['date'])) ."</b></div>
+												// 									<div class='event-year'><b>". date('Y', strtotime($row['date'])) ."</b></div>
+												// 								</div></a>
+												// 							</div>
+												// 							<div class='event-info'>
+												// 								<article>
+												// 									<h4 class='event-title'>".$row['title']."<a href='#'>
 																						
-																					</a></h4>
-																					<ul class='media-post'>
-																						<li>
-																							<a href='#'><i class='fa fa-clock-o'></i> <b>9:20 PM</b></a>
-																						</li>
-																					</ul>
+												// 									</a></h4>
+												// 									<ul class='media-post'>
+												// 										<li>
+												// 											<a href='#'><i class='fa fa-clock-o'></i> <b>9:20 PM</b></a>
+												// 										</li>
+												// 									</ul>
 																					
-																						<p>".$row['txt']."</p>
-																				</article>
-																			</div>
-																		</div>
-																	</div>
-																</li>
-															";
-														}
-													}
-												}else{
-													echo "No Announcements Posted";
-												}
+												// 										<p>".$row['txt']."</p>
+												// 								</article>
+												// 							</div>
+												// 						</div>
+												// 					</div>
+												// 				</li>
+												// 			";
+												// 		}
+												// 	}
+												// }else{
+												// 	echo "No Announcements Posted";
+												// }
 
-											?>
+											?> -->
 										</ul>
 										</div>
 													
@@ -432,11 +435,11 @@
 				<div class="container">
 					<div class="d-flex align-items-stretch">
 						<div class="pt-logo mr-auto">
-							<img src="assets/images/logo-white1111.png" style="width: 320px;; height: 60px;" alt=""/>
+							<img src="assets/images/bfclogo.png" style="width: 65px;; height: 60px;" alt=""/>
 						</div>
 						<div class="pt-social-link">
 							<ul class="list-inline m-a0">
-								<li><a href="https://facebook.com/profile.php?id=100069445621624&mibextid=ZbWKwL" class="btn-link" target="blank"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://www.facebook.com/profile.php?id=100063941023672&mibextid=ZbWKwL" class="btn-link" target="blank"><i class="fa fa-facebook"></i></a></li>
 							</ul>
 						</div>
 						<div class="pt-btn-join">
@@ -449,7 +452,7 @@
                 <div class="row">
 					<div class="col-lg-3 col-md-12 col-sm-12 footer-col-3">
                         <div class="widget">
-                        	<center><img src="assets/images/logo-2.jpg" style="width: 170px; height: 170px;"></center>
+                        	<center><img src="assets/images/bfclogo.png" style="width: 170px; height: 170px;"></center>
                         </div>
                     </div>
 					<div class="col-12 col-lg-9 col-md-12 col-sm-12">
@@ -479,9 +482,9 @@
 								<div class="widget footer_widget">
 									<h5 class="footer-title">Contact Us</h5>
 									<ul>
-										<li><a href="https://www.google.com/maps/dir//4G7H%2B6FW+Bolocboloc+Gym,+brgy,+Barili,+Cebu/@10.1130842,123.5284076,96m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x33a9630643dd013b:0x6265dd3ae93a9dd5!2m2!1d123.528696!2d10.1131061" target="blank">Bolocboloc Gym, Barili, Cebu City,<br>6036 Barili</a></li>
-										<li><a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=New+Stranger+from:&to=brgybolocboloc.infosys@gmail.com" target="blank">brgybolocboloc.infosys@gmail.com</a></li>
-										<li><a href="#">09104935212</a></li>
+										<li><a href="https://goo.gl/maps/HK8ZMEauYD8vPbvQ9" target="blank">Barili, Public Kiosk<br>6036 Barili</a></li>
+										<li><a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=New+Stranger+from:&to=barililgu@gmail.com" target="blank">barili.lgu@gmail.com</a></li>
+										<li><a href="#">0908 388 3647</a></li>
 									</ul>
 								</div>
 							</div>							
