@@ -564,14 +564,13 @@
         <!-- Main Slider -->
 		<div class="content-block">
             
-			<!-- Our Services -->
-			<div class="section-area content-inner service-info-bx">
+		<div class="section-area content-inner service-info-bx">
                 <div class="container">
 					<div class="row">
 						<div class="col-xl col-lg col-md col-sm">
 							<div class="service-bx">
 								<div class="action-box">
-									<img src="assets/images/our-services/pic1.jpg" alt="">
+									<img src="assets/images/slider/slider4.png" alt="">
 								</div>
 								<div class="info-bx text-center">
 									<div class="feature-box-sm radius bg-white">
@@ -585,7 +584,7 @@
 						<div class="col-xl col-lg col-md col-sm">
 							<div class="service-bx">
 								<div class="action-box">
-									<img src="assets/images/our-services/pic1.jpg" alt="">
+									<img src="assets/images/slider/slider4.png" alt="">
 								</div>
 								<div class="info-bx text-center">
 									<div class="feature-box-sm radius bg-white">
@@ -599,7 +598,7 @@
 						<div class="col-xl col-lg col-md col-sm">
 							<div class="service-bx m-b0">
 								<div class="action-box">
-									<img src="assets/images/our-services/pic1.jpg" alt="">
+									<img src="assets/images/slider/slider4.png" alt="">
 								</div>
 								<div class="info-bx text-center">
 									<div class="feature-box-sm radius bg-white">
@@ -613,7 +612,7 @@
 						<div class="col-xl col-lg col-md col-sm">
 							<div class="service-bx m-b0">
 								<div class="action-box">
-									<img src="assets/images/our-services/pic1.jpg" alt="">
+									<img src="assets/images/slider/slider4.png" alt="">
 								</div>
 								<div class="info-bx text-center">
 									<div class="feature-box-sm radius bg-white">
