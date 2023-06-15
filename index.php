@@ -192,7 +192,7 @@
 									<li><a href="#">U13</a></li>
 									<li><a href="#">U15</a></li>
 								</ul>
-							</li>
+							</li>;
 							<li><a href="all-events.php">Upcoming Events</a></li>
 							<li><a href="#">Sponsorship</a></li>
 							<li><a href="contact.php">Contacts</a></li>
