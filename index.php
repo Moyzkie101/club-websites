@@ -312,7 +312,7 @@
 								data-paddingbottom="[10,10,10,10]"
 								data-paddingleft="[0,0,0,0]"
 								style="z-index: 6; font-family:rubik; font-weight:700; text-align:center; white-space: normal;">
-									SPORTS <span style="color: #5691cf">CLUB</span>
+									BARILI FOOTBALL <span style="color: #5691cf">CLUB</span>
 							</div>
 
 							<!-- LAYER NR. 3 -->
