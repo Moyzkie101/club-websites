@@ -146,7 +146,7 @@
                 <div class="container clearfix">
 					<!-- Header Logo ==== -->
 					<div class="menu-logo">
-						<a href="index-2.php"><img src="assets/images/bfclogo.png" style="width: 80px!important;" alt=""></a>
+						<a href="index-2.php"><img src="assets/images/bfclogo.png" style="width: 65px!important;" alt=""></a>
 					</div>
 					<!-- Mobile Nav Button ==== -->
                     <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
