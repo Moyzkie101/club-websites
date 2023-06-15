@@ -192,7 +192,7 @@
 									<li><a href="#">U13</a></li>
 									<li><a href="#">U15</a></li>
 								</ul>
-							</li>;
+							</li>
 							<li><a href="all-events.php">Upcoming Events</a></li>
 							<li><a href="#">Sponsorship</a></li>
 							<li><a href="contact.php">Contacts</a></li>
@@ -420,7 +420,7 @@
 						data-param9="" data-param10="" 
 						data-description="Science says that Women are generally happier">
 							<!-- MAIN IMAGE -->
-							<img src="assets/images/slider/slide222.jpeg" alt="" 
+							<img src="assets/images/slider/slide222.jpg" alt="" 
 								data-bgposition="center center" 
 								data-bgfit="cover" 
 								data-bgrepeat="no-repeat" 
@@ -589,7 +589,7 @@
 								</div>
 								<div class="info-bx text-center">
 									<div class="feature-box-sm radius bg-white">
-										<i class="fa fa-envelope-open text-success"></i>
+										<i class="fa fa-users text-success"></i>
 									</div>
 									<h4><a href="all-announcements.php">Members</a></h4>
 									<a href="all-announcements.php" class="btn radius-xl">Learn More</a>
@@ -603,7 +603,7 @@
 								</div>
 								<div class="info-bx text-center">
 									<div class="feature-box-sm radius bg-white">
-										<i class="fa fa-bank text-success"></i>
+										<i class="fa fa-address-book text-success"></i>
 									</div>
 									<h4><a href="org-structure.php">Coaches</a></h4>
 									<a href="services.php" class="btn radius-xl">Learn More</a>
@@ -617,7 +617,7 @@
 								</div>
 								<div class="info-bx text-center">
 									<div class="feature-box-sm radius bg-white">
-										<i class="fa fa-bank text-success"></i>
+										<i class="fa fa-address-book text-success"></i>
 									</div>
 									<h4><a href="services.php">Attendance</a></h4>
 									<a href="services.php" class="btn radius-xl">Learn More</a>
