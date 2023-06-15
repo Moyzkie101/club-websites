@@ -575,7 +575,7 @@
 								</div>
 								<div class="info-bx text-center">
 									<div class="feature-box-sm radius bg-white">
-										<i class="fa fa-book text-success"></i>
+										<i class="fa fa-futbol-o text-success"></i>
 									</div>
 									<h4><a href="aboutus.php">The Club</a></h4>
 									<a href="aboutus.php" class="btn radius-xl">Learn More</a>
