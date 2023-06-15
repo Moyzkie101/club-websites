@@ -6,9 +6,10 @@ page_protect();
 <html lang="en">
 <head> 
 
+
     
     <title>SPORTS CLUB  | Dashboard </title>
-
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/bfclogo.png">
     <link rel="stylesheet" href="../../css1/style.css"  id="style-resource-5">
     <script type="text/javascript" src="../../js1/Script.js"></script>
     <link rel="stylesheet" href="../../css1/dashMain.css">

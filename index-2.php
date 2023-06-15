@@ -146,7 +146,7 @@
                 <div class="container clearfix">
 					<!-- Header Logo ==== -->
 					<div class="menu-logo">
-						<a href="index-2.php"><img src="assets/images/bfclogo.png" style="width: 80px!important;" alt=""></a>
+						<a href="index-2.php"><img src="assets/images/bfclogo.png" style="width: 65px!important;" alt=""></a>
 					</div>
 					<!-- Mobile Nav Button ==== -->
                     <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -692,7 +692,7 @@
     </div>
 	<!-- Page Content Box END ==== -->
 	<!-- Footer ==== -->
-    <footer>
+	<footer>
         <div class="footer-top">
 			<div class="pt-exebar">
 				<div class="container">
@@ -702,7 +702,7 @@
 						</div>
 						<div class="pt-social-link">
 							<ul class="list-inline m-a0">
-								<li><a href="https://facebook.com/profile.php?id=100069445621624&mibextid=ZbWKwL" class="btn-link" target="blank"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://www.facebook.com/profile.php?id=100063941023672&mibextid=ZbWKwL" class="btn-link" target="blank"><i class="fa fa-facebook"></i></a></li>
 							</ul>
 						</div>
 						<div class="pt-btn-join">
@@ -745,9 +745,9 @@
 								<div class="widget footer_widget">
 									<h5 class="footer-title">Contact Us</h5>
 									<ul>
-										<li><a href="https://www.google.com/maps/dir//4G7H%2B6FW+Bolocboloc+Gym,+brgy,+Barili,+Cebu/@10.1130842,123.5284076,96m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x33a9630643dd013b:0x6265dd3ae93a9dd5!2m2!1d123.528696!2d10.1131061" target="blank">Bolocboloc Gym, Barili, Cebu City,<br>6036 Barili</a></li>
-										<li><a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=New+Stranger+from:&to=brgybolocboloc.infosys@gmail.com" target="blank">brgybolocboloc.infosys@gmail.com</a></li>
-										<li><a href="#">09104935212</a></li>
+										<li><a href="https://goo.gl/maps/HK8ZMEauYD8vPbvQ9" target="blank">Barili, Public Kiosk<br>6036 Barili</a></li>
+										<li><a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=New+Stranger+from:&to=barililgu@gmail.com" target="blank">barili.lgu@gmail.com</a></li>
+										<li><a href="#">0908 388 3647</a></li>
 									</ul>
 								</div>
 							</div>							

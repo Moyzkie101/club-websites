@@ -19,9 +19,9 @@
 		<meta name="format-detection" content="telephone=no">
 		
 		<!-- <link rel="icon" href="assets/images/logo2.png" type="image/x-icon" /> -->
-		<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo-2.jpg" />
+		<link rel="shortcut icon" type="image/x-icon" href="assets/images/bfclogo.png" />
 		<!-- <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo2.png" /> -->
-		<title>Barangay Bolocboloc | LOGIN</title>
+		<title>The Club | LOGIN</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		

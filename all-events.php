@@ -1,39 +1,39 @@
 <!-- <?php 
-$database	= 'barsims';
-$username	= 'root';
-$host		= 'localhost';
-$password	= '';
+//$database	= 'barsims';
+//$username	= 'root';
+//$host		= 'localhost';
+//$password	= '';
 
-ini_set('display_errors',1);
-error_reporting(E_ALL);
-mysqli_report(MYSQLI_REPORT_ERROR | E_DEPRECATED | E_STRICT);
+//ini_set('display_errors',1);
+//error_reporting(E_ALL);
+//mysqli_report(MYSQLI_REPORT_ERROR | E_DEPRECATED | E_STRICT);
 
-date_default_timezone_set('Asia/Manila');
+//date_default_timezone_set('Asia/Manila');
 // error_reporting(0);
-session_start();
-$conn = new mysqli($host,$username,$password,$database);
+//session_start();
+//$conn = new mysqli($host,$username,$password,$database);
 
-if($conn->connect_error){
-	die("Connection Failed: ". $conn->connect_error());
-} ?> -->
+//if($conn->connect_error){
+//	die("Connection Failed: ". $conn->connect_error());
+//} 
+// ?> -->
+ <!-- <?php include 'server/server.php' ?>
 
-<?php include 'server/server.php' ?>
+ //<?php
+//     $query = "SELECT * FROM tbl_announce WHERE id = '1'";
+//     $result = $conn->query($query);
+// 	$row = $result->fetch_assoc();
 
-<?php
-    $query = "SELECT * FROM tbl_announce WHERE id = '1'";
-    $result = $conn->query($query);
-	$row = $result->fetch_assoc();
-
-	$query1 = "SELECT * FROM tblbrgy_info WHERE id = '1'";
-    $result1 = $conn->query($query1);
+// 	$query1 = "SELECT * FROM tblbrgy_info WHERE id = '1'";
+//     $result1 = $conn->query($query1);
 
 
-	$rows = $result1->fetch_assoc();
+// 	$rows = $result1->fetch_assoc();
 
 
 	
-?>
-
+// ?>
+-->
 
 
 <!DOCTYPE html>
@@ -60,7 +60,7 @@ if($conn->connect_error){
 	<meta name="format-detection" content="telephone=no">
 
 	<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo-2.jpg" />
-	<title>The Club | Events/title>
+	<title>The Club | Events</title>
 	<!-- MOBILE SPECIFIC ============================================= -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
