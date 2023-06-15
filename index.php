@@ -264,7 +264,7 @@
 						data-param9="" data-param10="" 
 						data-description="Science says that Women are generally happier">
 							<!-- MAIN IMAGE -->
-							<img src="assets/images/slider/slide1.jpeg" alt="" 
+							<img src="assets/images/slider/slide1.jpg" alt="" 
 								data-bgposition="center center" 
 								data-bgfit="cover" 
 								data-bgrepeat="no-repeat" 
