@@ -564,14 +564,13 @@
         <!-- Main Slider -->
 		<div class="content-block">
             
-			<!-- Our Services -->
-			<div class="section-area content-inner service-info-bx">
+		<div class="section-area content-inner service-info-bx">
                 <div class="container">
 					<div class="row">
 						<div class="col-xl col-lg col-md col-sm">
 							<div class="service-bx">
 								<div class="action-box">
-									<img src="assets/images/our-services/pic1.jpg" alt="">
+									<img src="assets/images/slider/slider4.png" alt="">
 								</div>
 								<div class="info-bx text-center">
 									<div class="feature-box-sm radius bg-white">
@@ -585,7 +584,7 @@
 						<div class="col-xl col-lg col-md col-sm">
 							<div class="service-bx">
 								<div class="action-box">
-									<img src="assets/images/our-services/pic1.jpg" alt="">
+									<img src="assets/images/slider/slider4.png" alt="">
 								</div>
 								<div class="info-bx text-center">
 									<div class="feature-box-sm radius bg-white">
@@ -599,7 +598,7 @@
 						<div class="col-xl col-lg col-md col-sm">
 							<div class="service-bx m-b0">
 								<div class="action-box">
-									<img src="assets/images/our-services/pic1.jpg" alt="">
+									<img src="assets/images/slider/slider4.png" alt="">
 								</div>
 								<div class="info-bx text-center">
 									<div class="feature-box-sm radius bg-white">
@@ -613,7 +612,7 @@
 						<div class="col-xl col-lg col-md col-sm">
 							<div class="service-bx m-b0">
 								<div class="action-box">
-									<img src="assets/images/our-services/pic1.jpg" alt="">
+									<img src="assets/images/slider/slider4.png" alt="">
 								</div>
 								<div class="info-bx text-center">
 									<div class="feature-box-sm radius bg-white">
@@ -699,7 +698,7 @@
 				<div class="container">
 					<div class="d-flex align-items-stretch">
 						<div class="pt-logo mr-auto">
-							<img src="assets/images/logo-white1111.png" style="width: 320px;; height: 60px;" alt=""/>
+							<img src="assets/images/bfclogo.png" style="width: 65px;; height: 60px;" alt=""/>
 						</div>
 						<div class="pt-social-link">
 							<ul class="list-inline m-a0">
@@ -716,7 +715,7 @@
                 <div class="row">
 					<div class="col-lg-3 col-md-12 col-sm-12 footer-col-3">
                         <div class="widget">
-                        	<center><img src="assets/images/logo-2.jpg" style="width: 170px; height: 170px;"></center>
+                        	<center><img src="assets/images/bfclogo.png" style="width: 170px; height: 170px;"></center>
                         </div>
                     </div>
 					<div class="col-12 col-lg-9 col-md-12 col-sm-12">
