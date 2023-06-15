@@ -603,7 +603,7 @@
 								</div>
 								<div class="info-bx text-center">
 									<div class="feature-box-sm radius bg-white">
-										<i class="fa fa-address-book text-success"></i>
+										<i class="fa fa-user-circle-o text-success"></i>
 									</div>
 									<h4><a href="org-structure.php">Coaches</a></h4>
 									<a href="services.php" class="btn radius-xl">Learn More</a>
