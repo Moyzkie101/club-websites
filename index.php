@@ -59,7 +59,7 @@
 	<meta name="format-detection" content="telephone=no">
 	
 	<!-- <link rel="icon" href="assets/images/logo-2.jpg" type="image/x-icon" /> -->
-		<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo-2.jpg" />
+		<link rel="shortcut icon" type="image/x-icon" href="assets/images/bfclogo.png" />
 		<title>The Club</title>
 	
 	<!-- MOBILE SPECIFIC ============================================= -->
@@ -146,7 +146,7 @@
                 <div class="container clearfix">
 					<!-- Header Logo ==== -->
 					<div class="menu-logo">
-						<a href="index-2.php"><img src="assets/images/logo-white1111.png" style="width: 800px!important;" alt=""></a>
+						<a href="index-2.php"><img src="assets/images/bfclogo.png" style="width: 80px!important;" alt=""></a>
 					</div>
 					<!-- Mobile Nav Button ==== -->
                     <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
