@@ -1,37 +1,3 @@
- <!-- <?php 
-//$database	= 'barsims';
-//$username	= 'root';
-//$host		= 'localhost';
-//$password	= '';
-
-//ni_set('display_errors',1);
-//error_reporting(E_ALL);
-//mysqli_report(MYSQLI_REPORT_ERROR | E_DEPRECATED | E_STRICT);
-// error_reporting(0);
-//session_start();
-//$conn = new mysqli($host,$username,$password,$database);
-
-//if($conn->connect_error){
-//	die("Connection Failed: ". $conn->connect_error());
-//} ?> -->
-
-<?php include 'server/server.php' ?>
-
-<?php
-  //  $query = "SELECT * FROM tbl_announce WHERE id = '1'";
-    //$result = $conn->query($query);
-	//$row = $result->fetch_assoc();
-
-	//$query1 = "SELECT * FROM tblbrgy_info WHERE id = '1'";
-    //$result1 = $conn->query($query1);
-
-
-	//$rows = $result1->fetch_assoc();
-
-
-	
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,7 +11,6 @@
 	<meta name="keywords" content="" />
 	<meta name="author" content="" />
 	<meta name="robots" content="" />
-	<meta name="theme-color" content="#810725" />
 	
 	<!-- DESCRIPTION -->
 	<meta name="description" content="The Club" />
@@ -56,13 +21,14 @@
 	<meta name="og:image" content="images/preview.png" align="middle"/>
 	<meta name="format-detection" content="telephone=no">
 	
-	<!-- <link rel="icon" href="assets/images/logo-2.jpg" type="image/x-icon" /> -->
-		<link rel="shortcut icon" type="image/x-icon" href="assets/images/bfclogo.png">
-		<title>The Club</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo-2.jpg" />
+		<title>The Club | U13 Players</title>
 	
 	<!-- MOBILE SPECIFIC ============================================= -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
+	
+	<!-- All PLUGINS CSS ============================================= -->
 	<link rel="stylesheet" type="text/css" href="assets/css/assets.css">
 	
 	<!-- TYPOGRAPHY ============================================= -->
@@ -72,41 +38,32 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/shortcodes/shortcodes.css">
 	
 	<!-- STYLESHEETS ============================================= -->
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">	
 	<link rel="stylesheet" type="text/css" href="assets/css/loader.css">
 
-	
-	<!-- REVOLUTION SLIDER CSS ============================================= -->
-	<link rel="stylesheet" type="text/css" href="assets/vendors/revolution/css/layers.css">
-	<link rel="stylesheet" type="text/css" href="assets/vendors/revolution/css/settings.css">
-	<link rel="stylesheet" type="text/css" href="assets/vendors/revolution/css/navigation.css">
-	
-
-	<!-- REVOLUTION SLIDER END -->	
 </head>
 <style type="text/css">/*===================== 	Premery bg color =====================*/
 
 
-:root {	--success: #5691cf;	--sc-success: #5691cf;}
+:root {	--primary: #5691cf;	--sc-primary: #5691cf;}
 
-/* Hex */.bg-success,.btn,.comments-area .comment-form p input[type="submit"],.pagination > .active > a,.pagination > .active > span,.pagination > .active > a:hover,.pagination > .active > span:hover,.pagination > .active > a:focus,.pagination > .active > span:focus,.feature-filters .active > [class*="btn"],.list-num-count > li:before,.pagination-bx.success .pagination > li > a, .pagination-bx.success .pagination > li > span,button.back-to-top,.rev-btn{    background-color: #5691cf;}
+/* Hex */.bg-primary,.btn,.comments-area .comment-form p input[type="submit"],.pagination > .active > a,.pagination > .active > span,.pagination > .active > a:hover,.pagination > .active > span:hover,.pagination > .active > a:focus,.pagination > .active > span:focus,.feature-filters .active > [class*="btn"],.list-num-count > li:before,.pagination-bx.primary .pagination > li > a, .pagination-bx.primary .pagination > li > span,button.back-to-top,.rev-btn{    background-color: #5691cf;}
 
-/*Hex color :hover */.btn:active,.btn:hover,.btn:focus,.active > .btn,.bg-success-dark,.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus ,.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus,.sidenav .closebtn:hover,.sidenav .closebtn:focus,.owl-btn-1.success .owl-prev:hover, .owl-btn-1.success .owl-next:hover,.owl-btn-2.success .owl-prev:hover, .owl-btn-2.success .owl-next:hover,.pagination-bx.success .pagination > li > a:hover, .pagination-bx.success .pagination > li > span:hover,.pagination-bx.success .pagination > li.active > span,.pagination-bx.success .pagination > li.active > a{    background-color: #5691cf;}
+/*Hex color :hover */.btn:active,.btn:hover,.btn:focus,.active > .btn,.bg-primary-dark,.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus ,.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus,.sidenav .closebtn:hover,.sidenav .closebtn:focus,.owl-btn-1.primary .owl-prev:hover, .owl-btn-1.primary .owl-next:hover,.owl-btn-2.primary .owl-prev:hover, .owl-btn-2.primary .owl-next:hover,.pagination-bx.primary .pagination > li > a:hover, .pagination-bx.primary .pagination > li > span:hover,.pagination-bx.primary .pagination > li.active > span,.pagination-bx.primary .pagination > li.active > a{    background-color: #5691cf;}
 
-/*===================== 	Premery text color =====================*/a,.text-success,.success li:before,.menu-links .nav > li.active > a,.menu-links .nav > li:hover > a,.menu-links .nav > li .mega-menu > li ul a:hover,.menu-links .nav > li .sub-menu li:hover > a,footer a:active,footer a:focus,footer a:hover,footer h1 a,footer h2 a,footer h3 a,footer h4 a,footer h5 a,footer h6 a,footer p a,.testimonial-1 .testimonial-position,.acod-head a:after,.acod-head a,.acod-head a:hover,.acod-head a.collapsed:hover,.ttr-tabs .nav-tabs > li > a i,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,.btn.outline,.btn-link:hover{    color: #5691cf;}
+/*===================== 	Premery text color =====================*/a,.text-primary,.primary li:before,.menu-links .nav > li.active > a,.menu-links .nav > li:hover > a,.menu-links .nav > li .mega-menu > li ul a:hover,.menu-links .nav > li .sub-menu li:hover > a,footer a:active,footer a:focus,footer a:hover,footer h1 a,footer h2 a,footer h3 a,footer h4 a,footer h5 a,footer h6 a,footer p a,.testimonial-1 .testimonial-position,.acod-head a:after,.acod-head a,.acod-head a:hover,.acod-head a.collapsed:hover,.ttr-tabs .nav-tabs > li > a i,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,.btn.outline,.btn-link:hover{    color: #5691cf;}
 
 /*===================== 	Secondery bg color =====================*/.bg-secondry {    background-color: #5691cf;}
 
-/*===================== 	Secondery text color =====================*/.text-secondry {    color: #a2cffe;}.ovpr-light:after, .ovpr-middle:after, .ovpr-dark:after,.ovpr:after,.bg-success{	background-color:#5691cf;}.footer-top,.footer-bottom {	background-color: #121921;}.ovbl-middle::after, .ovbl-light::after, .ovbl-dark::after{	
+/*===================== 	Secondery text color =====================*/.text-secondry {    color: #5691cf;}.ovpr-light:after, .ovpr-middle:after, .ovpr-dark:after,.ovpr:after,.bg-primary{	background-color:#5691cf;}.footer-top,.footer-bottom {	background-color: #121921;}.ovbl-middle::after, .ovbl-light::after, .ovbl-dark::after{	
 
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#267621+0,#267621+50,110038+100 */	background: #5691cf; 
 
 	/* Old browsers */	background: -moz-linear-gradient(45deg, #5691cf 0%, #5691cf 50%, #5691cf 100%); 
 
-	/* FF3.6-15 */	background: -webkit-linear-gradient(45deg, #a2cffe 0%,#a2cffe 50%,#a2cffe 100%); 
+	/* FF3.6-15 */	background: -webkit-linear-gradient(45deg, #5691cf 0%,#5691cf 50%,#5691cf 100%); 
 
-	/* Chrome10-25,Safari5.1-6 */	background: linear-gradient(45deg, #a2cffe 0%,#a2cffe 50%,#a2cffe 100%); 
+	/* Chrome10-25,Safari5.1-6 */	background: linear-gradient(45deg, #5691cf 0%,#5691cf 50%,#5691cf 100%); 
 
 	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5691cf', endColorstr='#5691cf',GradientType=1 ); 
 
@@ -116,7 +73,7 @@
 
 	/* Old browsers */	background: -moz-linear-gradient(45deg, #5691cf 0%, #5691cf 100%); 
 
-	/* FF3.6-15 */	background: -webkit-linear-gradient(45deg, #ut us5691cf 0%,#5691cf 100%); 
+	/* FF3.6-15 */	background: -webkit-linear-gradient(45deg, #5691cf 0%,#5691cf 100%); 
 
 	/* Chrome10-25,Safari5.1-6 */	background: linear-gradient(45deg, #5691cf 0%,#5691cf 100%); 
 
@@ -125,26 +82,33 @@
 	/* IE6-9 fallback on horizontal gradient */}/* Secondry Color */
 
 .portfolio-bx .portfolio-info-bx,.btn.outline:hover,.course-info-list ul li a.active, .course-info-list ul li a:hover,.btn,.profile-tabnav .nav li a.active,button.back-to-top,.upcoming-event-carousel.owl-btn-1 .owl-prev, .upcoming-event-carousel.owl-btn-1 .owl-next,.courses-carousel .owl-nav .owl-next, .courses-carousel .owl-nav .owl-prev, .recent-news-carousel .owl-nav .owl-next, .recent-news-carousel .owl-nav .owl-prev, .testimonial-carousel .owl-nav .owl-next, .testimonial-carousel .owl-nav .owl-prev{	background-color:#5691cf;	color:#fff;}.footer_widget ul li a:hover,[class*="ovbl-"] .counter-style-1 .counter-text,.header-transparent .secondary-menu .btn-link:hover,.header-transparent .menu-links .nav > li:hover > a,.header-transparent .menu-links .nav > li.active > a{	color:#5691cf;}.course-info-list ul li a.active:hover, .course-info-list ul li a:hover,.btn:hover,.profile-tabnav .nav li a.active:hover,button.back-to-top:hover,.upcoming-event-carousel.owl-btn-1 .owl-prev:hover, .upcoming-event-carousel.owl-btn-1 .owl-next:hover,.courses-carousel .owl-nav .owl-next:hover, .courses-carousel .owl-nav .owl-prev:hover, .recent-news-carousel .owl-nav .owl-next:hover, .recent-news-carousel .owl-nav .owl-prev:hover, .testimonial-carousel .owl-nav .owl-next:hover, .testimonial-carousel .owl-nav .owl-prev:hover{	background-color:#5691cf;	color:#fff;}.heading-bx.left .title-head{	border-color:#5691cf;	}
+
 .window-loading{
 	overflow: hidden;
 }
+
 </style>
 
+<style type="text/css">
+	ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+</style>
 <body id="bg">
 <div class="page-wraper">
-
 	<div class="loader">
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen hidden></iframe>
 	</div>
-	<!-- Header Top ==== -->
-    <header class="header rs-nav header-transparent">
-
+    <!-- Header Top ==== -->
+    <header class="header rs-nav">
 		<div class="sticky-header navbar-expand-lg">
             <div class="menu-bar clearfix">
                 <div class="container clearfix">
 					<!-- Header Logo ==== -->
 					<div class="menu-logo">
-						<a href="index-2.php"><img src="assets/images/bfclogo.png" style="width: 65px!important;" alt=""></a>
+						<a href="index-2.php"><img src="assets/images/logo-white1111" alt=""></a>
 					</div>
 					<!-- Mobile Nav Button ==== -->
                     <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -155,28 +119,28 @@
 					<!-- Author Nav ==== -->
                     <div class="secondary-menu">
                         <div class="secondary-inner">
-                        	<?php
-                        		if(isset($_SESSION['role'])){
-                        			  ?>
-                        			<a href="model/logout.php">Log Out</a><?php 
-                        		}else{
-                        			?>
-                        			<a href="login_access.php">Login</a>
-                        			<?php
-                        		}
-                         	?>
-						</div>
-						<div class="secondary-inner">
-                        	<?php
-                        		if(isset($_SESSION['role'])){
-                        			  ?>
-                        			<a href="model/logout.php">Log Out</a><?php 
-                        		}
-                         	?>
+                            <?php
+	                        	if(isset($_SESSION['role'])){
+	                        		?>
+	                        		<a href="model/logout.php">Log Out</a><?php 
+	                        	}else{
+	                        		?>
+	                        		<a href="login_access.php">Login</a>
+	                        		<?php
+	                        	}
+	                        ?>
 						</div>
                     </div>
+					<!-- Search Box ==== -->
+                    <div class="nav-search-bar">
+                        <form action="#">
+                            <input name="search" value="" type="text" class="form-control" placeholder="Type to search">
+                            <span><i class="ti-search"></i></span>
+                        </form>
+						<span id="search-remove"><i class="ti-close"></i></span>
+                    </div>
 					<!-- Navigation Menu ==== -->
-                    <div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
+					<div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
 						<div class="menu-logo">
 							<img src="assets/images/logo-black.png" alt="">
 						</div>
@@ -185,10 +149,10 @@
 							<li><a href="org-structure.php">Coaches</a></li>
 							<li><a href="javascript:;">Players<i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
-									<li><a href="#">U9</a></li>
-									<li><a href="#">U11</a></li>
-									<li><a href="#">U13</a></li>
-									<li><a href="#">U15</a></li>
+									<li><a href="u9.php">U9</a></li>
+									<li><a href="u11.php">U11</a></li>
+									<li><a href="u13.php">U13</a></li>
+									<li><a href="u15.php">U15</a></li>
 								</ul>
 							</li>
 							<li><a href="all-events.php">Upcoming Events</a></li>
@@ -231,14 +195,14 @@
             </div>
         </div>
     </header>
-    <!-- header END ==== -->	
+    <!-- header END ==== -->
     <!-- Inner Content Box ==== -->
     <div class="page-content bg-white">
         <!-- Page Heading Box ==== -->
-        <div class="page-banner ovbl-dark" style="background-image:url(assets/images/cover1.jpg);">
+        <div class="page-banner ovbl-dark" style="background-image:url(assets/images/cover2.jpeg);">
             <div class="container">
                 <div class="page-banner-entry">
-                    <h1 class="text-white">Barangay Bolocboloc History</h1>
+                    <h1 class="text-white">U13 Players</h1>
 				 </div>
             </div>
         </div>
@@ -246,50 +210,133 @@
 			<div class="container">
 				<ul class="list-inline">
 					<li><a href="home.php">Home</a></li>
-					<li>Our Story</li>
+					<li>U11 Players</li>
 				</ul>
 			</div>
 		</div>
 		<!-- Page Heading Box END ==== -->
-        <!-- Page Content Box ==== -->
-		<div class="content-block">
-
-
-			 <!-- Our Story ==== -->
-            <div class="section-area section-sp1">
+		<!-- contact area -->
+        <div class="content-block">
+			<!-- Portfolio  -->
+			<div class="section-area section-sp1">
                 <div class="container">
-					<div class="row align-items d-flex">
-						<div class="col-lg-7 col-md-12">
-							<div class="heading-bx left">
-								<h2 class="m-b10 title-head">Our <span> Story</span></h2>
+					 <div class="row">
+						<div class="col-lg-3 col-md-4 col-sm-12 m-b30">
+							<div class="profile-bx text-center">
+								<div class="user-thumb">
+									<img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 280px;">	
+								</div>
+								<div class="profile-info">
+									<h4> First Lastname</h4>
+									<span>Player</span>
+								</div>
 							</div>
-							<p style="text-align: justify; "><span style="font-size: 18px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;According to traditions, the name Bolocboloc is derived from the colorful waters which got a color from a fish that lived in the water. It's ever changing colors (boloc in dialect) had made the people call the place "Bolocboloc". One day a fishermen, hoping to catch a fish for lunch, caught the fish. When he turned around, to his surprise he saw that all the waters in the area was following him. In his fear, he climbed the nearest coconut tree and released the fish. It swam back to his home, and the rest of the water was returned to where it came from.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Another version, the barangay was named during the spanish Regime. A spring colors, and a murmuring "borocboroc" sound. One day two spanish soldiers passed by and asked the name of the flowing water. The two residents were not able to convey it in spanish so they just expressed it through sign language. The beautiful plants surrounding the place and it's amazing sound, the barangay was then named bolocboloc (from the word borocboroc) meaning the sound of the spring.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>The bolocboloc spring water are rich in sulfur, and can heals skin diseases.</b></span></p>
 						</div>
-						<div class="col-lg-5 col-md-12">
-							<div class="heading-bx left">
-								<h2 class="m-b10 title-head">Brgy. <span>Head</span></h2>
-							</div>	
-							<div class="row">
-								<div class="col-md-12">
-									<div class="profile text-center">
-										<div>
-											<img src="assets/images/org-structure/Captain1.png" style="width: 150px; height: 200px;">
+						<div class="col-lg-9 col-md-8 col-sm-12 m-b30">
+							<div class="profile-content-bx">
+								<div class="tab-content">
+									<div class="tab-pane active" id="courses">
+										<div class="profile-head">
+											<h3><span style="color: #5691cf">Players<br><span> Profile</h3>
+											<div class="feature-filters style1 ml-auto">
+												<ul class="filters" data-toggle="buttons">
+													<li data-filter="" class="btn active">
+														<input type="radio">
+														<a href="#"><span>All</span></a> 
+													</li>
+													<li data-filter="5" class="btn">
+														<input type="radio">
+														<a href="#"><span>Player 1</span></a> 
+													</li>
+													<li data-filter="10" class="btn">
+														<input type="radio">
+														<a href="#"><span>Player 2</span></a> 
+													</li>
+													<li data-filter="15" class="btn">
+														<input type="radio">
+														<a href="#"><span>Player 3</span></a> 
+													</li>
+													<li data-filter="20" class="btn">
+														<input type="radio">
+														<a href="#"><span>Player 4</span></a> 
+													</li>
+													<li data-filter="25" class="btn">
+														<input type="radio">
+														<a href="#"><span>Player 5</span></a> 
+													</li>
+												</ul>
+											</div>
 										</div>
-										<div class="profile-info">
-											<h4>Hon. Aquiles O. Cañete</h4>
-											<span>Barangay Captain</span>
+										<div class="courses-filter">
+											<div class="clearfix">
+												<ul id="masonry" class="ttr-gallery-listing magnific-image row">
+													<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 5">
+														<div class="cours-bx">
+															<div class="action-box">
+																<img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;">	
+															</div>
+															<div class="info-bx text-center">
+																<h5><a href="#">First Lastname</a></h5>
+																<span><b>Player 1</b></span><br>
+															</div>
+														</div>
+													</li>
+													<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 10">
+														<div class="cours-bx">
+															<div class="action-box">
+																 <img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;"> 	
+															</div>
+															<div class="info-bx text-center">
+																 <h5><a href="#">First Lastname</a></h5>
+																<span><b>Player 2</b></span><br> 
+															</div>
+														</div>
+													</li>
+
+														<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 15">
+														<div class="cours-bx">
+															<div class="action-box">
+																 <img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;"> 	
+															</div>
+															<div class="info-bx text-center">
+																 <h6><a href="#">First Lastname</a></h6>
+																<span><b>Player 3</b></span><br> 
+															</div>
+														</div>
+													</li>
+													<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 20">
+														<div class="cours-bx">
+															<div class="action-box">
+																 <img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;"> 	
+															</div>
+															<div class="info-bx text-center">
+																 <h5><a href="#">First Lastname</a></h5>
+																<span><b>Player 4</b></span><br> 
+															</div>
+														</div>
+													</li>
+													<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 25">
+														<div class="cours-bx">
+															<div class="action-box">
+																 <img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;"> 	
+															</div>
+															<div class="info-bx text-center">
+																 <h6><a href="#">First Lastname</a></h6>
+																<span><b>Player 5</b></span><br> 
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
 										</div>
-									</div>
-								</div>		
-							</div>		   
+									</div> 
+								</div>
+							</div>
 						</div>
-					</div>
-					
-                </div>
+				</div>
             </div>
-            <!-- Our Story End -->	
-			
-			        </div>
+			<!-- contact area END -->
+        </div>
 		<!-- Page Content Box END ==== -->
     </div>
 	<!-- Page Content Box END ==== -->
@@ -372,7 +419,7 @@
 		document.addEventListener("contextmenu", function(e){
 	    e.preventDefault();
 		}, false);
-	</script>			
+	</script>
 </div>
 <!-- External JavaScripts -->
 <script src="assets/js/jquery.min.js"></script>

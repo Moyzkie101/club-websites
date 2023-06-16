@@ -1,37 +1,3 @@
-<!-- <?php 
-$database	= 'barsims';
-$username	= 'root';
-$host		= 'localhost';
-$password	= '';
-
-ini_set('display_errors',1);
-error_reporting(E_ALL);
-mysqli_report(MYSQLI_REPORT_ERROR | E_DEPRECATED | E_STRICT);
-// error_reporting(0);
-session_start();
-$conn = new mysqli($host,$username,$password,$database);
-
-if($conn->connect_error){
-	die("Connection Failed: ". $conn->connect_error());
-} ?> -->
-
-<?php include 'server/server.php' ?>
-
-<?php
-    $query = "SELECT * FROM tbl_announce WHERE id = '1'";
-    $result = $conn->query($query);
-	$row = $result->fetch_assoc();
-
-	$query1 = "SELECT * FROM tblbrgy_info WHERE id = '1'";
-    $result1 = $conn->query($query1);
-
-
-	$rows = $result1->fetch_assoc();
-
-
-	
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,20 +13,20 @@ if($conn->connect_error){
 	<meta name="robots" content="" />
 	
 	<!-- DESCRIPTION -->
-	<meta name="description" content="Barangay Bolocboloc" />
+	<meta name="description" content="The Club" />
 	
 	<!-- OG -->
-	<meta property="og:title" content="Barangay Bolocboloc" />
-	<meta property="og:description" content="Barangay Bolocboloc" />
+	<meta property="og:title" content="The Club" />
+	<meta property="og:description" content="The Club" />
 	<meta name="og:image" content="images/preview.png" align="middle"/>
 	<meta name="format-detection" content="telephone=no">
 	
-	<link rel="icon" href="assets/images/logo2.png" type="image/x-icon" />
-	<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo2.png" />
-	<title>Barangay Bolocboloc | VISION & MISSION</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo-2.jpg" />
+		<title>The Club | U9 Players</title>
 	
 	<!-- MOBILE SPECIFIC ============================================= -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 	
 	<!-- All PLUGINS CSS ============================================= -->
 	<link rel="stylesheet" type="text/css" href="assets/css/assets.css">
@@ -123,6 +89,13 @@ if($conn->connect_error){
 
 </style>
 
+<style type="text/css">
+	ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+</style>
 <body id="bg">
 <div class="page-wraper">
 	<div class="loader">
@@ -135,7 +108,7 @@ if($conn->connect_error){
                 <div class="container clearfix">
 					<!-- Header Logo ==== -->
 					<div class="menu-logo">
-						<a href="index-2.php"><img src="assets/images/logo-black.png" alt=""></a>
+						<a href="index-2.php"><img src="assets/images/logo-white1111" alt=""></a>
 					</div>
 					<!-- Mobile Nav Button ==== -->
                     <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -167,25 +140,28 @@ if($conn->connect_error){
 						<span id="search-remove"><i class="ti-close"></i></span>
                     </div>
 					<!-- Navigation Menu ==== -->
-                    <div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
+					<div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
 						<div class="menu-logo">
-							<a href="index-3.php"><img src="assets/images/logo-black.png" alt=""></a>
+							<img src="assets/images/logo-black.png" alt="">
 						</div>
                         <ul class="nav navbar-nav">	
-							<li><a href="index-2.php">Home</a></li>
-							<li><a href="all-announcements.php">Announcements</a></li>
-							<li><a href="services.php">Services</a></li>
-							<!-- <li><a href="all-programs.php">Programs</a></li>
-							<li><a href="guidelines.php">Guidelines</a></li> -->
-							<li><a href="contact.php">Contact</a></li>
-							<li><a href="javascript:;">About<i class="fa fa-chevron-down"></i></a>
+							<li><a href="index-2.php">The Club</a></li>
+							<li><a href="org-structure.php">Coaches</a></li>
+							<li><a href="javascript:;">Players<i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
-									<li><a href="history.php">Our Story</a></li>
-									<li><a href="our-developers.php">Our Developers</a></li>
-									<li><a href="vision-mission.php">Vision & Mission</a></li>
-									<li><a href="org-structure.php">Org. Structure</a></li>
+									<li><a href="u9.php">U9</a></li>
+									<li><a href="u11.php">U11</a></li>
+									<li><a href="u13.php">U13</a></li>
+									<li><a href="u15.php">U15</a></li>
 								</ul>
 							</li>
+							<li><a href="all-events.php">Upcoming Events</a></li>
+							<li><a href="#">Sponsorship</a></li>
+							<li><a href="contact.php">Contacts</a></li>
+							<!-- <li><a href="all-programs.php">Programs</a></li>
+							<li><a href="guidelines.php">Guidelines</a></li> -->
+
+							
 							<?php
 								error_reporting(0);
 								if($_SESSION['role'] == 'administrator'){?>
@@ -200,19 +176,18 @@ if($conn->connect_error){
 									<li><a href="certif-of-indigency">Certifcate of Indigency</a></li>
 								</ul>
 							</li> -->
-							<!-- <li><a href="calendar.php">Calendar</a></li> -->
 						</ul>
 						<div class="nav-social-link">
 							<?php
-	                        		if(isset($_SESSION['role'])){
-	                        			  ?>
-	                        			<a href="model/logout.php">Log Out</a><?php 
-	                        		}else{
-	                        			?>
-	                        			<a href="login_access.php">Login</a>
-	                        			<?php
-	                        		}
-	                         	?>
+                        		if(isset($_SESSION['role'])){
+                        			  ?>
+                        			<a href="model/logout.php">Log Out</a><?php 
+                        		}else{
+                        			?>
+                        			<a href="login_access-2.php">Login</a>
+                        			<?php
+                        		}
+                         	?>
 						</div>
                     </div>
 					<!-- Navigation Menu END ==== -->
@@ -224,10 +199,10 @@ if($conn->connect_error){
     <!-- Inner Content Box ==== -->
     <div class="page-content bg-white">
         <!-- Page Heading Box ==== -->
-        <div class="page-banner ovbl-dark" style="background-image:url(assets/images/cover1.jpg);">
+        <div class="page-banner ovbl-dark" style="background-image:url(assets/images/cover2.jpeg);">
             <div class="container">
                 <div class="page-banner-entry">
-                    <h1 class="text-white">Barangay Bolocboloc Vision & Mission</h1>
+                    <h1 class="text-white">U9 Players</h1>
 				 </div>
             </div>
         </div>
@@ -235,57 +210,148 @@ if($conn->connect_error){
 			<div class="container">
 				<ul class="list-inline">
 					<li><a href="home.php">Home</a></li>
-					<li>Vision & Mission</li>
+					<li>U9 Players</li>
 				</ul>
 			</div>
 		</div>
 		<!-- Page Heading Box END ==== -->
-        <!-- Page Content Box ==== -->
-		<div class="content-block">
-
-
-			 <!-- Our Story ==== -->
-            <div class="section-area section-sp1">
+		<!-- contact area -->
+        <div class="content-block">
+			<!-- Portfolio  -->
+			<div class="section-area section-sp1">
                 <div class="container">
-					<div class="row align-items d-flex">
-						<div class="col-lg-6 col-md-12">
-							<div class="heading-bx left">
-								<h2 class="m-b10 title-head">Vision</h2>
+					 <div class="row">
+						<div class="col-lg-3 col-md-4 col-sm-12 m-b30">
+							<div class="profile-bx text-center">
+								<div class="user-thumb">
+									<img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 280px;">	
+								</div>
+								<div class="profile-info">
+									<h4> First Lastname</h4>
+									<span>Player</span>
+								</div>
 							</div>
-								<p style="text-align: justify; ">Barangay Bolocboloc envisioned a dynamic, progressive and peaceful community where people are active, united and rich in faith living in economically developed community with ecologically balanced environment.</p>
 						</div>
-						<div class="col-lg-6 col-md-12">
-							<div class="heading-bx left">
-								<h2 class="m-b10 title-head">Mission</h2>
+						<div class="col-lg-9 col-md-8 col-sm-12 m-b30">
+							<div class="profile-content-bx">
+								<div class="tab-content">
+									<div class="tab-pane active" id="courses">
+										<div class="profile-head">
+											<h3><span style="color: #5691cf">Players<br><span> Profile</h3>
+											<div class="feature-filters style1 ml-auto">
+												<ul class="filters" data-toggle="buttons">
+													<li data-filter="" class="btn active">
+														<input type="radio">
+														<a href="#"><span>All</span></a> 
+													</li>
+													<li data-filter="5" class="btn">
+														<input type="radio">
+														<a href="#"><span>Player 1</span></a> 
+													</li>
+													<li data-filter="10" class="btn">
+														<input type="radio">
+														<a href="#"><span>Player 2</span></a> 
+													</li>
+													<li data-filter="15" class="btn">
+														<input type="radio">
+														<a href="#"><span>Player 3</span></a> 
+													</li>
+													<li data-filter="20" class="btn">
+														<input type="radio">
+														<a href="#"><span>Player 4</span></a> 
+													</li>
+													<li data-filter="25" class="btn">
+														<input type="radio">
+														<a href="#"><span>Player 5</span></a> 
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="courses-filter">
+											<div class="clearfix">
+												<ul id="masonry" class="ttr-gallery-listing magnific-image row">
+													<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 5">
+														<div class="cours-bx">
+															<div class="action-box">
+																<img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;">	
+															</div>
+															<div class="info-bx text-center">
+																<h5><a href="#">First Lastname</a></h5>
+																<span><b>Player 1</b></span><br>
+															</div>
+														</div>
+													</li>
+													<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 10">
+														<div class="cours-bx">
+															<div class="action-box">
+																 <img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;"> 	
+															</div>
+															<div class="info-bx text-center">
+																 <h5><a href="#">First Lastname</a></h5>
+																<span><b>Player 2</b></span><br> 
+															</div>
+														</div>
+													</li>
+
+														<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 15">
+														<div class="cours-bx">
+															<div class="action-box">
+																 <img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;"> 	
+															</div>
+															<div class="info-bx text-center">
+																 <h6><a href="#">First Lastname</a></h6>
+																<span><b>Player 3</b></span><br> 
+															</div>
+														</div>
+													</li>
+													<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 20">
+														<div class="cours-bx">
+															<div class="action-box">
+																 <img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;"> 	
+															</div>
+															<div class="info-bx text-center">
+																 <h5><a href="#">First Lastname</a></h5>
+																<span><b>Player 4</b></span><br> 
+															</div>
+														</div>
+													</li>
+													<li class="action-card col-xl-4 col-lg-6 col-md-12 col-sm-6 25">
+														<div class="cours-bx">
+															<div class="action-box">
+																 <img src="assets/images/org-structure/coach.jpg" style="width: 250px; height: 260px;"> 	
+															</div>
+															<div class="info-bx text-center">
+																 <h6><a href="#">First Lastname</a></h6>
+																<span><b>Player 5</b></span><br> 
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div> 
+								</div>
 							</div>
-								<p style="text-align: justify; ">A determination to create a just, equality, peaceful and economically viable community through a God-centered and active people participation, working together for the promotion of common good of the Barangay Inhabitant.</p>							
 						</div>
-						<div class="col-lg-6 col-md-12">
-							<div class="heading-bx left">
-								<h2 class="m-b10 title-head">Goals and Objectives</h2>
-							</div>
-								<p style="text-align: justify; ">To improve the lifestyle of our constituents by providing economically, spiritually oriented and peaceful community and to provide a better services, working together hand in hand to have a better and well-developed community.</p>							
-						</div>
-					</div>
-                </div>
+				</div>
             </div>
-            <!-- Our Story End -->
+			<!-- contact area END -->
         </div>
 		<!-- Page Content Box END ==== -->
     </div>
 	<!-- Page Content Box END ==== -->
 	<!-- Footer ==== -->
-    <footer>
+	<footer>
         <div class="footer-top">
 			<div class="pt-exebar">
 				<div class="container">
 					<div class="d-flex align-items-stretch">
 						<div class="pt-logo mr-auto">
-							<img src="assets/images/logo-white1.png" style="width: 220px;; height: 60px;" alt=""/>
+							<img src="assets/images/bfclogo.png" style="width: 65px;; height: 60px;" alt=""/>
 						</div>
 						<div class="pt-social-link">
 							<ul class="list-inline m-a0">
-								<li><a href="https://facebook.com/profile.php?id=100069445621624&mibextid=ZbWKwL" class="btn-link" target="blank"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://www.facebook.com/profile.php?id=100063941023672&mibextid=ZbWKwL" class="btn-link" target="blank"><i class="fa fa-facebook"></i></a></li>
 							</ul>
 						</div>
 						<div class="pt-btn-join">
@@ -298,7 +364,7 @@ if($conn->connect_error){
                 <div class="row">
 					<div class="col-lg-3 col-md-12 col-sm-12 footer-col-3">
                         <div class="widget">
-                        	<center><img src="assets/images/logo2.png" style="width: 170px; height: 170px;"></center>
+                        	<center><img src="assets/images/bfclogo.png" style="width: 170px; height: 170px;"></center>
                         </div>
                     </div>
 					<div class="col-12 col-lg-9 col-md-12 col-sm-12">
@@ -328,9 +394,9 @@ if($conn->connect_error){
 								<div class="widget footer_widget">
 									<h5 class="footer-title">Contact Us</h5>
 									<ul>
-										<li><a href="https://www.google.com/maps/dir//4G7H%2B6FW+Bolocboloc+Gym,+brgy,+Barili,+Cebu/@10.1130842,123.5284076,96m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x33a9630643dd013b:0x6265dd3ae93a9dd5!2m2!1d123.528696!2d10.1131061" target="blank">Bolocboloc Gym, Barili, Cebu City,<br>6036 Barili</a></li>
-										<li><a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=New+Stranger+from:&to=brgybolocboloc.infosys@gmail.com" target="blank">brgybolocboloc.infosys@gmail.com</a></li>
-										<li><a href="#">09104935212</a></li>
+										<li><a href="https://goo.gl/maps/HK8ZMEauYD8vPbvQ9" target="blank">Barili, Public Kiosk<br>6036 Barili</a></li>
+										<li><a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=New+Stranger+from:&to=barililgu@gmail.com" target="blank">barili.lgu@gmail.com</a></li>
+										<li><a href="#">0908 388 3647</a></li>
 									</ul>
 								</div>
 							</div>							
@@ -342,7 +408,7 @@ if($conn->connect_error){
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 text-center">© 2023 <a href="#" style="color: white;">Barangay Bolocboloc</a> All Rights Reserved.</div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-center">© 2023 <a href="#" style="color: white;">Sports Club</a> All Rights Reserved.</div>
                 </div>
             </div>
         </div>

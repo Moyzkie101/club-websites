@@ -187,10 +187,10 @@
 							<li><a href="org-structure.php">Coaches</a></li>
 							<li><a href="javascript:;">Players<i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
-									<li><a href="#">U9</a></li>
-									<li><a href="#">U11</a></li>
-									<li><a href="#">U13</a></li>
-									<li><a href="#">U15</a></li>
+								<li><a href="u9.php">U9</a></li>
+								<li><a href="u11.php">U11</a></li>
+								<li><a href="u13.php">U13</a></li>
+								<li><a href="u15.php">U15</a></li>
 								</ul>
 							</li>
 							<li><a href="all-events.php">Upcoming Events</a></li>
