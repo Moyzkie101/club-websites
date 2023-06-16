@@ -16,16 +16,17 @@
 		</ul>
 	</li>
 
-	<li id="health_status"><a href="new_health_status.php"><i class="entypo-user-add"></i><span>Health Status</span></a> 	
+	<li id="health_status"><a href="new_health_status.php"><i class="entypo-user-add"></i><span>Health Status</span></a></li>	
 
 		<li class="" id="planhassubopen"><a href="#" onclick="memberExpand(2)"><i class="entypo-quote"></i><span>Sports Plan</span></a>
 
-		<ul id="planExpand">
-			<li class="active">
-				<a href="new_plan.php"><span>New Sports Plan</span></a></li>
+			<ul id="planExpand">
+				<li class="active">
+					<a href="new_plan.php"><span>New Sports Plan</span></a></li>
 
-			<li><a href="view_plan.php"><span>Edit Subsciption Details</span></a></li>
-		</ul>
+				<li><a href="view_plan.php"><span>Edit Subsciption Details</span></a></li>
+			</ul>
+		</li>
 
 	<li class="" id="overviewhassubopen"><a href="#" onclick="memberExpand(3)"><i class="entypo-box"></i><span>Overview</span></a>
 
@@ -43,7 +44,7 @@
 			</li>			
 
 		</ul>
-
+	</li>
 	<li class="" id="routinehassubopen"><a href="#" onclick="memberExpand(4)"><i class="entypo-alert"></i><span>Sports Routine</span></a>
 
 		<ul id="routineExpand">
